@@ -73,7 +73,7 @@ export class RequestAccessComponent {
   public documentClick(event: KeyboardEvent): void {
     if (!this.contains(event.target)) {
       this.isFilterOptionsVisible = false;
-    }
+    } 
   }
   constructor(private requestAccessService: RequestAccessService, private sharedService: SharedService, private router: Router, private nlqRestService: NlqRestService, private loaderService: LoaderService,
     private dialogService: DialogService) {
