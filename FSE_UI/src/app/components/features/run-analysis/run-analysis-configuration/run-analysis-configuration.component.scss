@@ -1,0 +1,101 @@
+
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/fonts.scss";
+
+.configuration{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.configuration-inputs{
+    display: flex;
+    justify-self: flex-end !important;
+}
+
+.documentation{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.formLabel{
+    font-weight: bold !important;
+}
+
+.formControls{
+    border: none;
+}
+.kendo_expansionpanel_documentation_sec_borders{
+    border-left: none;
+    border-right: none;
+}
+
+.kendo_expansionpanel_configuration_sec_borders{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+::ng-deep {
+    .k-switch-md{
+        width: 35px !important;
+    }
+ 
+    .k-switch-md.k-switch-on .k-switch-thumb-wrap{
+        left: calc(100% - 8px) !important;
+    }
+ 
+    .k-switch-md.k-switch-off .k-switch-thumb-wrap{
+        left: 8px !important;
+    }
+    .k-switch-label-on {
+        display: none;
+    }
+
+    .k-switch-label-off {
+        display: none;
+    }
+
+   .k-switch-on .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-off .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-on .k-switch-thumb {
+        border-color: $roche-blue-primary;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-primary;
+      
+    }
+    .k-switch-sm.k-switch-off .k-switch-thumb-wrap {
+        left: 10px;
+    }
+    .k-switch-sm .k-switch-thumb {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .k-switch-sm .k-switch-track {
+        height: 16px;
+        width: 20px !important;
+    }
+    .k-switch-sm.k-switch-on .k-switch-thumb-wrap {
+        left: calc(100% - 11px);
+    }
+    .k-switch-sm {
+        width: 45px;
+        height: 26px;
+        font-size: 10px;
+    }
+    
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "displayName": "admin",
+        "permission": 1
+    },
+    {
+        "displayName": "read-write",
+        "permission": ""          
+    },
+    {
+        "displayName": "read-write",
+        "permission": 2
+    },
+    {
+        "displayName": "read-only",
+        "permission": 3
+    },
+    {
+        "displayName": "remove",
+        "permission": 4
+    }
+]

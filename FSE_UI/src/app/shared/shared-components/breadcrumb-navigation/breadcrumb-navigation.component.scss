@@ -1,0 +1,55 @@
+@import '../../../../../../FSE_UI/src/styles/variables.scss';
+@import '../../../../../../FSE_UI/src/styles/fonts.scss';
+
+.breadcrumb-align {
+  display: flex;
+}
+
+.breadcrumb-list-align {
+  display: flex;
+  font-size: 14px;
+}
+
+.breadcrumb-alignment {
+  color: $roche-grey-600;
+  text-decoration: none;
+  font-family: $Roche-Sans-Regular;
+  letter-spacing: 0px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+a:last-child{
+  color: $roche-grey-900;
+  pointer-events: none;
+}
+
+.align-reset {
+  display: flex;
+}
+
+.align-reset-icon {
+  margin-left: 20%;
+}
+
+.align-reset-btn {
+  margin-left: 1%;
+  color: $roche-blue-primary;
+  width: 27px;
+  height: 16px;
+}
+
+.right-chevron-align {
+  margin-left: 5px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.breadcrumb-icon-align {
+  margin-bottom: 3px;
+}
+
+.disable-breadcrumb {
+  pointer-events: none;
+  cursor: not-allowed;
+}

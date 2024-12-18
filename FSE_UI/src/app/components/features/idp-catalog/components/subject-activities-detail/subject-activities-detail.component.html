@@ -1,0 +1,16 @@
+<ng-container *ngIf="!showGrid">
+    <app-no-results-found [showNoRecords]="fetchDataInfo"></app-no-results-found>
+</ng-container>
+<ng-container *ngIf="showGrid">
+    <app-grid
+        [pageSize]="gridData.length"
+        [gridData]="gridData"
+        [gridColumns]="gridColumns"
+        [pagination]="pagination"
+        (sendSortData)="getSortedData($event)"
+        (sendscrollData)="getPaginatedData($event)"
+        [checkBoxSelection]="false"
+        [showGearIcon]="false"
+        [nonActivitiesColumns]="true"
+    ></app-grid>
+</ng-container>

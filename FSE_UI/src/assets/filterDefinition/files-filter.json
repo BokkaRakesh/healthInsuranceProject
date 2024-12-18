@@ -1,0 +1,187 @@
+[
+
+     {
+        "id": "Subject_Unq_ID",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Subject ID",
+        "showFilter": true
+    },
+    {
+        "id": "Studynumber",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "ID Number",
+        "showFilter": true
+    },
+    {
+        "id": "Indication",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Indication/Therapeutic Area",
+        "showFilter": true
+    },
+    {
+        "id": "Molecule",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Compound / Investigational Drug",
+        "showFilter": true
+    },
+    {
+        "id": "Studyphase",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Phase",
+        "showFilter": true
+    },
+    {
+        "id": "studytype",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Type",
+        "showFilter": true
+    },
+    {
+        "id": "ScientificArea",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Scientific Area",
+        "showFilter": true
+    },
+    {
+        "id": "StudyStatus",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Status",
+        "showFilter": true
+    },
+    {
+        "id": "DatasetName",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Name",
+        "showFilter": true
+    },
+    {
+        "id": "studythemenumber",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Theme Number",
+        "showFilter": true
+    },
+    {
+        "id": "SubjectEnrollmentSiteId",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Enrollment Site ID",
+        "showFilter": true
+    },
+    {
+        "id": "subjectethnicity",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Ethinicity",
+        "showFilter": true
+    },
+    {
+        "id": "SubjectRace",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Race",
+        "showFilter": true
+    },
+    {
+        "id": "SubjectSex",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Gender",
+        "showFilter": true
+    },
+    {
+        "id": "dicomacquisitiondate",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showDatePicker",
+        "displayName": "Dicom Acquisition Date",
+        "showFilter": true
+    },
+    {
+        "id": "dicomacquisitiontime",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showDatePicker",
+        "displayName": "Dicom Acquisition Time",
+        "showFilter": true
+    },
+    {
+        "id": "dicombodypartexamined",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Body Part examined",
+        "showFilter": false
+    },
+    {
+        "id": "filemodality",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "File Modality",
+        "showFilter": true
+    },
+    {
+        "id": "filename",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "File Name",
+        "showFilter": true
+    },
+    {
+        "id": "visitage",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Visit Age",
+        "showFilter": true
+    },
+    {
+        "id": "acquistionparentsprojects",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Acquisition Parents Projects",
+        "showFilter": true
+    },
+    {
+        "id": "studysource",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Data Sources",
+        "showFilter": true
+    },
+    {
+        "id": "SubjectID",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Subject xx ID",
+        "showFilter": false
+    }
+]

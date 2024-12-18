@@ -1,0 +1,17 @@
+<div class="d-flex">
+    <form [formGroup]="searchForm" class="search-container"
+      [ngStyle]="{ 'width': width, 'background-color': backgroundColor }">
+      <!-- input box -->
+      <kendo-textbox type="text" formControlName="searchQuery" class="search-input" [placeholder]="placeHolder"
+        [ngStyle]="{ 'background-color': backgroundColor }" (keydown.enter)="performSearch()">
+        <ng-template kendoTextBoxSuffixTemplate>
+          <img class="mt-1 tooltip-info" kendoTooltip [title]="tooltipContentAsString()" position="bottom"
+          src="../assets/images/circle_info.svg" alt="" />  
+          <span class="arrow-icon-search" 
+          [ngClass]="{'arrow-icon-search-hover': searchForm.get('searchQuery')?.value, 'arrow-icon-search': !searchForm.get('searchQuery')?.value}" 
+          (click)="performSearch()"></span>
+        </ng-template>
+
+      </kendo-textbox>
+    </form>
+    </div>

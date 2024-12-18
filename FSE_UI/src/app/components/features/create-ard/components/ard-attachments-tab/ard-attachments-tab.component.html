@@ -1,0 +1,26 @@
+<div style="padding: 15px;">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row drop-upload-wrapper">
+            <kendo-upload zoneId="fileZone" (upload)="onFileChange()" (success)="onSuccess()"
+                (select)="onSelect($event)" [saveUrl]="uploadSaveUrl" [concurrent]="true" [multiple]="true"
+                [restrictions]="myRestrictions">
+                <kendo-upload-messages [select]="'Upload or drop files here'"></kendo-upload-messages>
+            </kendo-upload>
+        </div>
+    </form>
+    <div class="download-csv-template">
+        <span class="download">download </span><span class="csv-template">CSV template</span>
+    </div>
+
+    <ng-container *ngIf="!showGrid">
+        <app-no-results-found [showNoRecords]="true"></app-no-results-found>
+    </ng-container>
+    <div class="col-12 grid-container" *ngIf="showGrid">
+        <app-grid *ngIf="gridData.length > 0" [attachmentPopUp]="true" [gridData]="gridData"
+            [pageSize]="gridData.length" [gridColumns]="gridColumns" [threeDotMenu]="true" [pagination]="pagination"
+            [checkBoxSelection]="checkboxSelection" (actionMenuEmitter)="openRowMenu($event)">
+        </app-grid>
+    </div>
+    <app-table-pop-up *ngIf="showRowPopup" [items]="menuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign"
+        [popupAlign]="popupAlign">
+    </app-table-pop-up>

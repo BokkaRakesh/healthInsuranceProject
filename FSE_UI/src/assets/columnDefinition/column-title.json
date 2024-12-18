@@ -1,0 +1,155 @@
+{
+    "studyColumns": [
+        {
+            "name": "Name",
+            "id": "StudyNumber",
+            "default": true,
+            "checked": true,
+            "width": 190,
+            "order": 1,
+            "hasIcon": true,
+            "icon": "outlined-folder",
+            "hasTooltip": false
+        },
+        {
+            "name": "Subjects",
+            "id": "Subjects",
+            "default": true,
+            "checked": true,
+            "width": 80,
+            "order": 2,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Sessions",
+            "id": "Sessions",
+            "default": true,
+            "checked": true,
+            "width": 80,
+            "order": 3,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Aquisitions",
+            "id": "Aquisitions",
+            "default": true,
+            "checked": true,
+            "width": 80,
+            "order": 4,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Files",
+            "id": "Files",
+            "default": true,
+            "checked": true,
+            "width": 80,
+            "order": 5,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Modality",
+            "id": "Modality",
+            "default": true,
+            "checked": true,
+            "width": 130,
+            "order": 6,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Indication",
+            "id": "StudyIndication",
+            "default": false,
+            "checked": false,
+            "width": 150,
+            "order": 7,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Compound",
+            "id": "StudyThemeMolecule",
+            "default": false,
+            "checked": false,
+            "width": 110,
+            "order": 8,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Study Phase",
+            "id": "StudyPhase",
+            "default": false,
+            "checked": false,
+            "width": 170,
+            "order": 9,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Study Type",
+            "id": "StudyType",
+            "default": false,
+            "checked": false,
+            "width": 150,
+            "order": 10,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Study Close date",
+            "id": "StudyPCDActual",
+            "default": false,
+            "checked": false,
+            "width": 130,
+            "order": 11,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Created By",
+            "id": "StudyCreateUser",
+            "default": false,
+            "checked": false,
+            "width": 130,
+            "order": 12,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Scientific Area",
+            "id": "StudyScientificArea",
+            "default": true,
+            "checked": true,
+            "width": 190,
+            "order": 13,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Study Acronym",
+            "id": "StudyAcronym",
+            "default": false,
+            "checked": false,
+            "width": 150,
+            "order": 14,
+            "hasIcon": false,
+            "hasTooltip": false
+        },
+        {
+            "name": "Data Sources",
+            "id": "DataSources",
+            "default": true,
+            "checked": true,
+            "width": 150,
+            "order": 15,
+            "hasIcon": false,
+            "hasTooltip": false
+        }
+    ]
+}

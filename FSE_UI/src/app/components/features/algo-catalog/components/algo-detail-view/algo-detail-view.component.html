@@ -1,0 +1,80 @@
+<div>
+    <div class="overlay"></div>
+    <div class="drawer">
+        <div class="drawer-header d-flex justify-content-between align-items-center p-3">
+            <span>
+                <span class="header-icon me-3"></span>
+                <span class="header-title">{{ algorithmVersionDetails?.data?.summary.name }}</span>
+            </span>
+            <span class="close-btn" (click)="onClose()"></span>
+        </div>
+    
+        <div class="d-flex justify-content-between border-bottom mx-1">
+            <div class="drawer-tabs mx-2">
+                <button class="tab-button" [class.active]="selectedTab === 'documentation'"
+                    (click)="selectTab('documentation')">
+                    Documentation
+                </button>
+                <button class="tab-button" [class.active]="selectedTab === 'log'" (click)="selectTab('log')">
+                    Log
+                </button>
+            </div>
+            <div class="pt-3">
+                <button class="btn btn-outline-primary view-analysis-btn mx-1"><span class="icon pe-2"></span>View Analysis Runs</button>
+                <button class="btn btn-primary run-analysis-btn mx-1"><span class="icon pe-2"></span>Run Analysis</button>
+            </div>
+        </div>
+    
+        <div class="drawer-content p-3">
+            <!-- Documentation Tab -->
+            <div *ngIf="selectedTab === 'documentation'">
+                <div class="mx-2">
+                    <!-- <span><strong>Description</strong></span>
+                    <div>
+                        <span class="description-text">
+                            {{algorithmVersionDetails?.data?.summary.description}}
+                        </span>
+                    </div> -->
+                </div>
+                <ng-container *ngFor="let metaInfo of metaInformations ">
+                    <div class="meta-info border-bottom mx-2 py-2">
+                        <span class="label">{{metaInfo.label}}</span>
+                        <span class="value w-50">
+                            {{ metaInfo.value }}
+                        </span>
+                    </div>
+                </ng-container>
+
+                <div class="main-container p-4 rounded mx-2 my-3">
+                    <ng-container *ngFor="let algoSystems of algorithmSystemMap | keyvalue;">
+                        <app-expansion-panel [title]="algoSystems.key" [icon]="'data_share'" [requestAccess]="true"
+                            (requestAccessClick)="requestAccessCall()">
+                            <div>
+                                <!-- <div class="my-3">
+                                    <span><strong>Description</strong></span>
+                                    <div>
+                                        <span class="description-text">
+                                            {{algorithmVersionDetails?.data?.summary.description}}
+                                        </span>
+                                    </div>
+                                </div> -->
+                                <div class="d-flex justify-content-start">
+                                    <button kendoButton class="download-btn me-2" [disabled]="true" *ngFor="let system of algoSystems.value">
+                                        <span class="download-icon pe-2"></span>
+                                        <span>Download for {{system.type}}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </app-expansion-panel>
+                    </ng-container>
+                </div>
+            </div>
+    
+            <!-- Log Tab -->
+            <div *ngIf="selectedTab === 'log'">
+                <h6>Log</h6>
+                <p>Log information for {{ algorithmVersionDetails?.data.summary.name }}.</p>
+            </div>
+        </div>
+    </div>
+</div>

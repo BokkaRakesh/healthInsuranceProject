@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-auto">
+            <app-breadcrumb-navigation></app-breadcrumb-navigation>
+        </div>
+    </div>
+
+    <div class="row justify-content-between align-items-center">
+        <div class="col-auto page-label">
+            <span>Algo Catalog</span>
+        </div>
+
+        <div class="col d-flex justify-content-start align-items-center flex-wrap">
+            <div class="metadata-section text-end me-3">
+                <app-summary [summary]="summaryInfo"></app-summary>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="p-0">
+            <ng-container *ngIf="!showGrid">
+                <app-no-results-found [showNoRecords]="true"></app-no-results-found>
+            </ng-container>
+            <ng-container *ngIf="showGrid">
+                <app-grid-detail [pageSize]="gridData.length" [gridData]="gridData" [pagination]="pagination"
+                    [redirectIcon]="true" [gridColumns]="gridColumns" (sendSortData)="getSortedData($event)"
+                    (sendscrollData)="getPaginatedData($event)" (actionMenuEmitter)="openAlgoDetails($event)">
+                </app-grid-detail>
+            </ng-container>
+        </div>
+    </div>
+    <app-algo-detail-view *ngIf="isDetailViewOpen"
+        [algorithmVersionDetails]="algorithmVersionDetails" (closeDetailViewerEmitter)="closeDetailView()"></app-algo-detail-view>
+</div>

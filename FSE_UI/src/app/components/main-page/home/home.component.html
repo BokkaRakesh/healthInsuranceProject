@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="upper-section">
+    <div class="welcome-msg pt-4">
+      <div class="pb-3">Hello,
+        <span>{{ firstName }}</span>
+        <span class="px-3">|</span>
+        <span>What would you like to do today?</span>
+      </div>
+      <div class="search-and-buttons text-end d-flex align-items-center" *ngIf="this.currentPath === '/home'">
+        <button class="gip-chat-btn btn btn-md rounded-pill btn-primary mx-1" (click)="openGipai()">
+            <span class="align-text-bottom pe-1"></span>
+            <span>GIP</span>
+            <span class="pe-1">Ai</span>
+        </button>
+    </div>
+    </div>
+    <div class="workflow-gear">
+      <app-workflow
+      (selectedWorkflows)="showWorkflowCards($event)"
+      >
+      </app-workflow>
+    </div>
+    <div class="workflow-cards">
+      <app-workflow-cards-container 
+      [selectedWorkflowCards]="selectedWorkflowsCards">
+      </app-workflow-cards-container>
+    </div>
+    <div class="workflow-activities">
+      <app-workflow-activities>
+        
+      </app-workflow-activities>
+    </div>
+    <div>
+      <!-- <app-access-activity></app-access-activity> -->
+    </div>
+  </div>
+</div>
+<div kendoDialogContainer></div>

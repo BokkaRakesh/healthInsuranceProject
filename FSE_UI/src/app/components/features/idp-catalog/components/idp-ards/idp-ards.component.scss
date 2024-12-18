@@ -1,0 +1,65 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.three-dot {
+    content: url(../../../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.archieve-label{
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 100px;
+}
+
+::ng-deep {
+    .k-switch-label-on {
+        display: none;
+    }
+
+    .k-switch-label-off {
+        display: none;
+    }
+
+   .k-switch-on .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-off .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-on .k-switch-thumb {
+        border-color: $roche-blue-primary;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-primary;
+      
+    }
+    .k-switch-sm.k-switch-off .k-switch-thumb-wrap {
+        left: 10px;
+    }
+    .k-switch-sm .k-switch-thumb {
+        width: 20px;
+        height: 20px;
+    }
+    .k-switch-sm .k-switch-track {
+        height: 20px;
+        width: 20px;
+    }
+    .k-switch-sm.k-switch-on .k-switch-thumb-wrap {
+        left: calc(100% - 11px);
+    }
+    .k-switch-sm {
+        width: 45px;
+        height: 26px;
+        font-size: 10px;
+    }
+
+    
+}

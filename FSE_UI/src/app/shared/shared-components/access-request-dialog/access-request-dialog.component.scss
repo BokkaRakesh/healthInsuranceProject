@@ -1,0 +1,64 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.align-right {
+    float: right;
+}
+
+::ng-deep .k-radio:checked,
+.k-radio.k-checked {
+    border-color: $roche-blue-primary !important;
+    color: $roche-background !important;
+    background-color: $roche-blue-primary !important;
+}
+
+::ng-deep .k-radio:checked,
+::ng-deep .k-radio.k-checked {
+    border-color: $roche-blue-primary !important;
+    color: $roche-background !important;
+    background-color: $roche-blue-primary !important;
+}
+
+::ng-deep .k-input-solid.k-invalid,
+.k-input-solid.ng-invalid.ng-touched,
+.k-input-solid.ng-invalid.ng-dirty {
+    border-color: $roche-blue-primary ;
+}
+
+::ng-deep .k-list-item.k-selected,
+.k-selected.k-list-optionlabel {
+    color: $roche-background !important;
+    background-color: $roche-blue-primary !important;
+}
+
+.step-content {
+    box-shadow: 0px 0px 8px $roche-black-100;
+    background-color: $roche-background;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.badge-align {
+    background: $roche-blue-primary;
+    border-radius: 19px;
+    color: $roche-background;
+    font-family: $Roche-Sans-Regular;
+    height: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.badge-align-value {
+    font-family: $Roche-Sans-Medium;
+}
+
+.required-mark-align{
+    color: $roche-red-500;
+    font-weight: 500;
+}
+
+.align-radio-btn {
+    margin-right: 52px;
+}

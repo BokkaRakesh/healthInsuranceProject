@@ -1,0 +1,82 @@
+<!-- Accordion panels -->
+<div class="col-12">
+    <kendo-expansionpanel [svgExpandIcon]="arrowDown" [svgCollapseIcon]="arrowUp"
+        class="kendo_expansionpanel_configuration_sec_borders">
+        <ng-template kendoExpansionPanelTitleDirective>
+            <div class="header-content">
+                <span>Configurations</span>
+            </div>
+        </ng-template>
+
+        <div class="row mb-3">
+            <form [formGroup]="configurationForm">
+
+                <div class="row col-12 configuration" *ngFor="let config of configurationData">
+                    <div class="col-6">
+                        <label>{{config?.name}}</label>
+                    </div>
+                    <div class="col-6">
+                        <kendo-textbox class="configuration-inputs" *ngIf="config.type === 'Text'"
+                            formControlName="{{config.key}}" (valueChange)="changeFormValues()"
+                            [(ngModel)]="config.value"></kendo-textbox>
+                        <kendo-textarea class="configuration-inputs" *ngIf="config.type === 'TextArea'"
+                            placeholder="Tell us a little bit about yourself..." [rows]="3" resizable="vertical"
+                            formControlName="{{config.key}}" (valueChange)="loadConfigurationForm()"></kendo-textarea>
+                        <kendo-datepicker class="configuration-inputs" *ngIf="config.type === 'DatePicker'"
+                            placeholder="Choose a date ..." formControlName="{{config.key}}"
+                            (valueChange)="changeFormValues()"></kendo-datepicker>
+                        <kendo-slider class="configuration-inputs" *ngIf="config.type === 'Range'" [min]="0" [max]="100"
+                            formControlName="{{config.key}}" (valueChange)="changeFormValues()"
+                            [(ngModel)]="config.value"></kendo-slider>
+                        <kendo-switch class="configuration-inputs" *ngIf="config.type === 'Boolean'"
+                            formControlName="{{config.key}}" (valueChange)="changeFormValues($event, config.key)">
+                        </kendo-switch>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </kendo-expansionpanel>
+    <kendo-expansionpanel [svgExpandIcon]="arrowDown" class="kendo_expansionpanel_documentation_sec_borders"
+        [svgCollapseIcon]="arrowUp">
+        <ng-template kendoExpansionPanelTitleDirective>
+            <div class="header-content">
+                <span>Documentation</span>
+            </div>
+        </ng-template>
+        <!-- <div class="documentation" *ngFor="let data of documentationData | keyvalue">
+              <div class="title">{{data.key}}</div>
+              <div class="value">{{data.value}}</div>
+            </div> -->
+        <div class="documentation">
+            <div class="title">Name</div>
+            <div class="value">{{documentationData?.name}}</div>
+        </div>
+        <div class="documentation">
+            <div class="title">Author</div>
+            <div class="value">{{documentationData?.createdby}}</div>
+        </div>
+        <div class="documentation">
+            <div class="title">Maintainer</div>
+            <div class="value">{{documentationData?.updatedby}}</div>
+        </div>
+        <div class="documentation">
+            <div class="title">Version</div>
+            <div class="value">{{documentationData?.version}}</div>
+        </div>
+
+        <div class="documentation">
+            <div class="title">Source</div>
+            <div class="value">{{documentationData?.source}}</div>
+        </div>
+
+        <div class="documentation">
+            <div class="title">URL</div>
+            <div class="value">{{documentationData?.url}}</div>
+        </div>
+        <div class="documentation">
+            <div class="title">License</div>
+            <div class="value">{{documentationData?.versionref}}</div>
+        </div>
+
+    </kendo-expansionpanel>
+</div>

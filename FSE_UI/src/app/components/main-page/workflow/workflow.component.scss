@@ -1,0 +1,57 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.gear-icon {
+    span {
+        font-family: $Roche-Sans-Light;
+        font-size: 12px;
+        color: $roche-grey-700;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+kendo-popup {
+    width: 235px;
+    height: 340px;
+}
+
+.horizontal-separator {
+    margin: 0;
+}
+
+.popup-menu {
+    .title {
+        font-family: $Roche-Sans-Medium;
+        font-size: 14px;
+        color: $roche-grey-800;
+    }
+
+    p > label {
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+        color: $roche-grey-700;
+    
+    }
+
+    div:nth-child(2) {
+        // height: 300px;
+        // overflow-y: auto;
+        height: 300px;
+        padding-right: 10px;
+        overflow-y: auto;
+    }
+}
+
+::ng-deep {
+    .k-checkbox:checked, .k-checkbox.k-checked {
+        background-color: $roche-blue-primary;
+        border-color: transparent;
+    }
+
+    .k-checkbox:checked:focus, .k-checkbox.k-checked.k-focus {
+        box-shadow: none;
+    }
+}

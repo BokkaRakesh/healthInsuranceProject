@@ -1,0 +1,25 @@
+<!-- Data Grid Section -->
+<div class="row">
+  <ng-container *ngIf="!showGrid">
+      <app-no-results-found [showNoRecords]="fetchDataInfo"></app-no-results-found>
+  </ng-container>
+  <ng-container class="grid-container" *ngIf="showGrid">
+      <app-grid *ngIf="gridData.length > 0" [pageSize]="gridData.length" [gridData]="gridData" [pagination]="pagination" [threeDotMenu]="true" [gridColumns]="gridColumns.default"
+    (sendSortData)="getSortedData($event)" (sendscrollData)="getPaginatedData($event)"  (actionMenuEmitter)="openRowMenu($event)"  [checkBoxSelection]="false" [accessFlag]="accessFlag" (sendRowDataEmitter)="openARDDetails($event)">
+    <div class="grid-projected-content text-end">
+       
+            <span class="archieve-label">
+                {{ !isChecked ? 'Show Archived' : 'Hide Archived'}}
+            </span>
+            <kendo-switch size="small" (valueChange)="toogleArch()"></kendo-switch>        
+      </div>
+      </app-grid>
+  </ng-container>
+  </div>
+  
+  <app-table-pop-up *ngIf="showRowPopup" [items]="rowMenuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign"
+      (itemClick)="onPopupItemClick($event)">
+  </app-table-pop-up>
+  
+  <div kendoDialogContainer></div>
+  

@@ -1,0 +1,29 @@
+<kendo-dialog (close)="close()" [width]="1100" [height]="600">
+  <div class="view-analysis-header">
+    <span class="run-analysis">Analysis Run</span>
+    <button class="new-analysis" (click)="close()"><img class="run-img-icon"
+        src="../assets/images/runAnalysis-catalog-box.svg" alt="info">New
+      Analysis</button>
+    <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+  </div>
+
+  <ng-container *ngIf="!showGrid">
+    <app-no-results-found [showNoRecords]="true"></app-no-results-found>
+  </ng-container>
+  <ng-container *ngIf="showGrid">
+    <app-grid *ngIf="gridData.length > 0" [pageSize]="gridData.length" [gridData]="gridData"
+      [gridColumns]="gridColumnsData" [pagination]="pagination" [threeDotMenu]="true" [checkBoxSelection]="false"
+      [insights]="true" (sendSortData)="getSortedData($event)" (sendscrollData)="getPaginatedData($event)"
+      (actionMenuEmitter)="openRowMenu($event)">
+    </app-grid>
+  </ng-container>
+
+  <app-table-pop-up *ngIf="showRowPopup" [items]="menuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign"
+    [popupAlign]="popupAlign"></app-table-pop-up>
+  <kendo-dialog-actions>
+    <div class="modal-btn">
+      <button class="cancelBtn" style=" border: 1px solid; color: #0B41CD; float: right; width:81px; height: 34px;"
+        (click)="close()">Cancel</button>
+    </div>
+  </kendo-dialog-actions>
+</kendo-dialog>

@@ -1,0 +1,34 @@
+<div class="container mt-4 scroll-bar study-details">
+    <div class="main-container p-4 border rounded">
+      <div class="row" *ngIf="mappedStudiesData">
+        <!-- Accordion panels -->
+        <div class="col-12" *ngFor="let studyEntry of mappedStudiesData | keyvalue: originalOrder">
+            <div class="row mb-3">
+              <div class="study-catalog-info-box" *ngFor="let mainStudy of studyEntry.value.highLightedLabels">
+                <div class="info-box p-3 mb-2">
+                  <strong class="study-label">{{ mainStudy.uiLabel }} </strong>
+                  <div>
+                    {{ mainStudy.value }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="study-info-list">
+              <kendo-listview [data]="studyEntry.value.normalLabels">
+                <ng-template kendoListViewItemTemplate let-dataItem="dataItem">
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <strong class="study-label">{{ dataItem.uiLabel }}</strong>
+                    </div>
+                    <div class="col-6">
+                      {{ dataItem.value }}
+                    </div>
+                    <hr class="separator" />
+                  </div>
+                </ng-template>
+              </kendo-listview>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

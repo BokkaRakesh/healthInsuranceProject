@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+.upper-section {
+    background: transparent linear-gradient(170deg, $roche-background 0%, $roche-background 10%, $roche-light-pink-blue 62%, $roche-sky-blue 100%) 0% 0% no-repeat padding-box;
+    height: 50%;
+    padding: 0 7%;
+}
+
+.welcome-msg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: $roche-dark-blue;
+    font-family: $Roche-Sans-Light;
+    div {
+        span:nth-child(1) {        
+            font-family: $Roche-Sans-Medium;
+        }
+        span:nth-child(2) {
+            color: $roche-grey-400;
+        }
+        span:nth-child(3) {
+            font-size: 18px;
+            color: $roche-grey-700;
+        }
+    }
+}
+
+.gip-chat-btn {
+    background-color: $roche-blue-primary;
+    border-color: $roche-blue-primary;
+    cursor: pointer !important;
+    span:nth-child(1) {
+        content: url("../../../../assets/images/chat-icon.svg");
+    }
+    span:nth-child(2) {
+        font-family: $Roche-Sans-Medium;
+        font-size: 16px;
+        color: #fff !important;
+    }
+    span:nth-child(3) {
+        font-family: $Roche-Sans-Light;
+        font-size: 16px;
+        color: #fff !important;
+    }
+  }

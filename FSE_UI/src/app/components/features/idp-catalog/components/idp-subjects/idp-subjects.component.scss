@@ -1,0 +1,41 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.grid-projected-content {
+    span {
+        font-size: 12px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+
+    button {
+        background-color: $roche-blue-primary;
+        color: $roche-background;
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+    }
+}
+
+.grid-projected-content {
+    button:nth-child(2) > span {
+        content: url(../../../../../../assets/images/create_ard.svg);
+        vertical-align: middle;
+    }
+    button:nth-child(3) > span {
+        content: url(../../../../../../assets/images/run_analysis.svg);
+        vertical-align: middle;
+    }
+}
+
+.three-dot {
+    content: url(../../../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+    vertical-align: middle;
+}
+.create-ard-btn.disabled {
+    background-color: $roche-grey-200;
+    color: $roche-brown-100;
+    img {
+        filter: invert(66%) sepia(5%) saturate(531%) hue-rotate(339deg) brightness(90%) contrast(86%);
+    }
+}

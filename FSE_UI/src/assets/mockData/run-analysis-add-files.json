@@ -1,0 +1,58 @@
+{
+    "data": {
+        "pagination": {
+            "totalCount": 15146,
+            "page": 1,
+            "pageSize": 20
+        },
+        "items": [
+            {
+                "timestamp": "147c34d0-a591-11ef-a326-88a4c2a5318e",
+                "name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "type": "csv",
+                "value": "True",
+                "createdat": "2024-11-18T15:10:00Z",
+                "updatedat": "2024-11-18T15:10:00Z",
+                "StudyID": "test"
+                
+            },
+            {
+                "timestamp": "147c34d0-a591-11ef-a326-88a4c2a5318e",
+                "name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "type": "csv",
+                "value": "True",
+                "createdat": "2024-11-18T15:10:00Z",
+                "updatedat": "2024-11-18T15:10:00Z",
+                "StudyID": "test"
+            },
+            {
+                "timestamp": "147c34d0-a591-11ef-a326-88a4c2a5318e",
+                "name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "type": "csv",
+                "value": "True",
+                "createdat": "2024-11-18T15:10:00Z",
+                "updatedat": "2024-11-18T15:10:00Z",
+                "StudyID": "test"
+            },
+            {
+                "timestamp": "147c34d0-a591-11ef-a326-88a4c2a5318e",
+                "name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "type": "csv",
+                "value": "True",
+                "createdat": "2024-11-18T15:10:00Z",
+                "updatedat": "2024-11-18T15:10:00Z",
+                "StudyID": "test"
+            }
+        ]
+    },
+    "summary": {
+        "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+        "name": "GA Progression",
+        "version": 1,
+        "isactive": 1,
+        "createdby": "Payal Sharma",
+        "updatedby": "Payal Sharma",
+        "createdat": "2024-11-18 14:45:22",
+        "updatedat": "2024-11-18 14:45:22"
+    }
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Subject ID",
+    "id": "SubjectID",
+    "default": true,
+    "checked": true,
+    "width": 200,
+    "order": 1,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Gender",
+    "id": "SubjectSex",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 5,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Ethinicity",
+    "id": "SubjectEthnicity",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 3,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Race",
+    "id": "SubjectRace",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 4,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Enrollment Site ID",
+    "id": "SubjectEnrollmentSiteId",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 2,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "ID Number",
+    "id": "StudyNumber",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 6,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Name",
+    "id": "StudyAcronym",
+    "default": true,
+    "checked": true,
+    "width": 100,
+    "order": 7,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Indication/Therapeutic Area",
+    "id": "StudyIndication",
+    "default": false,
+    "checked": false,
+    "width": 150,
+    "order": 9,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Compound / Investigational Drug",
+    "id": "StudyThemeMolecule",
+    "default": false,
+    "checked": false,
+    "width": 150,
+    "order": 10,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Study Phase",
+    "id": "StudyPhase",
+    "default": false,
+    "checked": false,
+    "width": 150,
+    "order": 8,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+
+  {
+    "name": "Study Type",
+    "id": "StudyType",
+    "default": false,
+    "checked": false,
+    "width": 100,
+    "order": 11,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Scientific Area",
+    "id": "StudyScientificArea",
+    "default": false,
+    "checked": false,
+    "width": 100,
+    "order": 12,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Study Status",
+    "id": "StudyStatus",
+    "default": false,
+    "checked": false,
+    "width": 100,
+    "order": 13,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Study Theme Number",
+    "id": "StudyThemeNumber",
+    "default": false,
+    "checked": false,
+    "width": 100,
+    "order": 14,
+    "hasIcon": false,
+    "hasTooltip": false
+  }
+]

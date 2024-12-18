@@ -1,0 +1,64 @@
+{
+    "data": {
+        "items": [
+            {
+                "activity_type": "Analysis",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Started CAFE-14_ROSA-ALPHA_02_24_2024_1:42 run, 250 files processed",
+                "user": "John Avachain",
+                "progress": "inProgress"
+            },
+            {
+                "activity_type": "ARD",
+                "timestamp": "2024/02/09 1:42",
+                "information": "ARD was created",
+                "user": "John Avachain",
+                "progress": "complete"
+            },
+            {
+                "activity_type": "View",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Subject was viewed",
+                "user": "John Avachain",
+                "progress": "none"
+            },
+            {
+                "activity_type": "Analysis",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Completed CAFE-14_ROSA-ALPHA_02_24_2024_1:42 run, 50 files processed",
+                "user": "John Avachain",
+                "progress": "error"
+            },
+            {
+                "activity_type": "Download",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Subject Imaging data was downloaded",
+                "user": "John Avachain",
+                "progress": "none"
+            },
+            {
+                "activity_type": "Export CSV",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Subject Clinical Data data was exported as CSV",
+                "user": "John Avachain",
+                "progress": "none"
+            },
+            {
+                "activity_type": "Analysis",
+                "timestamp": "2024/02/09 1:42",
+                "information": "Completed CAFE-14_ROSA-ALPHA_02_24_2024_1:42 run, 350 files processed",
+                "user": "John Avachain",
+                "progress": "error"
+            }
+        ],
+        "sort": {
+            "field": "activity_type",
+            "order": "ASC"
+        },
+        "pagination": {
+            "totalCount": 7,
+            "page": 1,
+            "pageSize": 20
+        }
+    }
+}

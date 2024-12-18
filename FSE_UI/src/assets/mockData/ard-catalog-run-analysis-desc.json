@@ -1,0 +1,706 @@
+{
+    "data": {
+        "items": [
+            {
+                "icid": "1234",
+                "ecid": "ec123"     
+            },
+            {
+                "icid": "93",
+                "ecid": "Ec93"     
+            }
+            
+        ],
+        "sort": {
+            "field": "StudyNumber",
+            "order": "ASC"
+        },
+        "pagination": {
+            "totalCount": "2504",
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "idp_unq_id": "535d2f85-a5eb-405d-b43c-1ffb214f6525",
+            "idp_name": "GO 29436",
+            "status": "INPROGRESS",
+            "createdby": "Pradeep Shrivastava",
+            "updatedby": "Pradeep Shrivastava",
+            "currentversion": "1.0",
+            "createdat": "10/24/2024",
+            "updatedat": "10/24/2024",
+            "subjects": 1302,
+            "files": 94898,
+            "sessions": 8338,
+            "acquisitions": 70820,
+            "modality": "CT, PT, DOC, CR, SC, NM, DX, MR, OT",
+            "datasources": "GIP, OMICS"
+        },
+        "filters": [
+            {
+                "id": "Subject_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "02ae05ea-8b69-422b-9231-44eb95375df0",
+                    "11a962aa-51aa-48f1-b276-a1f6c748c4e6",
+                    "13e0cf9d-62de-4ad3-92a4-87191ddda726",
+                    "1fa4b61f-f562-41be-a9f9-ee3d3ad6247b",
+                    "226bd1a1-6160-4cad-8a49-b06506cf219b",
+                    "2a366756-ffc2-4ada-9eb2-572c0922c29a",
+                    "39b80478-855e-4130-8973-a62a2ea1c149",
+                    "5153d389-2ab0-4611-9678-ea7664816c2e",
+                    "53894535-6777-4e95-b388-1ff0e45c4a29",
+                    "5b5acbff-3c90-4992-aee8-829b0523f323",
+                    "657e40ae-a606-43d2-8c01-9857a13dbb0d",
+                    "6851b0cd-6757-40a7-b1b8-076c5a5383fc",
+                    "6aaae71d-4fb2-4215-8579-6f1827d96528",
+                    "98f9157b-e684-48b5-9d98-595a0e27d863",
+                    "9e0294e8-165a-46d1-893b-dc28f183fb74",
+                    "aebab84c-5bfd-418d-a87d-669b6da70d2d",
+                    "b963410b-95e8-4d78-ad7f-39996eab5212",
+                    "d2fb8a37-69b8-454c-8278-4edd385f14bd",
+                    "e8d38404-62b0-46c4-9e16-66318ca6995d",
+                    "ee578ae5-3472-4ebc-978c-a8a1e4e2a48a"
+                ]
+            },
+            {
+                "id": "SubjectFirstName",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectLastName",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectSex",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "female",
+                    "male"
+                ]
+            },
+            {
+                "id": "SubjectRace",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectEthnicity",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectSpecies",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectStrain",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectEnrollmentSiteId",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectVendorAssignedId",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectTags",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "SubjectNotes",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "SubjectID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "5de0f1bb257ea4df58c81c03b38ca6da856514046b3ac10636803fd2e29e6ee5",
+                    "6e669790e274bb8a44a10878fa4f547b28deffd4be792fe7c6436a721f172d23",
+                    "7fde08dd94bcb817fe5b342f4559e8e0119b217d354fa09c3e518af9e5cb688a",
+                    "a821a6abef087d3e53860fc18236154305b4b185a173086e2a98fbe15611b515",
+                    "c79cc516b736b4c2a87de8edec52400bdc1f655a3ffd4e6cf66a9126cecdb312",
+                    "d79bef85e5577cc738995b6b48d562535f8f10778958c53c18c4e185920a75dd",
+                    "dbe515e1f7682ee04e367c1d4cff57705ded44e706b40ab4b8564011d351a92d",
+                    "e9cc32e0dcd2ef957446ebc46a0e4f7061be14b3439d4a3c420101500ee818e5"
+                ]
+            },
+            {
+                "id": "SubjectType",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectCohort",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectCode",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "5de0f1bb257ea4df58c81c03b38ca6da856514046b3ac10636803fd2e29e6ee5",
+                    "6e669790e274bb8a44a10878fa4f547b28deffd4be792fe7c6436a721f172d23",
+                    "7fde08dd94bcb817fe5b342f4559e8e0119b217d354fa09c3e518af9e5cb688a",
+                    "a821a6abef087d3e53860fc18236154305b4b185a173086e2a98fbe15611b515",
+                    "c79cc516b736b4c2a87de8edec52400bdc1f655a3ffd4e6cf66a9126cecdb312",
+                    "d79bef85e5577cc738995b6b48d562535f8f10778958c53c18c4e185920a75dd",
+                    "dbe515e1f7682ee04e367c1d4cff57705ded44e706b40ab4b8564011d351a92d",
+                    "e9cc32e0dcd2ef957446ebc46a0e4f7061be14b3439d4a3c420101500ee818e5"
+                ]
+            },
+            {
+                "id": "SubjectMlset",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectParentsGroup",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "phc_anon"
+                ]
+            },
+            {
+                "id": "SubjectParentsProjects",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "622ff2184cddb7f534c1e0a4"
+                ]
+            },
+            {
+                "id": "SubjectCopyOf",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectOriginalCopyOf",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectOriginId",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "01650282477f26ef0c8dbf654e389b5658443a2a91d7aa9038ab99984302b6a4",
+                    "0ced6961b743442f75d1ba2f8a13d607495c9a027fb7478be19d3ecc572e45b5",
+                    "2baa65c15ae17fd95fdefaba8fbbaaaed1f4a4d5d8f46e6947153cad3dabb44d",
+                    "313fc3da8464622851b3530d5f937059e2477e0f9400bd287eca1e4d8f65cce7",
+                    "61ea2e1a230d2219602ecb79e2580c1e6f06dff86f28397c3ed87bcf13f299ef",
+                    "84a3f5850971a92de19f8b8bc52e2aae1e92a27125d7e4d67e3d20251fab1c5d",
+                    "c498fb47c6e15a891b78cd37c3c24b1f426c50fabc97b80b762aea091edfaf79",
+                    "d6876ba456bd99848e8d9f20bdfbd711c9a3c8522eab42b11fe473193cb00252"
+                ]
+            },
+            {
+                "id": "SubjectCreated",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectModified",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectDeleted",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectFWIdentifier",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "6230106b81bdb7f2f4dcb442",
+                    "623100105685beec11f47c85",
+                    "6231220d8b96d8fee9d18042",
+                    "62317e344b3fdb5ad6e71632",
+                    "62319a27ee1d5e030822686a",
+                    "623e04436c693ef60a91bf50",
+                    "624135095c00adf0136e6239",
+                    "624140b3bab3b86e436e2fb7"
+                ]
+            },
+            {
+                "id": "Project_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "e86d802c-6c4d-4077-9608-324f55334157"
+                ]
+            },
+            {
+                "id": "Study_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "577aa911-cd9d-4994-83a6-19a1f4e93698"
+                ]
+            },
+            {
+                "id": "SDTM_STUDYID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GO29436"
+                ]
+            },
+            {
+                "id": "SDTM_DOMAIN",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "DM"
+                ]
+            },
+            {
+                "id": "SDTM_USUBJID",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_SUBJID",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_BRTHDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_SEX",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "F",
+                    "M"
+                ]
+            },
+            {
+                "id": "SDTM_RACE",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "ASIAN",
+                    "BLACK OR AFRICAN AMERICAN",
+                    "WHITE"
+                ]
+            },
+            {
+                "id": "SDTM_ETHNICORIGIN",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFSTDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFENDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFXSTDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFXENDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFICDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RFPENDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_DTHDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_DTHFL",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Y"
+                ]
+            },
+            {
+                "id": "SDTM_SITEID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "0c442cef58e0f4f4878519658a3169c542f34cc760628f4f0a3c2ca0291b9dad",
+                    "2b27148e915eb462f6e93f033d18b22048bb636386c08f26c7240816ae843ddf",
+                    "2df68444ada2e53d79a0df8744684d5686ef54a3bda647bddd11f69804e862f8",
+                    "3042cf301096be1f6caaa3936f4c318e1e4a8586d5677e34befab407d8016dd7",
+                    "37bb3429158b1cb91cd3f50a532672b5bd1b78a1579e0936b752158e37815ecc",
+                    "71a65acce0f255ec24cde7f7aafc1156f3cf63a485f9b2dd81a3534e54155c5f",
+                    "a19733053e015f00df8b48d9332fce70eac9d2512577f09ff0ba0f9f19b3c2b0",
+                    "bd426ed262af1735e49edc2410bad65686a5f0792877e30eec3f6a2f9053deec",
+                    "ca411e61dbe67c403abf8c32bd8334ba39b7d7f8834d849567626a340b0a5e75",
+                    "cbe4be3abaa3dd81af280e5db215ddd3b6071730b808b66e7079feb20d804d0a",
+                    "fcbba73a21facef18721372ff7de4403ab65bd96b967ed32e43fc10bca1894e8"
+                ]
+            },
+            {
+                "id": "SDTM_AGE",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_AGEU",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "YEARS"
+                ]
+            },
+            {
+                "id": "SDTM_ETHNIC",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "NOT HISPANIC OR LATINO"
+                ]
+            },
+            {
+                "id": "SDTM_ARMCD",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "A_4CYCLES",
+                    "A_6CYCLES",
+                    "B_4CYCLES",
+                    "B_6CYCLES",
+                    "C_4CYCLES",
+                    "C_6CYCLES"
+                ]
+            },
+            {
+                "id": "SDTM_ARM",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Carboplatin+Paclitaxel+Bevacizumab (4 Cycles)",
+                    "Carboplatin+Paclitaxel+Bevacizumab (6 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel (4 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel (6 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel+Bevacizumab (4 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel+Bevacizumab (6 Cycles)"
+                ]
+            },
+            {
+                "id": "SDTM_ACTARMCD",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "A_4CYCLES",
+                    "A_6CYCLES",
+                    "B_4CYCLES",
+                    "B_6CYCLES",
+                    "C_4CYCLES",
+                    "C_6CYCLES",
+                    "NOTTRT"
+                ]
+            },
+            {
+                "id": "SDTM_ACTARM",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Carboplatin+Paclitaxel+Bevacizumab (4 Cycles)",
+                    "Carboplatin+Paclitaxel+Bevacizumab (6 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel (4 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel (6 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel+Bevacizumab (4 Cycles)",
+                    "MPDL3280A+Carboplatin+Paclitaxel+Bevacizumab (6 Cycles)",
+                    "Not treated"
+                ]
+            },
+            {
+                "id": "SDTM_COUNTRY",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "AUS",
+                    "DEU",
+                    "ESP",
+                    "FRA",
+                    "JPN",
+                    "TWN",
+                    "UKR",
+                    "USA"
+                ]
+            },
+            {
+                "id": "SDTM_DMDTC",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_DMDY",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "-11",
+                    "-13",
+                    "-14",
+                    "-15",
+                    "-16",
+                    "-19",
+                    "-21",
+                    "-28",
+                    "-8",
+                    "1"
+                ]
+            },
+            {
+                "id": "SDTM_RACE1",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RACE2",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RACE3",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RACE4",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RACE5",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_RACE6",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SDTM_UNI_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "080dc65ae24b7657d54a68f6e0a54a3b89b10ed15eb48594552af783a896df1e",
+                    "25aad6b15a0b880ee6cfa08e178e94a5cdeaaac966b4b71bb4eed1d8ba0b514e",
+                    "56f022f5f69fa6880b3a2d78de1b36bbb152a1d86c4f73950ec435aaa52b361a",
+                    "5ecc6c75d13a4977fa5005f0b03f1b916300daa8f7adf2bb0e3b04748c3973a2",
+                    "6c38b537e666f7129e0f4062b503b2bdbe45b4651362a055e2f3781b3b3ee40a",
+                    "72743c48ce1dcc3fbd3a34709ae0b32469c65df7aa16e057d06d5fb521aa4754",
+                    "7990f1de4419866ae369a6916b208f524b14fa239fc70ef01b9c5724580ccc2d",
+                    "89f746355fe0434aec369d97524100d38daaa08476103b43b14ac9f148282595",
+                    "8fda56a092354796ac0516cb2c9a9c65e7cd212594dcb8ebe37843b060a22e3d",
+                    "9ea5fe8d91efdd3af524224719a37f7e7451b48010a4137a8e9428b83851dfd8",
+                    "ee05b0676123e7f773ebe91513d853eea42714916fb3c199e84bbedfc920327a",
+                    "fba1dc45df2a1752ae04726f42a220efdb2ee420c70137557ab5d7aa2b3ce21e"
+                ]
+            },
+            {
+                "id": "SDTM_SCND_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "3146e32eed0c7d32cb38118e23c82bb501140c90d0ad30423df85dd2688fcc82",
+                    "32754862f9222fa246d3711aa24230a7e4b887cdb7dd7b5efd3542cf4c56e294",
+                    "3a5fbae855c9ccfbf3c384b0a060e80909db09966eaee21e6d3f74ce7bc7802b",
+                    "3e7b272a7b6d9b7f6ad205cd620d632fa118f7ba4d466b9b8bb206f42f3e6dff",
+                    "5609670da4294800bc4784744e1ed726b405d58153a8658069f5e5d85e86c73b",
+                    "9a06c7ff162ba97a662a43538ebf2e3adf00aba0286f5319f448d62d2c4ac310",
+                    "a84ed0d962a8479ba1dfced76d41cb101b25c9c160ed16dfd22ee333ed6f6ba6",
+                    "a87ec4c967ea350a54cbd1002886b704d1bef00880ac8d08aa6174d80dfb4b25",
+                    "b1ebeaaf0465c34370aefc326ab764f80dedc74dd504c9a6daca5e5a66d1b976",
+                    "cc59a3dca1a3422ff58acec6eba971cbcd3b538ddf49a399e118ebe5ee601ca7",
+                    "d76f80ca9f5590a3f129761a8dc8a64da72730a7f5321f10c6f2651dc15b2aa2",
+                    "e4f36d90d683543c50bfe30b42bd4af8e0bcd842777af9ff9d74d81666533ec5"
+                ]
+            },
+            {
+                "id": "SDTM_AGE_DI",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "StudyNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GO29436"
+                ]
+            },
+            {
+                "id": "StudyIndication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Lung cancer"
+                ]
+            },
+            {
+                "id": "StudyThemeMolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Tecentriq"
+                ]
+            },
+            {
+                "id": "StudyPhase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "StudyType",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "StudyScientificArea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Respiratory Disease | Oncology"
+                ]
+            },
+            {
+                "id": "StudyStatus",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Clinical Closure"
+                ]
+            },
+            {
+                "id": "StudyAcronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "IMpower 150"
+                ]
+            },
+            {
+                "id": "StudyThemeNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "30019"
+                ]
+            },
+            {
+                "id": "Modality",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "CR",
+                    "CT",
+                    "MR",
+                    "NM",
+                    "OT",
+                    "PT"
+                ]
+            },
+            {
+                "id": "StudyHasImaging",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "StudyHasCDSE",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "StudyHasOMICS",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            }
+        ]
+    }
+}

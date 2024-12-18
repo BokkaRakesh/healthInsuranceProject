@@ -1,0 +1,53 @@
+{
+    "data": {
+        "items": [
+            {
+                "ardattachmentuniqid": "0b851ce5-a9f9-463a-ac66-58c0d1c0d9ff",
+                "ardversionuniqid": "b34b4b50-64a4-4380-a386-89998fb0de30",
+                "arduniqid": "2cf7b8b7-d5f2-45ef-a185-9b6d88c32499",
+                "name": "Screenshot_2024-08-01_110729.png",
+                "location": null,
+                "type": "png",
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-12-13 09:17:52",
+                "updatedat": "2024-12-13 09:17:52"
+            },
+            {
+                "ardattachmentuniqid": "0b851ce5-a9f9-463a-ac66-58c0d1c0d9ff",
+                "ardversionuniqid": "b34b4b50-64a4-4380-a386-89998fb0de30",
+                "arduniqid": "2cf7b8b7-d5f2-45ef-a185-9b6d88c32499",
+                "name": "Screenshot_2024-08-01_110729.png",
+                "location": null,
+                "type": "png",
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-12-13 09:17:52",
+                "updatedat": "2024-12-13 09:17:52"
+            },
+            {
+                "ardattachmentuniqid": "0b851ce5-a9f9-463a-ac66-58c0d1c0d9ff",
+                "ardversionuniqid": "b34b4b50-64a4-4380-a386-89998fb0de30",
+                "arduniqid": "2cf7b8b7-d5f2-45ef-a185-9b6d88c32499",
+                "name": "Screenshot_2024-08-01_110729.png",
+                "location": null,
+                "type": "png",
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-12-13 09:17:52",
+                "updatedat": "2024-12-13 09:17:52"
+            }
+        ],
+        "summary": {
+            "total": 1
+        },
+        "sort": {
+            "field": "createdat",
+            "order": "DESC"
+        },
+        "pagination": {
+            "page": 1,
+            "pageSize": 20
+        }
+    }
+}

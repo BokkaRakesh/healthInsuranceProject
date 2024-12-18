@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Files",
+      "id": "name",
+      "default": true,
+      "checked": true,
+      "width": 10,
+      "order": 1,
+      "hasIcon": true,
+      "icon": "monitor_settings",
+      "hasTooltip": true,
+      "toolTipIcon": "circle_info",
+      "displayAsDot": false,
+      "displayAsCount": false
+    }
+  ]
+  

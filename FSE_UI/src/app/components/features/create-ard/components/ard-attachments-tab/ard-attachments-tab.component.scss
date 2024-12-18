@@ -1,0 +1,66 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.drop-upload-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px dashed #C2BAB5;
+  kendo-upload .k-upload-button-wrap {
+    margin-top: 10px;
+  }
+}
+
+.download-csv-template {
+  text-align: right;
+  margin: 15px 0 15px 0;
+
+  .download {
+    color: $roche-grey-700;
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+  }
+
+  .csv-template {
+    color: $roche-blue-primary;
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+  }
+}
+
+::ng-deep {
+
+  .k-upload .k-dropzone .k-dropzone-hint,
+  .k-upload .k-upload-dropzone .k-dropzone-hint {
+    display: none;
+  }
+
+  upload-dropzone .k-upload-status {
+    text-align: left;
+    color: $roche-grey-700 !important;
+  }
+
+  .k-upload .k-dropzone .k-upload-status,
+  .k-upload .k-upload-dropzone .k-upload-status {
+    color: $roche-dark-green;
+    font-size: 16px;
+    font-family: $Roche-Sans-Regular;
+  }
+
+  .k-upload-button-wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: $Roche-Sans-Regular;
+  }
+
+  .k-button-text {
+    color: $roche-background !important;
+  }
+
+  .k-upload .k-upload-button {
+    background: $roche-blue-primary;
+  }
+
+}

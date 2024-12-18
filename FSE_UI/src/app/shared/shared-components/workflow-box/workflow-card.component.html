@@ -1,0 +1,16 @@
+
+<div class="workflow-card d-flex justify-content-between mt-3 me-3" (click)="selectCard()">
+    <div class="d-flex flex-column justify-content-around mt-1 ms-3">
+        <div class="workflow-card-icon d-flex">
+            <img src="../assets/images/{{card?.icon}}.svg" alt="{{card?.name}}">
+        </div>
+        <div class="workflow-card-name">
+            <p>{{ card?.name }}</p>
+        </div>
+    </div>
+    <div class="mt-1 me-3" kendoTooltip>
+        <img src="../assets/images/circle_info.svg" title="{{card?.name}}" alt="info">
+    </div>
+</div>
+
+

@@ -1,0 +1,51 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.criteria-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $roche-grey-5-hover;
+    border-bottom: 2px solid $roche-blue-primary;
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-900;
+}
+
+.criteria-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-height: 90px;
+    overflow-y: auto;
+}
+
+.criteria-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.criteria-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.criteria-label {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-900;
+}
+
+.criteria-value {
+    font-size: 14px;
+    font-family: $Roche-Sans-Light;
+    color: $roche-grey-900;
+}
+
+.no-criteria {
+    font-size: 16px;
+    font-family: $Roche-Sans-Light;
+    color: $roche-grey-disabled;
+}

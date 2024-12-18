@@ -1,0 +1,37 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.content-area {
+  padding: 10px;
+}
+
+.k-drawer-expanded {
+  z-index: 999;
+}
+
+.toggle-btn {
+  height: 40px;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.k-drawer-item .k-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.item-descr {
+  margin-top: 0.5rem;
+}
+
+.item-descr-wrap > span {
+  font-size: 16px;
+  color: $roche-grey-900;
+  font-family: $Roche-Sans-Regular;
+}
+
+.item-descr-wrap {
+  display: flex;
+  flex-direction: column;
+}

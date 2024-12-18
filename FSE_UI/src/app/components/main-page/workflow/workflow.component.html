@@ -1,0 +1,24 @@
+<div class="gear-icon">
+    <img class="pe-2" src="../assets/images/settings-gear.svg" alt="gear" (click)="openWorkflow()"
+        #gear><span>Workflows</span>
+    <kendo-popup class="gear-menu" *ngIf="isWorkflowMenuVisible" [anchor]="gear" [animate]="false"
+        [anchorAlign]="{ vertical: 'bottom', horizontal: 'left' }" (close)="isWorkflowMenuVisible = false">
+        <div class="popup-menu mx-3">
+            <div class="title pt-3">
+                <p class="mb-0 fw-bold">Workflows</p>
+            </div>
+            <div>
+                <ng-container *ngFor="let workflow of workflows; let last=last">
+                    <p class="py-2 m-0 d-flex">
+                        <kendo-checkbox [(ngModel)]="workflow.checked"></kendo-checkbox>
+                        <label class="ps-2 pt-1">{{workflow.name}}</label>
+                    </p>
+                    <hr class="horizontal-separator" *ngIf="!last">
+                </ng-container>
+            </div>
+            <div class="mt-2 mb-3 d-flex justify-content-end">
+                <button kendoButton class="btn btn-primary btn-sm" (click)="applySelection()"  [disabled]="!isAnyWorkflowSelected()">Apply</button>
+            </div>
+        </div>
+    </kendo-popup>
+</div>

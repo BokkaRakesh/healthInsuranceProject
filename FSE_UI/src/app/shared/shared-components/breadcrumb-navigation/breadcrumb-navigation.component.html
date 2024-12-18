@@ -1,0 +1,12 @@
+<div class="breadcrumb-list-align mt-3">
+  <a *ngFor="let breadcrumb of breadcrumbs;let i= index" class="breadcrumb-alignment">
+    <!-- To display breadcrumb icon -->
+    <span *ngIf="breadcrumb.icon" style="margin: 5px;">
+      <img [src]="breadcrumb.icon" class="breadcrumb-icon" alt="{{breadcrumb.label}} icon" class="breadcrumb-icon-align">
+    </span>
+    <span (click)="onBreadCrumbClick(breadcrumb)" [ngClass]="breadcrumb.disableBreadcrumb ? 'disable-breadcrumb':''"> {{breadcrumb.label}} </span>
+    <span *ngIf="(i < breadcrumbs.length -1 && i > 0 && breadcrumb.label)">
+      <img src="../assets/images/chevron-right.svg" alt="arrow-icon" class="right-chevron-align">
+    </span>
+  </a>
+</div>

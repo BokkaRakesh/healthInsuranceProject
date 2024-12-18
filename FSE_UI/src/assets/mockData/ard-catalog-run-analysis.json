@@ -1,0 +1,487 @@
+{
+    "data": {
+        "items": [
+            {
+                "ARDUniqID": "7e1cd7d4-3a95-49d0-92b5-fe688369f923",
+                "Name": "test ard new subject file ard file",
+                "Access": "Everyone",
+                "Subjects": 3,
+                "Sessions": 3,
+                "Aquisitions": 0,
+                "Files": 3,
+                "CreatedAt": "11/22/2024",
+                "CreatedBy": "Payal Sharma",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "GO29438, MO39196",
+                "StudyIndication": "Lung cancer, Breast cancer",
+                "StudyThemeMolecule": "Tecentriq, Tecentriq",
+                "StudyPhase": "Phase III, Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A Phase III, Open-Label, Randomized Study of Atezolizumab (MPDL3280A, Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer, A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                "StudyStatus": ", ",
+                "StudyAcronym": "IMpower 132, Impassion 131",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "a97e1870-c281-4985-b83e-07f87d041651",
+                "Name": "Taesssst asll sin ossne gs00ss",
+                "Access": "Everyone",
+                "Subjects": 2,
+                "Sessions": 14,
+                "Aquisitions": 0,
+                "Files": 75,
+                "CreatedAt": "11/26/2024",
+                "CreatedBy": "Payal Sharma",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "GO29438, MO39196",
+                "StudyIndication": "Lung cancer, Breast cancer",
+                "StudyThemeMolecule": "Tecentriq, Tecentriq",
+                "StudyPhase": "Phase III, Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A Phase III, Open-Label, Randomized Study of Atezolizumab (MPDL3280A, Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer, A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                "StudyStatus": ", ",
+                "StudyAcronym": "IMpower 132, Impassion 131",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "d0ac5545-5774-4d08-81eb-53200534990d",
+                "Name": "ARD-Create-04",
+                "Access": "Everyone",
+                "Subjects": 2,
+                "Sessions": 2,
+                "Aquisitions": 0,
+                "Files": 2,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "GO29431",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A PHASE III, OPEN-LABEL, RANDOMIZED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) COMPARED WITH A PLATINUM AGENT (CISPLATIN OR CARBOPLATIN) IN COMBINATION WITH EITHER PEMETREXED OR GEMCITABINE FOR PD-L1−SELECTED, CHEMOTHERAPY-NAIVE PATIENTS WITH STAGE IV NON-SQUAMOUS OR SQUAMOUS NON−SMALL CELL LUNG CANCER",
+                "StudyStatus": "",
+                "StudyAcronym": "IMpower 110",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "Name": "sds dsfdsfdf",
+                "Access": "Everyone",
+                "Subjects": 0,
+                "Sessions": 0,
+                "Aquisitions": 0,
+                "Files": 0,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": null,
+                "StudyIndication": null,
+                "StudyThemeMolecule": null,
+                "StudyPhase": null,
+                "StudyType": "",
+                "StudyScientificArea": null,
+                "StudyStatus": null,
+                "StudyAcronym": null,
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "f147594b-028e-4a5e-bb57-fa645b019081",
+                "Name": "sad dsfds dfd",
+                "Access": "Everyone",
+                "Subjects": 0,
+                "Sessions": 0,
+                "Aquisitions": 0,
+                "Files": 0,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": null,
+                "StudyIndication": null,
+                "StudyThemeMolecule": null,
+                "StudyPhase": null,
+                "StudyType": "",
+                "StudyScientificArea": null,
+                "StudyStatus": null,
+                "StudyAcronym": null,
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "38f04ef3-eabe-459c-8131-b8806b328760",
+                "Name": "ytest ard idp",
+                "Access": "Everyone",
+                "Subjects": 2,
+                "Sessions": 2,
+                "Aquisitions": 0,
+                "Files": 2,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "MO39196",
+                "StudyIndication": "Breast cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                "StudyStatus": "",
+                "StudyAcronym": "Impassion 131",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "0e15c4f8-a252-4fce-aadf-7c713c0380f4",
+                "Name": "test ard ",
+                "Access": "Everyone",
+                "Subjects": 4,
+                "Sessions": 4,
+                "Aquisitions": 0,
+                "Files": 4,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "MO39196, GO29438",
+                "StudyIndication": "Breast cancer, Lung cancer",
+                "StudyThemeMolecule": "Tecentriq, Tecentriq",
+                "StudyPhase": "Phase III, Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER, A Phase III, Open-Label, Randomized Study of Atezolizumab (MPDL3280A, Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer",
+                "StudyStatus": ", ",
+                "StudyAcronym": "Impassion 131, IMpower 132",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "9832a05f-8100-448c-a8f0-7fd0ef85d7c4",
+                "Name": "test subject ard demo",
+                "Access": "Everyone",
+                "Subjects": 3,
+                "Sessions": 16,
+                "Aquisitions": 0,
+                "Files": 141,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "GO29438, MO39196",
+                "StudyIndication": "Lung cancer, Breast cancer",
+                "StudyThemeMolecule": "Tecentriq, Tecentriq",
+                "StudyPhase": "Phase III, Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A Phase III, Open-Label, Randomized Study of Atezolizumab (MPDL3280A, Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer, A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                "StudyStatus": ", ",
+                "StudyAcronym": "IMpower 132, Impassion 131",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "16ef27c9-0e59-4304-999f-07a9273ea334",
+                "Name": "test ard subject",
+                "Access": "Everyone",
+                "Subjects": 20,
+                "Sessions": 115,
+                "Aquisitions": 0,
+                "Files": 753,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": "GO29438, MO39196",
+                "StudyIndication": "Lung cancer, Breast cancer",
+                "StudyThemeMolecule": "Tecentriq, Tecentriq",
+                "StudyPhase": "Phase III, Phase III",
+                "StudyType": "",
+                "StudyScientificArea": "A Phase III, Open-Label, Randomized Study of Atezolizumab (MPDL3280A, Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer, A PHASE III, MULTICENTER, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                "StudyStatus": ", ",
+                "StudyAcronym": "IMpower 132, Impassion 131",
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "6cef1a04-1e95-49ac-884d-b58e1b4c891a",
+                "Name": "IDP-ARD-2-files",
+                "Access": "Everyone",
+                "Subjects": 0,
+                "Sessions": 0,
+                "Aquisitions": 0,
+                "Files": 0,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": null,
+                "StudyIndication": null,
+                "StudyThemeMolecule": null,
+                "StudyPhase": null,
+                "StudyType": "",
+                "StudyScientificArea": null,
+                "StudyStatus": null,
+                "StudyAcronym": null,
+                "StudyThemeNumber": ""
+            },
+            {
+                "ARDUniqID": "20372303-91b3-48aa-ba43-f78dc8acb728",
+                "Name": "IDP-ARD-02-files",
+                "Access": "Everyone",
+                "Subjects": 0,
+                "Sessions": 0,
+                "Aquisitions": 0,
+                "Files": 0,
+                "CreatedAt": "11/15/2024",
+                "CreatedBy": "",
+                "Modality": "",
+                "SubjectEnrollmentSiteId": null,
+                "StudyNumber": null,
+                "StudyIndication": null,
+                "StudyThemeMolecule": null,
+                "StudyPhase": null,
+                "StudyType": "",
+                "StudyScientificArea": null,
+                "StudyStatus": null,
+                "StudyAcronym": null,
+                "StudyThemeNumber": ""
+            }
+        ],
+        "sort": {
+            "field": "arduniqid",
+            "order": "ASC"
+        },
+        "pagination": {
+            "totalCount": 11,
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {},
+        "filters": [
+            {
+                "id": "arduniqid",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "d0ac5545-5774-4d08-81eb-53200534990d",
+                    "0e15c4f8-a252-4fce-aadf-7c713c0380f4",
+                    "20372303-91b3-48aa-ba43-f78dc8acb728",
+                    "f147594b-028e-4a5e-bb57-fa645b019081",
+                    "38f04ef3-eabe-459c-8131-b8806b328760",
+                    "16ef27c9-0e59-4304-999f-07a9273ea334",
+                    "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                    "a97e1870-c281-4985-b83e-07f87d041651",
+                    "6cef1a04-1e95-49ac-884d-b58e1b4c891a",
+                    "9832a05f-8100-448c-a8f0-7fd0ef85d7c4",
+                    "7e1cd7d4-3a95-49d0-92b5-fe688369f923"
+                ]
+            },
+            {
+                "id": "name",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "test subject ard demo",
+                    "sds dsfdsfdf",
+                    "Taesssst asll sin ossne gs00ss",
+                    "test ard new subject file ard file",
+                    "ARD-Create-04",
+                    "ytest ard idp",
+                    "test ard subject",
+                    "IDP-ARD-2-files",
+                    "sad dsfds dfd",
+                    "test ard ",
+                    "IDP-ARD-02-files"
+                ]
+            },
+            {
+                "id": "createdat",
+                "type": "datetime",
+                "inclusion": true,
+                "values": [
+                    "11/15/2024",
+                    "11/26/2024",
+                    "11/22/2024"
+                ]
+            },
+            {
+                "id": "createdby",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "4",
+                    "90",
+                    "1",
+                    "18"
+                ]
+            },
+            {
+                "id": "subjects",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    20
+                ]
+            },
+            {
+                "id": "sessions",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    14,
+                    16,
+                    115
+                ]
+            },
+            {
+                "id": "aquisitions",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    0
+                ]
+            },
+            {
+                "id": "files",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    75,
+                    141,
+                    753
+                ]
+            },
+            {
+                "id": "subjectenrollmentsiteid",
+                "type": "NoneType",
+                "inclusion": true,
+                "values": [
+                    null
+                ]
+            },
+            {
+                "id": "studynumber",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    null,
+                    "GO29431",
+                    "MO39196",
+                    "GO29438"
+                ]
+            },
+            {
+                "id": "studyindication",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    null,
+                    "Lung cancer",
+                    "Breast cancer"
+                ]
+            },
+            {
+                "id": "studythememolecule",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    null,
+                    "Tecentriq"
+                ]
+            },
+            {
+                "id": "studyphase",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Phase III",
+                    null
+                ]
+            },
+            {
+                "id": "studytype",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "studyscientifictitle",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    null,
+                    "RANDOMIZED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) COMPARED WITH A PLATINUM AGENT (CISPLATIN OR CARBOPLATIN) IN COMBINATION WITH EITHER PEMETREXED OR GEMCITABINE FOR PD-L1−SELECTED",
+                    "MULTICENTER",
+                    "CHEMOTHERAPY-NAIVE PATIENTS WITH STAGE IV NON-SQUAMOUS OR SQUAMOUS NON−SMALL CELL LUNG CANCER",
+                    "RANDOMISED",
+                    "Randomized Study of Atezolizumab (MPDL3280A",
+                    "PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI−PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER",
+                    "Anti-Pd-L1 Antibody) in Combination With Carboplatin or Cisplatin + Pemetrexed Compared With Carboplatin or Cisplatin + Pemetrexed in Patients Who Are Chemotherapy-Naive and Have Stage IV Non-Squamous Non-Small Cell Lung Cancer",
+                    "A Phase III",
+                    "Open-Label",
+                    "A PHASE III",
+                    "OPEN-LABEL",
+                    "DOUBLE-BLIND"
+                ]
+            },
+            {
+                "id": "studystatus",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "",
+                    null
+                ]
+            },
+            {
+                "id": "studyacronym",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Impassion 131",
+                    null,
+                    "IMpower 110",
+                    "IMpower 132"
+                ]
+            },
+            {
+                "id": "studythemenumber",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "modality",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "datasource",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "",
+                    "Omics",
+                    "Imaging",
+                    "Clinical"
+                ]
+            }
+        ]
+    }
+}

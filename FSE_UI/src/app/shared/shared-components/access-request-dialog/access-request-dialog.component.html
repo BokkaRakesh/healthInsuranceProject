@@ -1,0 +1,61 @@
+<kendo-dialog title="Access Request" (close)="close()" [minWidth]="250" [width]="500">
+    <form [formGroup]="accessRequestForm" (ngSubmit)="onSubmit()">
+        <div class="dialog-body">
+            <div class="form-floating mt-3 mb-1">
+                <div class="step-content mx-3 my-2 py-3 px-4 scroll-bar summary-details d-flex justify-content-between">
+                    <p>{{studyNumber}}</p>
+                    <div class="badge-align">
+                        <p class="badge-align-value mx-2 py-1" formControlName="dataSourceName">{{dataSourceName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 py-3 px-3 d-flex justify-content-between">
+            <kendo-label text="Will the data be used for primary or secondary purposes?"><span class="required-mark-align"> *</span>
+                <p class="d-flex justify-content-between my-2">
+                    <span>
+                        <kendo-radiobutton #checked value="Primary Use" formControlName="dataUsePurpose"
+                            value="Primary Use"></kendo-radiobutton>
+                        <kendo-label class="k-radio-label" [for]="checked" text="Primary Use"></kendo-label>
+                    </span>
+                    <span>
+                        <kendo-radiobutton #checked value="secondary Use" formControlName="dataUsePurpose"
+                            value="Secondary Use"></kendo-radiobutton>
+                        <kendo-label class="k-radio-label" [for]="checked" text="Secondary Use"></kendo-label>
+                    </span>
+                </p>
+            </kendo-label>
+        </div>
+        <div class="my-1 py-1 px-3 d-flex justify-content-between">
+            <kendo-label
+                text="Do you need access to pseudonymized or anonymized data? Please note that user will be granted access to one one data set type."><span class="required-mark-align">*</span>
+                <p class="d-flex justify-content-between my-2 align-radio-btn">
+                    <span>
+                        <kendo-radiobutton #checked value="Pseudonymized Data" formControlName="dataSetType"
+                            value="Pseudonymized Data"></kendo-radiobutton>
+                        <kendo-label class="k-radio-label" [for]="checked" text="Pseudonymized Data"></kendo-label>
+                    </span>
+                    <span>
+                        <kendo-radiobutton #checked value="Anonymized Data" formControlName="dataSetType"
+                            value="Anonymized Data"></kendo-radiobutton>
+                        <kendo-label class="k-radio-label" [for]="checked" text="Anonymized Data"></kendo-label>
+                    </span>
+                </p>
+            </kendo-label>
+        </div>
+        <div class="my-2 py-3 px-3">
+            <kendo-label text="How do you intend to use this data?"><span class="required-mark-align"> *</span>
+                <p class="my-2">
+                    <kendo-textarea placeholder="" formControlName="description" [rows]="4"
+                        resizable="vertical"></kendo-textarea>
+                </p>
+            </kendo-label>
+        </div>
+        <div class="d-flex justify-content-between align-right mt-5">
+            <div class="modal-btn">
+                <button class="btn btn-outline mx-1" (click)="close()">Cancel</button>
+                <button class="btn btn-primary mx-1" type="submit" [disabled]="!accessRequestForm.valid">Create</button>
+            </div>
+        </div>
+    </form>
+</kendo-dialog>

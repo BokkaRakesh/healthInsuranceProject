@@ -1,0 +1,44 @@
+
+ <!-- Data Grid Section -->
+ <div class="row">
+  <ng-container *ngIf="!showGrid">
+      <app-no-results-found [showNoRecords]="fetchDataInfo"></app-no-results-found>
+  </ng-container>
+  <ng-container class="grid-container" *ngIf="showGrid">
+  <app-grid
+    *ngIf="gridData.length > 0"
+    [pageSize]="gridData.length"
+    [gridData]="gridData"
+    [gridColumns]="gridColumns.default"
+    [pagination]="pagination"
+    [threeDotMenu]="true"
+    (sendSortData)="getSortedData($event)"
+    (sendscrollData)="getPaginatedData($event)"
+    (actionMenuEmitter)="openRowMenu($event)"
+    [checkBoxSelection]="!isARDNavigated"
+  >
+    <div class="grid-projected-content text-end">
+      <ng-container *ngIf="!isARDNavigated">
+        <span class="pe-1">I want to</span>
+        <button class="btn btn-sm btn-primary mx-1 create-ard-btn" (click)="openCreateArdDialog()" [disabled]="selectedRecords.length ===0"
+        [ngClass]="{ disabled: selectedRecords.length ===0 }">
+          <span class="pe-1"></span>Create ARD
+        </button>
+        <button class="btn btn-sm btn-primary mx-1" (click)="runAnalysis()">
+          <span class="pe-1"></span>Run Analysis
+        </button>
+      </ng-container>
+      <span class="three-dot m-1" (click)="togglePopUp()" #tablePopUp></span>
+    </div>
+  </app-grid>
+  </ng-container>
+  </div>
+
+<app-table-pop-up *ngIf="showTablePopup" [items]="tableMenuItems" [anchor]="tablePopUp" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign"
+    (itemClick)="onPopupItemClick($event)">
+</app-table-pop-up>
+<app-table-pop-up *ngIf="showRowPopup" [items]="rowMenuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign"
+    (itemClick)="onPopupItemClick($event)">
+</app-table-pop-up>
+
+<div kendoDialogContainer></div>

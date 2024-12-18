@@ -1,0 +1,37 @@
+
+{
+    "data": {
+        "pagination": {
+            "totalCount": 15146,
+            "page": 1,
+            "pageSize": 20
+        },
+        "items": [
+            {
+                "algouniqid": "5330cbf9-a585-11ef-a326-88a4c2a5326c",
+                "name": "GA Progression",
+                "description": "Description of the algorithm",
+                "type": "Analysis",
+                "currentversion": 1,
+                "isactive": true,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51"
+            },
+            {
+                "algouniqid": "aa1fdec7-a585-11ef-a326-88a4c2a5318f",
+                "name": "Rosa",
+                "description": "rosa algo",
+                "type": "Analysis",
+                "currentversion": 1,
+                "isactive": true,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:48:17",
+                "updatedat": "2024-11-18 13:48:17"
+            }
+        ]
+    }
+}
+ 

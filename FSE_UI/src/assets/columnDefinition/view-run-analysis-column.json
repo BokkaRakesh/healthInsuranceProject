@@ -1,0 +1,84 @@
+[
+    {
+       "name": "Stat",
+        "id": "status",
+        "default": false,
+        "checked": true,
+        "width": 40,
+        "order": 1,
+        "hasIcon": false,
+        "icon": "circle_checkmark",
+        "onlyTooltip": false,
+        "hasCircle": false
+    },
+    {
+        "name": "Analysis Run",
+        "id": "algoanalysisuniqid",
+        "default": false,
+        "checked": true,
+        "width": 200,
+        "order": 2,
+        "hasIcon": true,
+        "icon": "server",
+        "onlyTooltip": true,
+        "hasCircle": false
+    },
+    {
+        "name": "Hierarchy",
+         "id": "location",
+         "default": false,
+         "checked": true,
+         "width": 200,
+         "order": 3,
+         "hasIcon": false,
+         "icon": "circle_checkmark",
+         "onlyTooltip": true,
+         "hasCircle": false
+     },
+     {
+        "name": "Algorithm",
+        "id": "algoname",
+        "default": false,
+        "checked": true,
+        "width": 80,
+        "order": 4,
+        "hasIcon": false,
+        "toolTipIcon": "circle_info",
+        "onlyTooltip": false,
+        "hasCircle": false
+    },
+    {
+        "name": "Runs",
+        "id": "runs",
+        "default": false,
+        "checked": true,
+        "width": 60,
+        "order": 5,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": false
+    },
+    {
+        "name": "Errored",
+        "id": "errored",
+        "default": false,
+        "checked": true,
+        "width": 60,
+        "order": 6,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": false
+    },
+    {
+        "name": "Owner",
+        "id": "createdby",
+        "default": false,
+        "checked": true,
+        "width": 60,
+        "order": 7,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": true
+    }
+    
+]

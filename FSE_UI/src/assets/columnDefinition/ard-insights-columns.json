@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Stat",
+        "id": "status",
+        "default": false,
+        "checked": true,
+        "width": 70,
+        "order": 1,
+        "hasIcon": false,
+        "icon": "circle_checkmark",
+        "onlyTooltip": false,
+        "hasCircle": false,
+        "onlyStatusIcon": true
+    },
+    {
+        "name": "Name",
+        "id": "Name",
+        "default": false,
+        "checked": true,
+        "width": 300,
+        "order": 2,
+        "hasIcon": true,
+        "icon": "server",
+        "onlyTooltip": true,
+        "hasCircle": false,
+        "onlyStatusIcon": false
+    },
+    {
+        "name": "Info",
+        "id": "Info",
+        "default": false,
+        "checked": true,
+        "width": 80,
+        "order": 3,
+        "hasIcon": false,
+        "toolTipIcon": "circle_info",
+        "onlyTooltip": false,
+        "hasCircle": false,
+        "onlyStatusIcon": false
+    },
+    {
+        "name": "Files",
+        "id": "Files",
+        "default": false,
+        "checked": true,
+        "width": 60,
+        "order": 4,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": false,
+        "onlyStatusIcon": false
+    },
+    {
+        "name": "Algo version",
+        "id": "Algoversion",
+        "default": false,
+        "checked": true,
+        "width": 130,
+        "order": 5,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": false,
+        "onlyStatusIcon": false
+    },
+    {
+        "name": "Type",
+        "id": "Type",
+        "default": false,
+        "checked": true,
+        "width": 100,
+        "order": 6,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": false,
+        "onlyStatusIcon": false
+    },
+    {
+        "name": "Owner",
+        "id": "Owner",
+        "default": false,
+        "checked": true,
+        "width": 100,
+        "order": 7,
+        "hasIcon": false,
+        "onlyTooltip": true,
+        "hasCircle": true,
+        "onlyStatusIcon": false
+    }
+]

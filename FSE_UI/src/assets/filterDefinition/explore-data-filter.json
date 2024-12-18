@@ -1,0 +1,170 @@
+[
+    {
+        "id": "StudyNumber",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "ID Number"
+    },
+    {
+        "id": "StudyAcronym",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Name"
+    },
+    {
+        "id": "Subjects",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Subject ID"
+    },
+    {
+        "id": "Sessions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Sessions"
+    },
+    {
+        "id": "Aquisitions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Aquisitions"
+    },
+    {
+        "id": "Files",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Files"
+    },
+    {
+        "id": "Modality",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Modality"
+    },
+    {
+        "id": "DataSources",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Data Sources"
+    },
+    {
+        "id": "StudyIndication",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Indication/Therapeutic Area"
+    },
+    {
+        "id": "StudyPhase",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Phase"
+    },
+    {
+        "id": "StudyThemeMolecule",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Compound / Investigational Drug"
+    },
+    {
+        "id": "StudyType",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Type"
+    },
+    {
+        "id": "StudyScientificArea",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Scientific Area"
+    },
+    {
+        "id": "StudyStatus",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Status"
+    },
+    {
+        "id": "StudyThemeNumber",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Theme Number"
+    },
+    {
+        "id": "subjectenrollmentsiteid",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Enrollment Site ID"
+    },
+    {
+        "id": "subjectethnicity",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Ethinicity"
+    },
+    {
+        "id": "subjectrace",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Race"
+    },
+    {
+        "id": "subjectsex",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Gender"
+    },
+    {
+        "id": "visitage",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Visit Age"
+    },
+    {
+        "id": "dicombodypartexamined",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Body Part examined"
+    },
+    {
+        "id": "age",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Age"
+    },
+    {
+        "id": "filetype",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "File Type"
+    },
+    {
+        "id": "dataModality",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showDatePicker",
+        "displayName": "Data Modality"
+    }
+]

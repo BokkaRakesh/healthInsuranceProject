@@ -1,0 +1,41 @@
+<kendo-drawer-container>
+  <kendo-drawer
+    #drawer
+    [expanded]="expanded"
+    [autoCollapse]="false"
+    [items]="items"
+    [mini]="true"  
+    mode="push"
+    (select)="onSelect($event)"
+  >
+    <ng-template kendoDrawerHeaderTemplate>
+      <div class="toggle-btn" (click)="toggleSideBar(!expanded, drawer)">
+        <span>
+          <img
+            [hidden]="expanded"
+            src="../assets/images/drawer_double_right.svg"
+            alt="drawerIcon"
+          />
+        </span>
+        <span>
+          <img
+            [hidden]="!expanded"
+            src="../assets/images/drawer_double_left.svg"
+            alt="drawerIcon"
+          />
+        </span>
+      </div>
+    </ng-template>
+
+    <ng-template kendoDrawerItemTemplate let-item>
+        <div class="k-icon flag icon-size">
+          <img src="../assets/images/{{ item.icon }}.svg" alt="{{item.icon}}" />
+        </div>
+        <div class="item-descr-wrap" *ngIf="expanded">
+          <span class="item-descr">{{ item.text }}</span>
+        </div>
+    </ng-template>
+  </kendo-drawer>
+  <kendo-drawer-content>
+  </kendo-drawer-content>
+</kendo-drawer-container>

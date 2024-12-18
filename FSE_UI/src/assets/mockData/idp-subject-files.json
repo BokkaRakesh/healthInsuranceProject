@@ -1,0 +1,1044 @@
+{
+    "data": {
+        "items": {
+            "visits": [
+                {
+                    "id": "2c69bc51-5898-4c6d-8e9f-28f7ef08c5d3",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_42",
+                    "acquisition_count": 5,
+                    "file_count": 5,
+                    "session": [
+                        {
+                            "id": "8d80ed57-a3e4-412b-a123-85668107d489",
+                            "files": [
+                                {
+                                    "file_unq_id": "file 1 0066eb13-5930-4681-be28-32aecc900119",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140032",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1400_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15301705
+                                }, {
+                                    "file_unq_id": "file 2 0066eb13-5930-4681-be28-32aecc900119",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140032",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1400_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15301705
+                                }, {
+                                    "file_unq_id": "file 3 0066eb13-5930-4681-be28-32aecc900119",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140032",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1400_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15301705
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6d2e99ce-8091-4c72-82b2-750da45ae734",
+                            "files": [
+                                {
+                                    "file_unq_id": "35e1a7bc-007b-4428-81f2-0b39dff24d8b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140453",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1405_302_w_IV contrast.dicom.zip",
+                                    "filesize": 77102542
+                                }
+                            ]
+                        },
+                        {
+                            "id": "bccb6867-0521-49a9-b179-e3314e263063",
+                            "files": [
+                                {
+                                    "file_unq_id": "42c80d42-2ee5-41f3-a14e-4ec2706c350a",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140453",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1412_304_Lung window.dicom.zip",
+                                    "filesize": 56560555
+                                }
+                            ]
+                        },
+                        {
+                            "id": "37ca0c5c-7114-4416-a003-0a6a3e3375b5",
+                            "files": [
+                                {
+                                    "file_unq_id": "784dbae9-5050-4568-b747-890f4139a2f4",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140453",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1405_301_w_IV contrast.dicom.zip",
+                                    "filesize": 44666939
+                                }
+                            ]
+                        },
+                        {
+                            "id": "209b8a9b-6830-4a2c-b99f-0cf0debf2be2",
+                            "files": [
+                                {
+                                    "file_unq_id": "a7420222-b5cb-4f6d-b1a3-5a50a313c00b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "140453",
+                                    "dicomacquisitiondate": "20180117",
+                                    "filename": "20171110_1405_303_w_IV contrast.dicom.zip",
+                                    "filesize": 73295753
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1e38e3e2-9804-4b52-ac64-0bac0490e9f4",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Screening",
+                    "session": [
+                        {
+                            "id": "f5bb2e34-5e36-4226-ae2f-19cf26c5069c",
+                            "files": [
+                                {
+                                    "file_unq_id": "00f70dc2-572f-4435-99fe-c52f50a4aee8",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "142701",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1426_100_Scout.dicom.zip",
+                                    "filesize": 590434
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b17f6111-7be8-4cc5-849b-b289bc2b9b67",
+                            "files": [
+                                {
+                                    "file_unq_id": "535ac380-8411-4733-b79a-08ed94fe6b10",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143313",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1433_303_w_IV contrast.dicom.zip",
+                                    "filesize": 71608673
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9df2ebf2-9fad-46cf-a2fa-9bdd346cf070",
+                            "files": [
+                                {
+                                    "file_unq_id": "596b6090-5d07-4f6a-8c48-72e21f1b05ca",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "142337",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1424_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 12079871
+                                }
+                            ]
+                        },
+                        {
+                            "id": "91bcde64-2ee8-439f-a82c-1e9ca9287d35",
+                            "files": [
+                                {
+                                    "file_unq_id": "7215e88c-206a-432d-b07a-f4f4b6257dc7",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143737",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1438_502_w_IV contrast.dicom.zip",
+                                    "filesize": 51354575
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b4a4487a-1519-4e36-a5ff-320ec7b62b8a",
+                            "files": [
+                                {
+                                    "file_unq_id": "7c847db1-5d1c-4067-981a-e51ce45b4229",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143313",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1433_302_w_IV contrast.dicom.zip",
+                                    "filesize": 75121168
+                                }
+                            ]
+                        },
+                        {
+                            "id": "16db75ce-de31-4be8-9d5e-e58099f4e024",
+                            "files": [
+                                {
+                                    "file_unq_id": "85404db8-777b-4a50-bad8-63139a6bd7bb",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143541",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1435_400_Scout.dicom.zip",
+                                    "filesize": 226387
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3ebdbbe5-a44a-4cce-942d-26dd41ac4d24",
+                            "files": [
+                                {
+                                    "file_unq_id": "92c6c6ea-b2e6-4186-a7f6-7d1da6626f95",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143313",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1433_301_w_IV contrast.dicom.zip",
+                                    "filesize": 41427942
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9f403eee-a521-43b7-8cfa-08d2b105fe2d",
+                            "files": [
+                                {
+                                    "file_unq_id": "a742825b-d84e-40d3-8942-7f97928904bb",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "142249",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1422_100_Scout.dicom.zip",
+                                    "filesize": 204274
+                                }
+                            ]
+                        },
+                        {
+                            "id": "aefe1c45-1538-44e8-ad13-732e6166060c",
+                            "files": [
+                                {
+                                    "file_unq_id": "b399e51a-f742-4ff8-9d14-77095be131dd",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "142337",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1424_202_w_o IV Contrast.dicom.zip",
+                                    "filesize": 49319267
+                                }
+                            ]
+                        },
+                        {
+                            "id": "24330f20-a487-424e-b848-fbe8a09421f4",
+                            "files": [
+                                {
+                                    "file_unq_id": "b5d81d86-3fde-4411-8d8d-8d7992696316",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143737",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1438_501_w_IV contrast.dicom.zip",
+                                    "filesize": 12516657
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d1a44a2e-ae57-4e41-bad8-40f0e147d4c6",
+                            "files": [
+                                {
+                                    "file_unq_id": "e2c8f025-40b8-4b67-abe3-290912922c3f",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "143313",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1443_304_Lung window.dicom.zip",
+                                    "filesize": 111010168
+                                }
+                            ]
+                        },
+                        {
+                            "id": "224fc186-ac5a-4ead-b438-52f6ffbe963e",
+                            "files": [
+                                {
+                                    "file_unq_id": "ef0e1eb9-d708-4e86-85aa-2dcac4341129",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "142752",
+                                    "dicomacquisitiondate": "20170314",
+                                    "filename": "20170105_1428_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15125016
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 12,
+                    "file_count": 12
+                },
+                {
+                    "id": "0a575276-9e92-4b7e-a14f-c7c6dca48b8e",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_66",
+                    "session": [
+                        {
+                            "id": "e617541d-459f-4a54-9683-bdd53b944c3a",
+                            "files": [
+                                {
+                                    "file_unq_id": "067a3208-08fb-4d82-a96d-5f5b5a63d129",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145853",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1459_301_w_IV contrast.dicom.zip",
+                                    "filesize": 41951916
+                                }
+                            ]
+                        },
+                        {
+                            "id": "94a67c6d-fcdd-40b9-8492-8bbecd1684a7",
+                            "files": [
+                                {
+                                    "file_unq_id": "28e58c72-d7a0-4f0f-9e7e-19c00782a614",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145853",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1459_303_w_IV contrast.dicom.zip",
+                                    "filesize": 69889236
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a5bdbb08-ddd8-4870-8241-3be4309571da",
+                            "files": [
+                                {
+                                    "file_unq_id": "7a70b756-235d-408c-b154-484842b4fdf9",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145853",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1459_302_w_IV contrast.dicom.zip",
+                                    "filesize": 73243888
+                                }
+                            ]
+                        },
+                        {
+                            "id": "397bb145-635f-4f43-8ee6-c6e91ffabcd2",
+                            "files": [
+                                {
+                                    "file_unq_id": "c4b931f8-bcb7-4785-bd3e-8b8adea2cdd5",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145421",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1454_201_Plain 5mm iD2_ iDose _2.dicom.zip",
+                                    "filesize": 15802335
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1b6846c4-6bac-45da-a0a5-7a3b27f6cbc3",
+                            "files": [
+                                {
+                                    "file_unq_id": "ea438f4b-b2a0-4c87-9dbf-ab9ba7a55fb4",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145853",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1500_304_Lung window.dicom.zip",
+                                    "filesize": 56397960
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4d08471d-d8fe-45c2-8022-37998135aaf3",
+                            "files": [
+                                {
+                                    "file_unq_id": "fa78d339-05c3-48c4-80df-96a5a11a2c1f",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145330",
+                                    "dicomacquisitiondate": "20180624",
+                                    "filename": "20180417_1453_100_Scout.dicom.zip",
+                                    "filesize": 606416
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "da4a3a45-d5a4-4e91-95e1-5b7d76038b4b",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_24",
+                    "session": [
+                        {
+                            "id": "8058c429-d0a7-49bc-aa16-c133474afb3e",
+                            "files": [
+                                {
+                                    "file_unq_id": "0b96904c-f523-4562-ab37-5286e86adad9",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133137",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1331_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 16133710
+                                }
+                            ]
+                        },
+                        {
+                            "id": "daa301fb-87cb-4cbb-80c0-25c120f0cc0d",
+                            "files": [
+                                {
+                                    "file_unq_id": "79259572-8ba9-46ca-a674-f81963828720",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133050",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1330_100_Scout.dicom.zip",
+                                    "filesize": 627756
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0e394799-342b-4f3c-91dc-da8a9586dd09",
+                            "files": [
+                                {
+                                    "file_unq_id": "95d2d309-8a4d-4e77-8b72-02c985a73efd",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133750",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1339_304_Lung window.dicom.zip",
+                                    "filesize": 56543923
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f479a010-6a67-4156-ae0f-fd82ad7754e9",
+                            "files": [
+                                {
+                                    "file_unq_id": "a5db7175-84ba-4d34-8dc4-8f58b1f66c77",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133750",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1338_303_w_IV contrast.dicom.zip",
+                                    "filesize": 67914188
+                                }
+                            ]
+                        },
+                        {
+                            "id": "160635a0-c07d-4793-abd1-c14bfdf8531d",
+                            "files": [
+                                {
+                                    "file_unq_id": "dfbe6bd7-7e91-49dc-9780-147e985f34a1",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133750",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1338_301_w_IV contrast.dicom.zip",
+                                    "filesize": 42362913
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2318c181-4790-4c47-8a9b-cb32788d17d8",
+                            "files": [
+                                {
+                                    "file_unq_id": "ecbc70a5-e71b-4e0d-8125-95f2292479e2",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133750",
+                                    "dicomacquisitiondate": "20170913",
+                                    "filename": "20170707_1338_302_w_IV contrast.dicom.zip",
+                                    "filesize": 71580932
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "32769b62-849a-4c1c-9e34-607ae53d34a4",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_30",
+                    "session": [
+                        {
+                            "id": "7ca1edbe-ea62-4673-a238-92d67ba1504f",
+                            "files": [
+                                {
+                                    "file_unq_id": "12e4bcfc-dd63-44bb-969d-3e6838d7224f",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133532",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1335_100_Scout.dicom.zip",
+                                    "filesize": 674593
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e6c4c1fa-ba6c-4790-be4d-fe1b792a7cd2",
+                            "files": [
+                                {
+                                    "file_unq_id": "2d8edb68-99c7-4b84-ac01-836a8a104921",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "134156",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1342_301_w_iv contrast  5mm.dicom.zip",
+                                    "filesize": 42917649
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c008c656-ef88-4dd1-9fb4-5889cfdea285",
+                            "files": [
+                                {
+                                    "file_unq_id": "39c804ba-276a-494c-939a-a2b521b4002b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "134156",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1342_302_w_iv contrast  2mm.dicom.zip",
+                                    "filesize": 72421800
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a6743250-180b-4b2f-8463-bb2c9d4933d1",
+                            "files": [
+                                {
+                                    "file_unq_id": "aecb34dd-a766-41d3-a2fa-16e8b490d244",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "134156",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1342_303_w_iv contrast  2mm.dicom.zip",
+                                    "filesize": 68719035
+                                }
+                            ]
+                        },
+                        {
+                            "id": "63b6cf36-3acd-4173-9141-1055989f109a",
+                            "files": [
+                                {
+                                    "file_unq_id": "bb8d10f1-f632-4135-9172-ece3c2df8914",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "133634",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1336_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 16056816
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2a7dd41a-1998-47cd-ab96-16d37ac49af6",
+                            "files": [
+                                {
+                                    "file_unq_id": "d8e41f8e-4b1e-4ffc-bd41-29fec905c0e3",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "134156",
+                                    "dicomacquisitiondate": "20171023",
+                                    "filename": "20170816_1345_304_Lung window.dicom.zip",
+                                    "filesize": 56978991
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "8840772e-cd4d-4fd1-bbbf-d6ca7e8ca1e6",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_12",
+                    "session": [
+                        {
+                            "id": "c5cb5ca4-df4b-4e85-86ac-6380af16d368",
+                            "files": [
+                                {
+                                    "file_unq_id": "199a80e0-95b4-4e23-be4a-aa9d4f38ac6b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145947",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1459_100_Scout.dicom.zip",
+                                    "filesize": 677330
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c6bbd967-f755-4f30-8ed2-e2bf8d30213a",
+                            "files": [
+                                {
+                                    "file_unq_id": "2b1d843b-c9fb-4d51-bc90-f97d02cf7f31",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150617",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1514_304_Lung window.dicom.zip",
+                                    "filesize": 56802043
+                                }
+                            ]
+                        },
+                        {
+                            "id": "707a0c37-c999-4a6a-8839-d8f03614fe4d",
+                            "files": [
+                                {
+                                    "file_unq_id": "33f8af66-29f3-47d3-b006-30813efe638b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150617",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1506_301_w_IV contrast.dicom.zip",
+                                    "filesize": 43501931
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3a3e7f60-483d-438e-a860-840f9723fd5b",
+                            "files": [
+                                {
+                                    "file_unq_id": "50bf8fd0-e6a2-44fd-8543-917f6801231b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150617",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1506_303_w_IV contrast.dicom.zip",
+                                    "filesize": 71240688
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5178051b-8d4a-4ff1-bbbf-22b3bf028b78",
+                            "files": [
+                                {
+                                    "file_unq_id": "7dc8b840-6eb2-4fbe-8a5b-b7045f18bfd1",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150617",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1506_302_w_IV contrast.dicom.zip",
+                                    "filesize": 75173002
+                                }
+                            ]
+                        },
+                        {
+                            "id": "aeb61b66-f87c-4449-8b03-60287a83a566",
+                            "files": [
+                                {
+                                    "file_unq_id": "d358133b-0bae-4a2e-8922-57d07383a6ae",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150045",
+                                    "dicomacquisitiondate": "20170614",
+                                    "filename": "20170407_1500_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15571813
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "16043b35-5f08-488f-88ba-715967783343",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_06",
+                    "session": [
+                        {
+                            "id": "530007df-2c68-4327-bde4-d69b68a940f5",
+                            "files": [
+                                {
+                                    "file_unq_id": "1e7c8e52-154e-4263-854d-c24b5032149c",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144302",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1442_100_Scout.dicom.zip",
+                                    "filesize": 667837
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c97af9a2-19b5-4f60-9071-4809192d9ab2",
+                            "files": [
+                                {
+                                    "file_unq_id": "66e54630-5af3-4be4-96e2-d887ae1fd889",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144929",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1449_303_w_IV contrast.dicom.zip",
+                                    "filesize": 75234480
+                                }
+                            ]
+                        },
+                        {
+                            "id": "bf9c951a-44a5-45b8-be77-85415a07b699",
+                            "files": [
+                                {
+                                    "file_unq_id": "8a5431d9-d62e-47cc-b82d-3e90446a994d",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144352",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1444_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 17434025
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a8dd95c5-12f3-4a8a-81eb-dc8d96f7548f",
+                            "files": [
+                                {
+                                    "file_unq_id": "96fb4903-c771-4e62-a503-46d02a5b060b",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144929",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1449_302_w_IV contrast.dicom.zip",
+                                    "filesize": 78864759
+                                }
+                            ]
+                        },
+                        {
+                            "id": "28661694-f3e3-4b6b-b130-4fdc72599706",
+                            "files": [
+                                {
+                                    "file_unq_id": "bdb4ca2a-a52f-4503-8b99-14fc07cab0ad",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144929",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1450_304_Lung window.dicom.zip",
+                                    "filesize": 109014732
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b35691ee-3800-4c59-b8cf-52ac53ba33b9",
+                            "files": [
+                                {
+                                    "file_unq_id": "fb6a343c-bb58-4b3b-a3db-366e089f7a4c",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "144929",
+                                    "dicomacquisitiondate": "20170506",
+                                    "filename": "20170227_1449_301_w_IV contrast.dicom.zip",
+                                    "filesize": 43095168
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "b2bd21a8-3870-4592-bb69-27bc2213539c",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_57",
+                    "session": [
+                        {
+                            "id": "2291a1ed-852c-4003-84a5-9fd6753138d4",
+                            "files": [
+                                {
+                                    "file_unq_id": "2bc4e189-e5fe-4b49-9f69-e1854ab89678",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150515",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1505_303_w_IV contrast.dicom.zip",
+                                    "filesize": 65806262
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a561d60e-a186-4e07-a02e-84273750f989",
+                            "files": [
+                                {
+                                    "file_unq_id": "395abe86-55ab-4126-b491-7b9122ec63c3",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150515",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1505_301_w_IV contrast.dicom.zip",
+                                    "filesize": 42288539
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ca9a35df-6f31-46e8-b08f-3f60a20ab136",
+                            "files": [
+                                {
+                                    "file_unq_id": "64b326b1-9106-4eff-b7aa-a1a6313c3572",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150515",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1505_302_w_IV contrast.dicom.zip",
+                                    "filesize": 69033347
+                                }
+                            ]
+                        },
+                        {
+                            "id": "456d21ff-009f-47f0-8136-5fe5a870ac9b",
+                            "files": [
+                                {
+                                    "file_unq_id": "94a64088-4d21-4267-814e-12f68c1c37de",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150515",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1506_304_Lung window.dicom.zip",
+                                    "filesize": 55375126
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4150133b-241c-42ae-967b-a7722978e4bd",
+                            "files": [
+                                {
+                                    "file_unq_id": "d4926081-0b7c-43b9-8f19-f8622b073625",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "145943",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1459_100_Scout.dicom.zip",
+                                    "filesize": 610772
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3d9b8869-d890-4cb1-8eba-902c274e362c",
+                            "files": [
+                                {
+                                    "file_unq_id": "f47853ca-3733-4de3-bf10-bd8378006b11",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150029",
+                                    "dicomacquisitiondate": "20180512",
+                                    "filename": "20180305_1500_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 12752276
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "d9d2f64d-a647-4d35-83c0-17540efce7bd",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_18",
+                    "session": [
+                        {
+                            "id": "8a72cb46-8dae-4e10-8ed1-174183f993bf",
+                            "files": [
+                                {
+                                    "file_unq_id": "33259d87-cb0c-4470-b353-5e7d0235f5ef",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "150916",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1508_100_Scout.dicom.zip",
+                                    "filesize": 633590
+                                }
+                            ]
+                        },
+                        {
+                            "id": "71320132-4edb-4c8c-ac11-a82ed048f4ed",
+                            "files": [
+                                {
+                                    "file_unq_id": "6fba5b1a-2075-47c4-a98e-997062682f88",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "151828",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1519_301_w_iv contrast  5mm.dicom.zip",
+                                    "filesize": 41768851
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e9a9a399-bca8-47f0-97fa-2ba2a7a971a5",
+                            "files": [
+                                {
+                                    "file_unq_id": "c015197b-f84d-49fa-8125-40d0216eed53",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "151027",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1510_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15478889
+                                }
+                            ]
+                        },
+                        {
+                            "id": "772a2ae9-fb44-48fd-9686-dd30c738649f",
+                            "files": [
+                                {
+                                    "file_unq_id": "ca2fe173-a081-458b-a564-9a9aaebc2031",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "151828",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1519_303_w_iv contrast  2mm.dicom.zip",
+                                    "filesize": 71628619
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f3a13713-26c3-431b-9ba7-20ab2429ddad",
+                            "files": [
+                                {
+                                    "file_unq_id": "d57cb177-362c-4044-8699-5f737fb59653",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "151828",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1537_304_Lung window.dicom.zip",
+                                    "filesize": 53740687
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c3bd8b0a-8ff6-4d8c-8bfe-fc353e0b2418",
+                            "files": [
+                                {
+                                    "file_unq_id": "ed67a8a4-21b2-4b67-b2cd-235d0ddaafc9",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "151828",
+                                    "dicomacquisitiondate": "20170802",
+                                    "filename": "20170526_1519_302_w_iv contrast  2mm.dicom.zip",
+                                    "filesize": 75172614
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "9cf8f626-2b45-4ed3-8335-97039b757b99",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_36",
+                    "session": [
+                        {
+                            "id": "afad9fff-ef9b-4cfd-a289-6a1b5173f075",
+                            "files": [
+                                {
+                                    "file_unq_id": "34e9bada-585c-4370-8d34-9ed947aae9f7",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095822",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_1000_304_2_2 LUNG_ iDose _4.dicom.zip",
+                                    "filesize": 55249328
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a069b3eb-ecae-452a-ac18-f53f375a1afc",
+                            "files": [
+                                {
+                                    "file_unq_id": "4c4de522-c43a-4540-a562-7a23ee2b5c86",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095254",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_0953_201_w_o IV Contrast.dicom.zip",
+                                    "filesize": 15998463
+                                }
+                            ]
+                        },
+                        {
+                            "id": "890f537e-1084-4126-bc0c-1cb8d0f24ab3",
+                            "files": [
+                                {
+                                    "file_unq_id": "a10b6619-8844-4fec-8e6f-a5d08ffc4f66",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095822",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_0958_301_w_IV contrast.dicom.zip",
+                                    "filesize": 42363984
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8d8bda85-9c07-4a69-abfa-011d821ba899",
+                            "files": [
+                                {
+                                    "file_unq_id": "aa97e01b-ea0c-4118-91c3-b3ee5f7ea031",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095822",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_0958_303_w_IV contrast.dicom.zip",
+                                    "filesize": 71218840
+                                }
+                            ]
+                        },
+                        {
+                            "id": "091750d6-93ab-4942-921d-e598fa2fde11",
+                            "files": [
+                                {
+                                    "file_unq_id": "c47375c6-0491-4a1f-930f-72e7de3650b0",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095822",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_0958_302_w_IV contrast.dicom.zip",
+                                    "filesize": 74822802
+                                }
+                            ]
+                        },
+                        {
+                            "id": "093b5b9f-0ef2-4e05-ab2d-a14a3b2b9e25",
+                            "files": [
+                                {
+                                    "file_unq_id": "fc03ff65-51b5-4d29-86f7-0c51b3f46edc",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "095200",
+                                    "dicomacquisitiondate": "20171210",
+                                    "filename": "20171003_0951_100_Scout.dicom.zip",
+                                    "filesize": 646225
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                },
+                {
+                    "id": "e945e68c-1335-4c97-8adf-dc7f8759314d",
+                    "visitgroup": "phc_anon",
+                    "visitlabel": "Week_48",
+                    "session": [
+                        {
+                            "id": "a81251b1-a4bb-4441-9cfb-5c29c5794aae",
+                            "files": [
+                                {
+                                    "file_unq_id": "3619b37b-7202-4526-9d72-6393a66cf29d",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131800",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1319_804_Lung window.dicom.zip",
+                                    "filesize": 55646567
+                                }
+                            ]
+                        },
+                        {
+                            "id": "05c12aa8-86d4-4f0b-9524-05c8a29b97aa",
+                            "files": [
+                                {
+                                    "file_unq_id": "507b2509-5390-4a9a-b51e-9e20aeacdfc6",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131800",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1318_803_w_IV contrast.dicom.zip",
+                                    "filesize": 70374726
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e988db65-d330-4254-83a3-65d3a16c6c5c",
+                            "files": [
+                                {
+                                    "file_unq_id": "51bffc61-38eb-4473-ad27-f41e3c63e5d9",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131233",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1311_600_Scout.dicom.zip",
+                                    "filesize": 686759
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2da3ec5e-1d20-4a29-8223-e6211f371cd9",
+                            "files": [
+                                {
+                                    "file_unq_id": "6ec13f7d-86a4-4690-9556-e87f00eb8c26",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131800",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1318_802_w_IV contrast.dicom.zip",
+                                    "filesize": 73702032
+                                }
+                            ]
+                        },
+                        {
+                            "id": "079e7cf9-e64b-4bab-be94-3a6921202f6a",
+                            "files": [
+                                {
+                                    "file_unq_id": "81d3e2d5-e86d-4498-91e5-76993ed292f0",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131800",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1318_801_w_IV contrast.dicom.zip",
+                                    "filesize": 41931297
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8cec0148-6afb-4116-9b67-d339cc3252ba",
+                            "files": [
+                                {
+                                    "file_unq_id": "ee35cc72-8be4-4825-9ad4-fd7ab6ee3be7",
+                                    "filemodality": "CT",
+                                    "dicomacquisitiontime": "131334",
+                                    "dicomacquisitiondate": "20180304",
+                                    "filename": "20171226_1313_701_w_o IV Contrast.dicom.zip",
+                                    "filesize": 16316457
+                                }
+                            ]
+                        }
+                    ],
+                    "acquisition_count": 6,
+                    "file_count": 6
+                }
+            ]
+        }
+	}
+}

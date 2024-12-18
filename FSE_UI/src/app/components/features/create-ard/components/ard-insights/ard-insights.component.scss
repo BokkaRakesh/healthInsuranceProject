@@ -1,0 +1,116 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.card {
+    border: none;
+
+    .title {
+        font-size: 14px;
+        font-family: $Roche-Sans-Medium;
+        color: $roche-grey-900;
+    }
+
+    .link {
+        font-size: 12px;
+        font-family: $Roche-Sans-Regular;
+        color: $roche-blue-primary;
+    }
+}
+
+.grid-projected-content {
+    span {
+        font-size: 12px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+
+    button {
+        background-color: $roche-blue-primary;
+        color: $roche-background;
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+    }
+}
+
+.grid-projected-content {
+    button:nth-child(2)>span {
+        content: url(../../../../../../assets/images/create_ard.svg);
+        vertical-align: middle;
+    }
+
+    button:nth-child(3)>span {
+        content: url(../../../../../../assets/images/run_analysis.svg);
+        vertical-align: middle;
+    }
+}
+
+.three-dot {
+    content: url(../../../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.create-ard-btn.disabled {
+    background-color: $roche-grey-200;
+    color: $roche-brown-100;
+
+    img {
+        filter: invert(66%) sepia(5%) saturate(531%) hue-rotate(339deg) brightness(90%) contrast(86%);
+    }
+}
+
+.insight-list {
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.insight-item {
+    display: grid;
+    grid-template-columns: 40px 5fr 1fr auto;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid $roche-border;
+    border-bottom: 1px solid $roche-border;
+}
+
+.inprogress {
+    content: url(../../../../../../assets/images/repeat-1.svg);
+    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(3333%) hue-rotate(202deg) brightness(106%) contrast(96%);
+}
+
+.complete {
+    content: url(../../../../../../assets/images/circle_checkmark.svg);
+    filter: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(1356%) hue-rotate(141deg) brightness(98%) contrast(101%);
+}
+
+.error {
+    content: url(../../../../../../assets/images/outlined-warning_triangle.svg);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(98%) saturate(5060%) hue-rotate(339deg) brightness(79%) contrast(107%);
+}
+
+.insight-name {
+    border-left: 1px solid $roche-border;
+
+    .icon {
+        content: url(../../../../../../assets/images/server.svg);
+        vertical-align: middle;
+    }
+
+    .name {
+        font-size: 14px;
+        font-family: $Roche-Sans-Regular;
+        color: $roche-grey-900;
+    }
+}
+
+.insight-value {
+    font-size: 14px;
+    font-family: $Roche-Sans-Light;
+    color: $roche-grey-900;
+}
+
+.launch-icon {
+    // content: url(../../../../assets/images/outlined-launch.svg);
+    filter: brightness(0) saturate(100%) invert(12%) sepia(7%) saturate(254%) hue-rotate(349deg) brightness(94%) contrast(97%);
+    cursor: pointer;
+}

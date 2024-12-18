@@ -1,0 +1,30 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.popup-menu {
+    list-style-type: none;
+    padding: 0.2rem;
+    margin: 0;
+    width: 150px;
+    min-width: 100px;
+    max-width: 180px;
+    .border-bottom {
+        border-bottom: 1px solid #000; /* Adjust the color and width as needed */
+      }
+}
+
+.popup-menu li {
+    padding: 10px;
+    cursor: pointer;
+    font-family: $Roche-Sans-Light;
+    font-size: 14px;
+    color: $roche-grey-700;
+}
+
+.popup-menu li:hover {
+    background-color: $roche-grey-5-hover;
+}
+
+.popup-item-seperate{
+    border-top: 1px solid #C2BAB5;
+}

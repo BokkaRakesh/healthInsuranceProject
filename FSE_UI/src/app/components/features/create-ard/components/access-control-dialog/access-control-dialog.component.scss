@@ -1,0 +1,113 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+
+.align-visibility-label {
+    font-weight: 600;
+}
+
+.align-radio-btn {
+    margin-left: 16px;
+    margin-right: 14rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.align-radio-btn-font {
+    font-size: 14px;
+    color: $roche-grey-900;
+}
+
+::ng-deep .k-radio:checked,
+::ng-deep .k-radio.k-checked {
+    border-color: $roche-blue-primary !important;
+    color: $roche-background !important;
+    background-color: $roche-blue-primary !important;
+}
+
+
+kendo-autocomplete {
+    width: 200px;
+}
+
+.align-right {
+    float: right;
+}
+
+.align-from-left {
+    margin-left: 17px
+}
+
+.align-font {
+    font-size: 14px;
+    color: $roche-grey-900;
+}
+
+.auto-complete-align {
+    margin-left: 19px;
+    margin-right: 11px;
+}
+
+.auto-complete-search {
+    width: 98%;
+    height: 30%;
+    padding: 8px 0 8px 24px;
+    border: 2px solid $roche-grey-400;
+    background-image: url('../../../../../../assets/images/search-user-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 16px;
+}
+
+.auto-complete-search kendo-autocomplete {
+    padding-left: 30px;
+}
+
+
+.align-header {
+    background-color: $roche-grey-5-hover;
+    border-bottom: 3px solid $roche-blue-primary;
+    padding: 10px;
+}
+
+.align-header-label {
+    flex: 1;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-900;
+    font-size: 14px;
+}
+
+::ng-deep .k-input-solid.k-invalid,
+.k-input-solid.ng-invalid.ng-touched,
+.k-input-solid.ng-invalid.ng-dirty {
+    border-color: $roche-grey-900 !important;
+}
+
+::ng-deep .k-no-data,
+.k-nodata {
+    all: unset;
+    display: none;
+}
+
+::ng-deep .k-window-title {
+    font-family: $Roche-Sans-Bold;
+}
+
+.modal-btn {
+    .btn.btn-outline {
+      border-color: $roche-dark-blue;
+      color: $roche-dark-blue;
+      font-family: $Roche-Sans-Regular;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .btn.btn-primary {
+      background-color: $roche-blue-primary;
+      color: $roche-background;
+      font-family: $Roche-Sans-Regular;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .btn.btn-primary:hover {
+      background-color: $roche-dark-blue;
+    }
+  }

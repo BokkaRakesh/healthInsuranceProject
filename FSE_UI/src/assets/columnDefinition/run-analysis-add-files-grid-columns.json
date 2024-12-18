@@ -1,0 +1,35 @@
+[  
+    
+    {
+        "name": "Timestamp",
+        "id": "timestamp",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 1,
+        "hasIcon": true,
+        "icon": "network_drive_gray",
+        "hasTooltip": false
+    },
+    {
+        "name": "Name",
+        "id": "name",
+        "type": true,
+        "checked": true,
+        "width": 200,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Type",
+        "id": "type",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 3,
+        "hasIcon": false,
+        "icon": "image_photo_library",
+        "hasTooltip": false
+    }
+]

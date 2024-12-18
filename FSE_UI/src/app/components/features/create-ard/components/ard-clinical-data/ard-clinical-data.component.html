@@ -1,0 +1,35 @@
+<div class="container mt-4 scroll-bar study-details">
+  <div class="main-container p-4 border rounded">
+    <div *ngFor="let data of gridData;  index as i ">
+      <kendo-expansionpanel [svgExpandIcon]="arrowDown" [svgCollapseIcon]="arrowUp">
+        <ng-template kendoExpansionPanelTitleDirective>
+          <div class="header-content">
+            <div class="grid-container">
+              <div>
+                <img class="pe-1" src="../assets/images/outlined-folder.svg" alt="study" />
+                INBFHGDD
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <div class="row mb-3">
+          <ul class="access-control-list list-unstyled mt-2">
+            <kendo-gridlayout *ngFor="let item of data  | keyvalue">
+              <li class="access-control-item">
+                <kendo-gridlayout-item [col]="1" [row]="5" class="box">
+                  <strong class="user-name">{{item.key}}</strong>
+                </kendo-gridlayout-item>
+                <kendo-gridlayout-item [col]="2" [row]="5" class="box">
+                  <span class="acess-type">{{item.value}}</span>
+                </kendo-gridlayout-item>
+              </li>
+
+            </kendo-gridlayout>
+          </ul>
+        </div>
+
+        <div class="show-more" (click)="showMore()">show more</div>
+      </kendo-expansionpanel>
+    </div>
+  </div>
+</div>

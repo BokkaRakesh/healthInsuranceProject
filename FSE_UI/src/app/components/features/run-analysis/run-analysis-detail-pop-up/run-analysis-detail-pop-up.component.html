@@ -1,0 +1,121 @@
+<kendo-dialog  [width]="700" [minWidth]="700" [height]="windowHeight" [animation]="false">
+    <div class="custom-dialog-title" style="padding-bottom: 30px;">
+        <img class="close-icon"src="../assets/images/columns_settings.svg" alt="" />
+       <p class="dialog-title">{{algoAnalysisUniqidOfSelectedRunDetail}}</p> 
+        <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+      </div>
+
+      <div class="row">
+        <ng-container>
+            <div class="col-11 p-0">
+                <app-tab-navigation
+                [navigation]="parentTabs"
+                (tabInfo)="getSelectedTabInfo($event)">
+                </app-tab-navigation>
+            </div>
+            
+        </ng-container>
+        <ng-container *ngIf="selectedTab === 'IDP_Documentation'">
+            <div class="row">
+                <div class="card datasetDetails px-3 py-2">
+                    <div class="row d-flex">
+                        <ul class="list-unstyled mt-2">
+                                <li class="dataset-item">
+                                    <div class="user-name">Status</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.status}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Created</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.created}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Completed</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.completed}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">User</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.createdby}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">ARD</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.ard}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Algorithm</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.algorithm}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Version</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary.Version}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Subject</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary?.subject}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Session</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary?.session}}</div>
+                                </li>
+                                <li class="dataset-item">
+                                    <div class="user-name">Aquisition</div>
+                                    <div class="access-type">{{runAnalysisDetails.data.summary?.aquisition}}</div>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filesDiv">
+                <app-grid [raNavigation]="true" [gridData]="inputFileGridData" [noPagination]="true" [threeDotMenu]="true" [checkBoxSelection]="false" [gridColumns]="inputFileColumns"> </app-grid>
+            </div>
+    
+            <div class="filesDiv">
+                <app-grid [raNavigation]="true" [gridData]="outputFileGridData" [noPagination]="true" [threeDotMenu]="true" [checkBoxSelection]="false" [gridColumns]="outputFileColumns"> </app-grid>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="selectedTab === 'configuration'">
+            <div class="row dataSetList">
+                <div class="card datasetDetails px-3 py-2 mx-sm-3">
+                    <div>
+                        <span class="runConfigurationLabel">Run Configuration</span> <span><button class="download-config-btn">
+                            <img class="close-icon" src="../assets/images/download_blue.svg" alt="" />
+                            Download Config</button></span>
+
+                    </div>
+                    <div class="configuration-content my-sm-3">
+                        {{configData | json}}
+                    </div>
+
+                    <!-- <div class="row d-flex">
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="selectedTab === 'log'">
+            <div class="row dataSetList">
+                <div class="card datasetDetails px-3 py-2 mx-sm-3">
+                    <div>
+                        <span class="runConfigurationLabel ">Run Log</span> <span><button class="download-config-btn">
+                            <img class="close-icon" src="../assets/images/download_blue.svg" alt="" />
+                            Download Config</button></span>
+
+                    </div>
+                    <div class="configuration-content my-sm-3">
+                        <div>{{logsData}}</div>
+                    </div>
+
+                    <div class="row d-flex">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </ng-container>
+        
+    </div>
+   
+        
+</kendo-dialog>

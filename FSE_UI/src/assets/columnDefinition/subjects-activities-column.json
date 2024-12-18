@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Activity Type",
+        "id": "activity_type",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 1,
+        "hasIcon": true,
+        "hasTooltip": false,
+        "displayAsDot": false
+    },
+    {
+        "name": "Timestamp",
+        "id": "timestamp",
+        "default": true,
+        "checked": true,
+        "width": 150,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false,
+        "displayAsDot": false
+    },
+    {
+        "name": "Information",
+        "id": "information",
+        "default": true,
+        "checked": true,
+        "width": 300,
+        "order": 3,
+        "hasIcon": false,
+        "hasTooltip": false,
+        "displayAsDot": false
+    },
+    {
+        "name": "User",
+        "id": "user",
+        "default": true,
+        "checked": true,
+        "width": 50,
+        "order": 4,
+        "hasIcon": false,
+        "hasTooltip": false,
+        "displayAsDot": true
+    }
+]

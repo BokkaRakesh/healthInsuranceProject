@@ -1,0 +1,7 @@
+<kendo-popup *ngIf="anchor" [anchor]="anchor" [animate]="animate" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign">
+    <ul class="popup-menu">
+        <li *ngFor="let item of items" (click)="onItemClick(item.action)"  [ngClass]="{'border-bottom': isDuplicate(item), 'popup-item-seperate' : item.action === 'launchViewer'}">
+            {{ item.label }}
+        </li>
+    </ul>
+</kendo-popup>

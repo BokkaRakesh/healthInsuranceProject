@@ -1,0 +1,12 @@
+<div class="app-container">
+    <div class="sidebar">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="header ms-5">
+        <app-header></app-header>
+    </div>
+    <div class="content ms-5 z-3">
+        <kendo-loader *ngIf="loading$ | async" type="infinite-spinner" size="large"></kendo-loader>
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<kendo-dialog  [width]="700" [minWidth]="700" [height]="710" [minHeight]="710" [animation]="false">
+    <div class="custom-dialog-title">
+      <img class="close-icon"src="../assets/images/folder.svg" alt="" />
+     <p class="dialog-title">{{ exploreId }}</p> 
+      <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+    </div>
+    <!-- Dialog content goes here -->
+
+    <div class="col d-flex justify-content-start align-items-center flex-wrap summaryInfo">
+        <div class="metadata-section text-end me-3" >
+            <app-summary [summary]="summaryInfo"></app-summary>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 mb-3">
+                <div class="card ard-details">
+                    <div class="row d-flex">
+                        <div class="col-3 mx-2 my-2 py-2 info-box" *ngFor="let expDoc of expDocDetails">
+                            <div class="label py-1">{{ expDoc.label }}</div>
+                            <div class="value">{{ expDoc.value }}</div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card datasetDetails px-3 py-2">
+                <div class="row d-flex">
+                    <p class="desc_text">Description</p>
+                    <p class="desc_text_value">{{description}}</p>
+                  </div>
+                </div>
+        </div>  
+        <div class="row dataSetList">
+            <div class="card datasetDetails px-3 py-2">
+                <div class="row d-flex">
+                <ul class="dataset-list list-unstyled mt-2">
+                    <ng-container *ngFor="let data of dataSet">
+                        <li class="dataset-item">
+                            <div class="user-name">{{ data.name }}</div>
+                            <div class="access-type">{{ data.value }}</div>
+                        </li>
+                    </ng-container>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </kendo-dialog>

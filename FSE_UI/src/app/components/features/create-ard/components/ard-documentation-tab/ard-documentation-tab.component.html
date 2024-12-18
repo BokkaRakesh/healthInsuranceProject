@@ -1,0 +1,72 @@
+<div class="container-fluid p-3">
+    <!-- Description -->
+    <form [formGroup]="descriptionForm">
+        <div class="container mb-1">
+            <span><strong>Description</strong>&nbsp;</span>
+            <span *ngIf="!isEditable"><img class="pe-2 pb-1 edit-icon" src="../assets/images/write.svg" alt=""
+                    (click)="editDescription()" /></span>
+            <span *ngIf="isEditable" class="save-label"><button kendoButton [disabled]="!descriptionForm.valid"
+                    (click)="saveDescription(descriptionForm.value.description)" fillMode="clear">
+                    Save
+                </button></span>
+            <span *ngIf="isEditable" class="cancel-label"><button kendoButton (click)="cancel()" fillMode="clear">
+                    Cancel
+                </button></span>
+        </div>
+        <div *ngIf="!isEditable" class="description-container mb-2">
+            <div class="col-12 ms-2">
+                <div class="description-content p-1"
+                    *ngIf="descriptionForm.value.description; else describePlaceholder">
+                    {{ description }}
+                </div>
+                <ng-template #describePlaceholder>
+                    <div class="description-content p-1">
+                        Please add description here…
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+        <div *ngIf="isEditable" class="row describe ps-4 pe-1">
+            <kendo-textarea placeholder="Please add description here...." formControlName="description" [rows]="3"
+                resizable="vertical"></kendo-textarea>
+        </div>
+        <div class="row ps-4 pe-1 descriptionError" *ngIf="
+        descriptionForm.controls['description'].touched &&
+        descriptionForm.get('description')?.hasError('required')
+      ">
+            Please enter description as it is required
+        </div>
+        <div class="row ps-4 pe-1 descriptionError" *ngIf="
+        descriptionForm.controls['description'].touched &&
+        descriptionForm.controls['description']?.hasError('maxlength')
+      ">
+            Maximum of 5000 characters are allowed for description
+        </div>
+    </form>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card p-3 ard-details">
+                    <span class="mb-3">
+                        <span class="ard-icon pe-1"></span>
+                        <span class="ard-text">ARD Details</span>
+                    </span>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6 mx-2 my-2 py-2 info-box" *ngFor="let ardDetail of ardDetails">
+                            <div class="label py-1">{{ ardDetail.label }}</div>
+                            <div class="value">{{ ardDetail.value }}</div>
+                        </div>
+                    </div>
+                    <!-- Inclusion and Exclusion Criteria -->
+                    <app-criteria-display [inclusionCriteria]="inclusionCriteria" [exclusionCriteria]="exclusionCriteria" class="mt-5">
+                    </app-criteria-display>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <app-access-control [users]="users"></app-access-control>
+                <app-insights [insights]="insights"></app-insights>
+            </div>
+        </div>
+    </div>
+</div>

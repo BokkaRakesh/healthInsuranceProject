@@ -1,0 +1,139 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.summaryCard {
+    padding: 8px 14px;
+    margin-bottom: 4px;
+    height: 64px;
+}
+
+.summaryCard h2 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.summaryCard p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.k-hstack {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.mate-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.k-avatar-solid-primary {
+    border-color: white !important; 
+    color: white !important; 
+    background-color: white !important; 
+}
+
+.summaryContainer {
+    height: 100%;
+}
+
+.summarylist {
+    
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 4px 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.26),
+        0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    font-family: $Roche-Sans-Medium;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 14px;
+}
+
+.text {
+    color: $roche-grey-900;
+}
+
+.cardName {
+    font-family: $Roche-Sans-Light;
+    font-size: 14px;
+    text-align: left;
+    margin-left: -7.2rem;
+}
+
+.cardValue {
+    font-family: $Roche-Sans-Bold;
+    font-size: 18px;
+    float: right;
+}
+
+kendo-progressbar {
+    .k-progressbar-horizontal {
+        width: 35em;
+    }
+
+    .k-progressbar-track {
+        height: 6px !important;
+    }
+
+    .k-progressbar-indicator {
+        height: 6px !important;
+        border-radius: 0px !important;
+    }
+
+    ::ng-deep .k-progress-status {
+        padding-block: 0;
+        padding-inline: var(--kendo-spacing-2, .5rem);
+        min-width: 10px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+        opacity: 0 !important;
+    }
+   
+}
+
+.progressbar {
+    width: 100%;
+    height: 5px;
+    margin-top: 0px;
+}
+
+.sources{
+    width: 118px;
+}
+
+.dataSourcesContainer {
+    margin-top: auto;
+    margin-left: 12px;
+}
+
+.dataSources {
+    display: inline-block;
+    font-family: $Roche-Sans-Medium;
+    font-size: 14px;
+}
+
+.datasourcestitle {
+    font-family: $Roche-Sans-Light;
+    font-size: 12px;
+    text-align: left;
+}
+
+.modalityContainer {
+    margin-left: 12px;
+}
+
+.k-icon {
+    height: 22px;
+    width: 12px;
+  }

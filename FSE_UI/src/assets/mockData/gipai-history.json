@@ -1,0 +1,106 @@
+{ 
+    "examplesData": {
+    "Data": "Examples",
+    "examples":[
+        "show me data for cancer",
+        "how do I register",
+        "tell me about studies",
+        "create IDP criteria"
+    ]
+    },
+   "historyData": {
+    "Data": "Recent History",
+    "history":[
+        {
+            "date": "Today",
+            "message":[
+                {
+                    "id":"ID253654",
+                    "text":"show me studies in oncology that are in phase III ot IV."
+                }
+            ]
+        },
+        {
+            "date": "Yesterday",
+            "message":[
+                {
+                    "id":"ID253655",
+                    "text":"MN3945_Musicale"
+                },
+                {
+                    "id":"ID253656",
+                    "text":"show me dateset for Alzheimer diease with PET, MRI, and Clinical data."
+                }
+            ]
+        },
+        {
+            "date": "last 7 days",
+            "message":[
+                {
+                    "id":"ID253654",
+                    "text":"show me studies in oncology that are in phase III ot IV."
+                },
+                {
+                    "id":"ID253655",
+                    "text":"MN3945_Musicale"
+                },
+                {
+                    "id":"ID253656",
+                    "text":"show me dateset for Alzheimer diease with PET, MRI, and Clinical data."
+                }
+            ]
+        },
+        {
+            "date": "last 15 days",
+            "message":[
+                {
+                    "id":"ID253654",
+                    "text":"show me studies in oncology that are in phase III ot IV."
+                },
+                {
+                    "id":"ID253655",
+                    "text":"MN3945_Musicale"
+                },
+                {
+                    "id":"ID253656",
+                    "text":"show me dateset for Alzheimer diease with PET, MRI, and Clinical data."
+                }
+            ]
+        },
+        {
+            "date": "last 20 days",
+            "message":[
+                {
+                    "id":"ID253654",
+                    "text":"show me studies in oncology that are in phase III ot IV."
+                },
+                {
+                    "id":"ID253655",
+                    "text":"MN3945_Musicale"
+                },
+                {
+                    "id":"ID253656",
+                    "text":"show me dateset for Alzheimer diease with PET, MRI, and Clinical data."
+                }
+            ]
+        },
+        {
+            "date": "last 25 days",
+            "message":[
+                {
+                    "id":"ID253654",
+                    "text":"show me studies in oncology that are in phase III ot IV."
+                },
+                {
+                    "id":"ID253655",
+                    "text":"MN3945_Musicale"
+                },
+                {
+                    "id":"ID253656",
+                    "text":"show me dateset for Alzheimer diease with PET, MRI, and Clinical data."
+                }
+            ]
+        }
+    ]
+}
+}

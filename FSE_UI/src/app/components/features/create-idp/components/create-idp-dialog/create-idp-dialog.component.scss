@@ -1,0 +1,116 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.modal-title {
+  font-family: $Roche-Sans-Medium;
+  font-size: 20px;
+  color: $roche-light-black;
+}
+
+.name {
+  font-family: $Roche-Sans-Medium;
+  font-size: 14px;
+  color: $roche-grey-900;
+}
+
+.dialog-body {
+  div.form-floating {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown),
+  .form-floating > .form-control-plaintext:focus,
+  .form-floating > .form-control-plaintext:not(:placeholder-shown) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form-floating > .form-control,
+  .form-floating > .form-control-plaintext {
+    padding: 0;
+  }
+
+  div.form-floating > label {
+    font-family: $Roche-Sans-Regular;
+    font-size: 12px;
+    color: $roche-grey-700;
+  }
+
+  div.form-floating > input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+  }
+
+}
+.modal-footer {
+  border-top: 0;
+}
+.modal-btn {
+  .btn.btn-outline {
+    border-color: #022366;
+    color: #022366;
+    font-family: $Roche-Sans-Regular;
+    font-size: 16px;
+  }
+  .btn.btn-primary {
+    background-color: $roche-blue-primary;
+    color: $roche-background;
+    font-family: $Roche-Sans-Regular;
+    font-size: 16px;
+  }
+  .btn.btn-primary:hover {
+    background-color: #022366;
+  }
+}
+
+::ng-deep .k-window-title {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  font-family: $Roche-Sans-Medium;
+  color: $roche-light-black;
+}
+
+.form-check-label {
+  color: $roche-grey-800;
+  font-family: $Roche-Sans-Regular;
+  font-weight: 500;
+}
+
+.k-textbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.k-textbox {
+  border-radius: 0 4px 4px 0; /* To ensure seamless alignment */
+  flex-grow: 1;
+}
+
+.prefix {
+    font-family: $Roche-Sans-Light;
+    color: $roche-grey-3;
+    font-size: 16px;
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+    margin-bottom: -4px;
+    pointer-events: none; /* Disable interactions with prefix/suffix */
+    user-select: none; /* Prevent text selection */
+}
+
+.input-info {
+    font-size: 12px !important;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-naming-convention-800;  
+}
+
+.idpNameError {
+  font-family: $Roche-Sans-Regular;
+  font-size: 14px;
+  color: #ff3333;;
+}

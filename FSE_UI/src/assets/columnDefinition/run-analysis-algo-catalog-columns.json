@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Algorithm",
+        "id": "algouniqid",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 1,
+        "hasIcon": true,
+        "icon": "network_drive_gray",
+        "hasTooltip": false
+    },
+    {
+        "name": "Author",
+        "id": "createdby",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 1,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Type",
+        "id": "type",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 1,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Version",
+        "id": "currentversion",
+        "default": true,
+        "checked": true,
+        "width": 200,
+        "order": 1,
+        "hasIcon": false,
+        "hasTooltip": false
+       
+    }
+]

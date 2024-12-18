@@ -1,0 +1,25 @@
+{
+    "data": {
+        "items": [
+            {
+                "StudyNumber": "GO29431",
+                "StudyPhase": "Phase I",
+                "StudyIndication": "Alzheimer disease, Diabetic retinopathy",
+                "studyscientificarea": "Acquisition",
+                "IdpCreatedBy": "1",
+                "studysource": "CT",
+                "modality": "MRI",
+                "StudyType": "Interventional"
+            }
+        ],
+        "summary": {
+            "files": 10,
+            "sessions": 5,
+            "acquisitions": 30,
+            "analyses": 0,
+            "datasources": "MDMS",
+            "modality": "FP, CT",
+            "createdby": "Priyanka Soni"
+          }     
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "data": {
+        "items": [
+            {
+                "algoconfigdetailuniqid": "147c34d0-a591-11ef-a326-88a4c2a5318e",
+                "algoconfiguniqid": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "key": "do_reg_check",
+                "value": "True",
+                "type": "Text",
+                "createdat": "2024-11-18T15:10:00Z",
+                "updatedat": "2024-11-18T15:10:00Z"
+            },
+            {
+                "algoconfigdetailuniqid": "3388296e-a591-11ef-a326-88a4c2a5318e",
+                "algoconfiguniqid": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "key": "do_resize",
+                "value": "True",
+                "type": "Boolean",
+                "createdat": "2024-11-18T15:10:52Z",
+                "updatedat": "2024-11-18T15:10:52Z"
+            },
+            {
+                "algoconfigdetailuniqid": "37904fc9-a591-11ef-a326-88a4c2a5318e",
+                "algoconfiguniqid": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "key": "do_rgb_conv",
+                "value": "SSelect",
+                "type": "Boolean",
+                "createdat": "2024-11-18T15:10:59Z",
+                "updatedat": "2024-11-18T15:10:59Z"
+            },
+            {
+                "algoconfigdetailuniqid": "380d6480-a591-11ef-a326-88a4c2a5318e",
+                "algoconfiguniqid": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "key": "do_strip_rm",
+                "value": "True",
+                "type": "Boolean",
+                "createdat": "2024-11-18T15:11:00Z",
+                "updatedat": "2024-11-18T15:11:00Z"
+            },
+            {
+                "algoconfigdetailuniqid": "39ba9daa-a591-11ef-a326-88a4c2a5318e",
+                "algoconfiguniqid": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "key": "prefer_ML_classification",
+                "value": "True",
+                "type": "Boolean",
+                "createdat": "2024-11-18T15:11:02Z",
+                "updatedat": "2024-11-18T15:11:02Z"
+            }
+        ]
+    },
+    "summary": {
+        "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+        "name": "GA Progression",
+        "version": 1,
+        "isactive": 1,
+        "createdby": "Payal Sharma",
+        "updatedby": "Payal Sharma",
+        "createdat": "2024-11-18 14:45:22",
+        "updatedat": "2024-11-18 14:45:22"
+    }
+}

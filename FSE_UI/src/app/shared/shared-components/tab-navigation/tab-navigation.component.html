@@ -1,0 +1,15 @@
+<div class="navbar-align">
+  <div *ngFor="let navItem of navigation" class="nav-link nav-link-ltr navigation-tab"
+    [class.active]="navItem.isSelected" [class.disabled]="!navItem.enabled" (click)="selectTab(navItem)">
+    {{navItem.label}}
+  </div>
+  <div class="nav-link status-display" *ngIf="statusDisplay">
+    <span class="px-1">Status</span>
+    <kendo-chip [ngStyle]="{'background-color': statusDisplay.name === 'in_progress' ? '#FEF0C4' : '#CBEDE8' }"
+      [label]="statusDisplay.label">
+    </kendo-chip>
+  </div>
+  <div class="status-display">
+    <ng-content></ng-content>
+  </div>
+</div>

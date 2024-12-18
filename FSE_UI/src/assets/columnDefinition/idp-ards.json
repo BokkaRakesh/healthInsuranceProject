@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Name",
+    "id": "Name",
+    "default": true,
+    "checked": true,
+    "width": 260,
+    "order": 1,
+    "hasIcon": true,
+    "icon": "outlined-network-drive",
+    "hasTooltip": false
+  },
+  {
+    "name": "Created",
+    "id": "CreatedAt",
+    "default": true,
+    "checked": true,
+    "width": 130,
+    "order": 2,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Subjects",
+    "id": "Subjects",
+    "default": true,
+    "checked": true,
+    "width": 120,
+    "order": 3,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Sessions",
+    "id": "Sessions",
+    "default": true,
+    "checked": true,
+    "width": 120,
+    "order": 4,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Acquisitions",
+    "id": "Aquisitions",
+    "default": true,
+    "checked": true,
+    "width": 120,
+    "order": 5,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Files",
+    "id": "Files",
+    "default": true,
+    "checked": true,
+    "width": 120,
+    "order": 6,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Modality",
+    "id": "Modality",
+    "default": true,
+    "checked": true,
+    "width": 140,
+    "order": 7,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Access",
+    "id": "Access",
+    "default": true,
+    "checked": true,
+    "width": 110,
+    "order": 8,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Visits",
+    "id": "visits",
+    "default": false,
+    "checked": false,
+    "width": 120,
+    "order": 12,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "Created By",
+    "id": "CreatedBy",
+    "default": false,
+    "checked": false,
+    "width": 130,
+    "order": 10,
+    "hasIcon": false,
+    "hasTooltip": false
+  },
+  {
+    "name": "ARD Unique ID",
+    "id": "ARDUniqID",
+    "default": true,
+    "checked": true,
+    "width": 160,
+    "order": 11,
+    "hasIcon": false,
+    "hasTooltip": false
+  }
+]

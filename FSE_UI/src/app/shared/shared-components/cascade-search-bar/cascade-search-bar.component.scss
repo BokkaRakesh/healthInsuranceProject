@@ -1,0 +1,99 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+::ng-deep {
+    .k-textbox {
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
+        transition: width 0.8s ease-in-out;
+    }
+    
+    @media (max-width: 1024px) {
+        .k-textbox.expanded {
+            width: 800px !important;
+        }
+    }
+ 
+    @media (max-width: 1300px) {
+        .k-textbox.expanded {
+            width: 1024px !important;
+        }
+    }
+    @media (max-width: 1100px) {
+        .k-textbox.expanded {
+            width: 786px !important;
+        }
+    }
+ 
+    @media (max-width: 768px) {
+        .k-textbox.expanded {
+            width: 500px !important;
+        }
+    }
+
+    @media (max-width: 1422px) {
+        .k-textbox.expanded {
+            width: 900px !important;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        .k-textbox.expanded {
+            width: 1100px !important;
+        }
+    }
+
+    .k-input-inner {
+        font-size: 16px;
+        font-family: $Roche-Sans-Regular;
+    }
+    // input-box
+    .k-input-solid.k-focus, .k-input-solid:focus, .k-input-solid:focus-within {
+        box-shadow: none;
+    }
+}
+
+.search-input {
+    background-color: $roche-blue-50;
+    border: none;
+    outline: none;
+    padding: 5px;
+    
+    :focus {
+        background-color: none;
+        box-shadow: none;
+    }
+}
+
+.search-icon {
+    content: url("../../../../assets/images/cascade-search-icon.svg");
+}
+
+.clear-btn {
+    border: none;
+    background: none;
+    font-family: $Roche-Sans-Regular;
+    font-size: 14px;
+    color: $roche-blue-primary;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        content: url("../../../../assets/images/close.svg");
+    }
+}
+
+.search-btn {
+    background-color: $roche-blue-primary;
+    border: none;
+    color: $roche-background;
+    border-radius: 3px;
+    vertical-align: middle;
+    span {
+        content: url("../../../../assets/images/arrow_right.svg");
+        filter: brightness(0) invert(1);
+    }
+}

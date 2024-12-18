@@ -1,0 +1,244 @@
+<div class="container-fluid summary-container pt-3 px-4">
+
+    <div class="row">
+        <div class="row mb-2">
+            <div class="col-auto">
+                <app-breadcrumb-navigation></app-breadcrumb-navigation>
+
+            </div>
+        </div>
+        <div class="dummy-class">
+            <p class="ra-heading"> Run Analysis
+                <button type="button" (click)="newAnalysis()" *ngIf="algoBtnLabel === 'Running...' && gridRunData" class="btn btn-primary run-analysis-btn">
+                    New Analysis</button>
+                <button type="button" class="view-analysis-btn" (click)="viewAnalysis()">
+                    <img src="../assets/images/clock_timer.svg">View Analysis Runs</button>
+            </p>
+        </div>
+
+        <!-- First Section -->
+        <div class="col-4 first-section-outer">
+            <div class="col-12 py-2">
+                <!--Default div for run analysis-->
+                <div class="step-header d-flex align-items-center py-2">
+                    <!--Default div for run analysis-->
+                    <span class="step step-number" *ngIf="selectedARDCatalogData.length === 0 && (!idpId)">1</span>
+
+                    <!--On Selection of ard,below img should get display-->
+                    <span><img class="pe-2 pb-1 checkMarkIcon" *ngIf="selectedARDCatalogData.length > 0 || ardId"
+                            src="../assets/images/circle_checkmark.svg"></span>
+                    <span class="step-title ms-2">ARD</span>
+                </div>
+
+                <div class="step-content my-2 py-3 px-4 scroll-bar run-analysis-step-label">
+                    <!--Default container for run analysis-->
+                    <ng-container *ngIf="selectedARDCatalogData.length === 0 && (!idpId)">
+                        <a (click)="openRAArdCatalogDialog()">
+                            <span class="ard-catalog py-0"></span>
+                            <span class="pe-1"></span>
+                            <span class="label-color"> ARD Catalog</span>
+                        </a>
+                        <ng-container>
+                        </ng-container>
+                    </ng-container>
+                    <!--On Selection of ard below container should get display-->
+                    <ng-container *ngIf="selectedARDCatalogData.length > 0 || ardId">
+                        <!-- *ngFor="let item of selectedARDCatalogData" -->
+                        <div class="row col-12">
+                            <div class="col-8 algo-name" *ngIf="!ardId">
+                                {{selectedARDCatalogData[0].Name}}&nbsp;<span
+                                    class="algo-version">{{selectedARDCatalogData[0].currentversion}}</span></div>
+                            <div class="col-8 algo-name" *ngIf="ardId">
+                                {{ardData?.data?.summary?.name}}<span
+                                    class="algo-version">{{ardData?.data?.summary?.currentversion}}</span>
+                            </div>
+                            <div class="col-4"><img class="pe-2 pb-1 algo-select edit-icon" *ngIf="!runAnalysisClicked"
+                                    src="../assets/images/write.svg" alt="" (click)="openRAArdCatalogDialog()" /></div>
+                        </div>
+                    </ng-container>
+                </div>
+                <div class="col-12 py-2" *ngIf="selectedARDCatalogData.length > 0">
+                    <p class="catalog">Description</p>
+                    <p>{{ardData?.data?.summary?.description}}</p>
+                </div>
+                <div class="col-12 py-2">
+                    <ol class="list-group list-group-numbered">
+                        <ng-container *ngFor="let ards of ardDetails">
+                            <li class="list-group-item d-flex justify-content-between align-items-start" *ngIf="ards.value && ards.label">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">{{ ards.label }}</div>
+                                {{ards.value}}
+                              </div>
+                            </li>
+                        </ng-container>
+                        </ol>
+                </div>
+
+                <div class="col-12 py-2">
+
+                    <!-- <ng-container *ngFor="let item of icECtable">
+                        <span class="mb-0 mt-3 filter-list-label catalog">{{ item.id }}</span> <span class="decValues">
+                            {{item.value}}</span>
+                        <hr class="m-0 mt-1">
+                    </ng-container> -->
+                    <!-- <app-grid *ngIf="gridData?.length > 0" [pageSize]="gridData.length" [gridData]="gridData"
+                    [gridColumns]="runAnalysisDescColumns"
+                    [pagination]="pagination"
+                    >
+                    </app-grid> -->
+
+                    <!-- <app-run-analysis-grid [gridData]="gridData.data.items" [gridColumns]="runAnalysisDescColumns"></app-run-analysis-grid> -->
+
+                </div>
+            </div>
+
+            <app-run-analysis-modal-dialog *ngIf="showAlgoPopup" [selectedCatalog]="selectedCatalog" [idpId]="idpId"
+                (actionDialogEmitter)="dialogAction($event)" (selectedAlgoRowEmitter)="selectedAlgoRow($event)"
+                (selectedAlgoEventEmitter)="getSelectedAlgo($event)"
+                (selectedARDRowEmitter)="selectedARDRow($event)"></app-run-analysis-modal-dialog>
+
+            <app-view-run-analysis *ngIf="showViewAnalysis" (actionDialogEmitter)="dialogAction($event)"
+                (actionMenuEmitter)="getSelectedViewAnalysisData($event)">
+            </app-view-run-analysis>
+
+        </div>
+
+        <!--Middle section-->
+        <div class="col-4 middle-section-outer">
+
+            <div class="col-12 py-2">
+
+                <div class="step-header my-2 d-flex align-items-center">
+                    <!-- Default view of middle section -->
+                    <span class="step step-number" *ngIf="!selectedAlgoDetails">2</span>
+
+                    <!--On Selection of ard,below img should get display-->
+                    <span *ngIf="selectedAlgoDetails"><img class="pe-2 pb-1 checkMarkIcon"
+                            src="../assets/images/circle_checkmark.svg"></span>
+                    <span class="step-title ms-2">Algorithm</span>
+                </div>
+                <!-- <div class="step-content my-2 py-3 px-4 scroll-bar run-analysis-step-label">
+                    <div *ngFor="let catalog of selectedAlgoCatalogData" class="catalog">
+                        {{catalog.name}} 
+                        <kendo-svg-icon [icon]="icons.pencilIcon" (click)="openRAAlgoCatalogDialog()"></kendo-svg-icon>
+                    </div>
+                </div> -->
+                <div class="step-content my-2 py-3 px-4 scroll-bar run-analysis-step-label">
+                    <!-- Default view of middle section -->
+                    <ng-container *ngIf="!selectedAlgoDetails">
+                        <a (click)="openRAAlgoCatalogDialog()">
+                            <span class="algo-catalog"></span>
+                            <span class="pe-1"></span>
+                            <span class="labelColor">Algo Catalog</span>
+                        </a>
+                    </ng-container>
+
+
+                    <!--On Selection of algo below container should get display-->
+                    <ng-container *ngIf="selectedAlgoDetails">
+                        <div class="row col-12">
+                            <div class="col-4 seleted-algo-name">{{selectedAlgoDetails.data.name}}</div>
+                            <div class="col-4 algo-selected-version">{{selectedAlgoDetails.data.version}}</div>
+                            <div class="col-4 algo-edit-icon" (click)="openRAAlgoCatalogDialog()"><img
+                                    *ngIf="!runAnalysisClicked" class="pe-2 pb-1 edit-icon"
+                                    src="../assets/images/write.svg" alt="" /></div>
+                        </div>
+
+                    </ng-container>
+                </div>
+            </div>
+
+            <!-- <app-grid [raNavigation]="true" [gridData]="gridFilesData" [checkBoxSelection]="false" [gridColumns]="gridFilesColumns"> </app-grid> -->
+           
+           
+            <div class="row col-12" *ngIf="filesGridData">
+                <app-grid  [gridData]="filesGridData" [noPagination]="true"  [checkBoxSelection]="false" [gridColumns]="filesColumns" [height]="height"></app-grid>
+            </div>
+            <div class = row>
+                <div class="col-10"></div>
+                <div class="col-2 add-files-outer">
+                    <!--Enable add files if algo catalog selected-->
+                    <ng-container>
+                        <span class="add-files-label" [ngClass]="selectedAlgoDetails ? 'algoSelected': ''">Add Files</span>
+                        <span class="pe-1"></span>
+                        <span class="attach-files">
+                            <a *ngIf="selectedAlgoDetails" (click)="addFiles()">
+                                <img src="../assets/images/attach-file-run-analysis-enable.svg"
+                                    class="add-files-enabled"></a>
+                            <a *ngIf="!selectedAlgoDetails">
+                                <img src="../assets/images/attach-file-run-analysis.svg" class="attach-files-img"></a>
+                        </span>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="col-12" class="configuration-outer" *ngIf="selectedAlgoDetails">
+                <run-analysis-configuration *ngIf="showConfiguration" [algoConfigurationsData]="algoConfigurationsData"
+                    (configurationFormValues)="getConfigurationFormValues($event)"></run-analysis-configuration>
+            </div>
+
+            <div class="col-12" class="run-analysis-btn-outer">
+                <div class="step-header d-flex align-items-center run-analysis-label-div">
+                    <span class="step step-number">3</span>
+                    <span class="step-title ms-2">Run Analysis</span>
+                </div>
+                <!-- {{resultFilters[0].status}} -->
+                <kendo-listview [data]="selectedRunAnalysisStatus" containerClass="k-d-flex k-flex-col k-flex-nowrap">
+                    <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-index="index">
+                        <div class="algo-filters">
+                            <div class="algo-filter">
+                                <img [src]="dataItem.icon" [alt]="dataItem.display" class="stats-img" />
+                            </div>
+                            <div class="algo-filter">{{dataItem.display}}</div>
+                            <div class="algo-filter algo-filter-style"
+                                (click)="getRunAnalysisListData(dataItem, index)">
+                                {{dataItem.showing}}</div>
+                            <div class="algo-filter algo-count-style" class="status-count">{{dataItem.count}}</div>
+                        </div>
+                    </ng-template>
+                </kendo-listview>
+                <!-- [ngClass]="disableRunAlgoBtn ? 'algo-disable-btn' : ''" -->
+                <button class="run-analysis-btn btn mt-2 w-100"
+                    [disabled]="(this.selectedARDCatalogData.length === 0 || !this.ardId) && (!this.selectedAlgoDetails)"
+                    (click)="runAnalysis('clicked')" [ngClass]="((this.selectedARDCatalogData.length === 0 || !this.ardId) 
+                    && (!this.selectedAlgoDetails)) || ( algoBtnLabel === 'Running...' )? 'algo-disable-btn' : '' ">
+                    {{algoBtnLabel}} <img src="../assets/images/clock_programmable_timer.svg"
+                        *ngIf="algoBtnLabel === 'Running...'" />
+                    <!-- <img src="../assets/images/idp_arrow_grey.png" *ngIf="!(this.selectedARDCatalogData.length === 0 || !this.ardId) && (!this.selectedAlgoDetails)" alt="arrow_right" /> -->
+                    <img src="../assets/images/arrow_right_white.svg" *ngIf="algoBtnLabel != 'Running...'"
+                        alt="arrow_right" />
+                </button>
+            </div>
+            <!-- <run-analysis-documentation *ngIf="showDocumentation"
+                [documentationData]="documentationData"></run-analysis-documentation> -->
+        </div>
+
+        <!--Third Section-->
+        <!-- [ngClass]="runAlgoNotFound? 'runAlgoNotFoundBgColor':''" -->
+        <div class="col-4 third-section-three" [ngClass]="runAlgoNotFound? 'run-algo-not-found-bg-Color':''">
+            <div class="col-12 py-2 runs-section">
+                <img src="../assets/images/columns_settings.svg" class="column-settings-img">
+                <span class="run-label">Runs <a (click)="refreshRunAnalysis()"><img
+                            src="../assets/images/Outlined-refresh.svg" class="refresh-icon"></a></span>
+                <span class="run-results"> {{gridRunData ? gridRunData.length : 0}} Results</span>
+            </div>
+
+            <ng-container>
+                <div *ngIf="gridRunData">
+                    <app-grid [raNavigation]="true" [raStatus]="true" [gridData]="gridRunData"
+                        [checkBoxSelection]="false" [gridColumns]="gridColumns" [runAnalysisRunSectionGrid]="true"
+                        (sendRowDataEmitter)="openRunAnalysisDetails($event)"> </app-grid>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="!gridRunData && !runAnalysisClicked">
+                <app-no-results-found [runAlgoNotFound]="true"></app-no-results-found>
+            </ng-container>
+            <ng-container *ngIf="!gridRunData && runAnalysisClicked">
+                <div class="loading">
+                    Please Wait<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </ng-container>
+        </div>
+
+    </div>
+</div>
+<div kendoDialogContainer></div>

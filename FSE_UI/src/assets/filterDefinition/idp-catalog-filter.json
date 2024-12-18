@@ -1,0 +1,158 @@
+[
+ 
+    {
+        "id": "StudyAcronym",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Name"
+    },
+    {
+        "id": "StudyScientificArea",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Scientific Area"
+    },
+    {
+        "id": "Subjects",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Subject ID"
+    },
+    {
+        "id": "Sessions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Sessions"
+    },
+    {
+        "id": "Aquisitions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Aquisitions"
+    },
+    {
+        "id": "Files",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Files"
+    },
+  
+    {
+        "id": "DataSources",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Data Sources"
+    },
+    {
+        "id": "StudyIndication",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Indication/Therapeutic Area"
+    },
+    {
+        "id": "StudyThemeMolecule",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Compound / Investigational Drug"
+    },
+    {
+        "id": "StudyPhase",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Phase"
+    },
+    {
+        "id": "StudyType",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Type"
+    },
+    {
+        "id": "StudyStatus",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Status"
+    },
+    {
+        "id": "StudyThemeNumber",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Study Theme Number"
+    },
+    {
+        "id": "subjectenrollmentsiteid",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Enrollment Site ID"
+    },
+    {
+        "id": "subjectethnicity",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Ethinicity"
+    },
+    {
+        "id": "subjectrace",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Race"
+    },
+    {
+        "id": "subjectsex",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddSingle",
+        "displayName": "Gender"
+    },
+    {
+        "id": "visitage",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Visit Age"
+    },
+    {
+        "id": "dicombodypartexamined",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Body Part examined"
+    },
+    {
+        "id": "filetype",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "File Type"
+    },
+    {
+        "id": "FileModalitiesInStudy",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showDatePicker",
+        "displayName": "file Modality"
+    },
+    {
+        "id": "Modality",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Modality"
+    }
+]

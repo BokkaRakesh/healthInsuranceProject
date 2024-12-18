@@ -1,0 +1,27 @@
+[
+    {
+        "key": "do_reg_check",
+        "label": "Do Regular Check",
+        "formControlName": "doRegCheck"
+    },
+    {
+        "key": "do_resize",
+        "label": "Do Resize",
+        "formControlName": "doResize"
+    },
+    {
+        "key": "do_rgb_conv",
+        "label": "Do RGB Convertion",
+        "formControlName": "doRGBConv"
+    },
+    {
+        "key": "do_strip_rm",
+        "label": "Do Strip RM",
+        "formControlName": "doStripRM"
+    },
+    {
+        "key": "prefer_ML_classification",
+        "label": "Prefer ML Classfication",
+        "formControlName": "preferMLClassification"
+    }
+]

@@ -1,0 +1,149 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+kendo-appbar {
+    box-shadow: none;
+    background-color: $roche-background;
+    height: 72px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-width: 1px;
+    border-color: $roche-border;
+}
+
+.k-appbar-separator {
+    min-height: 1rem;
+    padding: 0;
+    color: $roche-grey-400;
+    border-width: 0 0 0 1.5px;
+}
+
+.dot {
+  height: 38px;
+  width: 38px;
+  background-color: $roche-blue-100;
+  border-radius: 50%;
+  border-width: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.text {
+    color: $roche-blue-primary;
+}
+
+.title {
+    font-family: $Roche-Sans-Bold;
+    font-size: 20px;
+}
+.asset {
+    font-family: $Roche-Sans-Regular;
+    font-size: 14px;
+    padding: 5px;
+}
+  
+.help-btn, .notification-btn {
+  background-color: $roche-background;
+  border: none;
+}
+
+.help-btn.k-button-solid-base:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.help-btn.k-button-solid-base:hover {
+    background-color: $roche-grey-5-hover;
+}
+
+.notification-btn.k-button-solid-base:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.notification-btn.k-button-solid-base:hover  {
+  background-color: $roche-grey-5-hover;
+}
+
+.help.k-animation-container-shown {
+    width: 270px;
+    height: 240px;
+    box-shadow: 0 0 12px $roche-shadow;
+}
+
+.menu-item {
+  margin-bottom: 0;
+  display: block;
+  font-family: $Roche-Sans-Regular;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  color: $roche-grey-700;
+}
+
+p.menu-item:hover {
+  background-color: $roche-grey-5-hover;
+  cursor: pointer;
+}
+
+.bookmarks-section {
+  font-family: $Roche-Sans-Medium;
+  font-size: 14px;
+  color: $roche-grey-900;
+  .bookmark-item {
+    font-family: $Roche-Sans-Regular;
+    font-size: 16px;
+    color: $roche-blue-primary;
+  }
+}
+
+.profile.k-animation-container-shown {
+  width: 242px;
+  height: 240px;
+}
+
+.dropdown-items {
+  padding: 0 25px 25px 25px;
+}
+
+.dropdown-item:hover {
+  background-color: $roche-grey-5-hover;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+::ng-deep .popover {
+  border-radius: inherit;
+}
+
+::ng-deep .logout-align{ 
+  cursor: pointer !important;
+}
+
+::ng-deep  .dropdown-item:hover, .dropdown-item:focus {
+  cursor: pointer !important;
+}
+
+::ng-deep .popover-body{
+  height: 240px;
+  width: 200px;
+  border-radius: 0px;
+}
+
+
+.gip-chat-btn {
+  background-color: $roche-blue-primary;
+  border-color: $roche-blue-primary;
+  span:nth-child(1) {
+      content: url("../../../../assets/images/chat-icon.svg");
+  }
+  span:nth-child(2) {
+      font-family: $Roche-Sans-Medium;
+      font-size: 16px;
+  }
+  span:nth-child(3) {
+      font-family: $Roche-Sans-Light;
+      font-size: 16px;
+  }
+}

@@ -1,0 +1,143 @@
+.card-carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+}
+
+::ng-deep .k-scrollview-next .k-icon {
+  color: #000 !important;
+}
+
+::ng-deep .k-scrollview-prev .k-icon {
+  color: #000 !important;
+}
+
+::ng-deep .k-scrollview-wrap {
+  margin: 0 auto;
+}
+
+::ng-deep kendo-scrollview {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+kendo-tabstrip {
+  width: 100%;
+}
+
+.tab-image {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+::ng-deep .k-tabstrip-top>.k-tabstrip-items-wrapper .k-item:active {
+  background: none !important;
+  border: none !important;
+}
+
+::ng-deep .k-tabstrip-top>.k-tabstrip-items-wrapper .k-item.k-active {
+  background: none !important;
+  border: none !important;
+}
+
+::ng-deep .k-link {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  border: none !important;
+  cursor: pointer;
+  all: unset !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+::ng-deep .k-link:hover {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  border: none !important;
+  cursor: pointer;
+  all: unset !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+::ng-deep .k-link:active {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  border: none !important;
+  cursor: pointer;
+  all: unset !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+::ng-deep .k-tabstrip-items .k-item {
+  border: none !important;
+  all: unset !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+::ng-deep .k-tabstrip-prev:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+::ng-deep .k-button-overlay {
+  background-color: transparent !important;
+  display: none !important;
+}
+
+::ng-deep .k-button::before {
+  display: none !important;
+}
+
+::ng-deep .k-tabstrip-prev {
+  margin-right: 2% !important;
+}
+
+::ng-deep .k-tabstrip-next {
+  margin-left: 2% !important;
+}
+
+::ng-deep kendo-svgicon svg {
+  display: none !important;
+}
+
+::ng-deep kendo-svgicon.k-svg-i-caret-alt-left.k-button-icon.k-svg-icon.k-icon {
+  background-image: url('../../../../assets/images/chevron-left.svg') !important;
+  background-size: contain;
+  background-repeat: repeat;
+  width: 24px;
+  height: 24px;
+}
+
+::ng-deep kendo-svgicon.k-svg-i-caret-alt-right.k-button-icon.k-svg-icon.k-icon {
+  background-image: url('../../../../assets/images/chevron-right.svg') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}

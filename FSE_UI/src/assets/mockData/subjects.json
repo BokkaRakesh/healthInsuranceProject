@@ -1,0 +1,514 @@
+{
+    "data": {
+        "items": [
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fff26d90-d64e",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ffefff73-7061-48d6-99f2-54a1c3d30a32",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "99a02ad8765d027c179d4365903df92bc11bca0d3e13a9488cf4621a2be49de9",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ffe8b6b8-c13a-44cc-ad46-0de570830e65",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ffdfa2da-5a9d-4a5d-bd22-804d32bea711",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ffbe395e-36a7-4919-bd6b-1dbfb61de820",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "5dd0ab19d080cf47a47ffb5a72b49a1044195c246ee093dba90b254a155a702b",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ffb062f3-6cca-413e-8e3f-f9d7927cbeb3",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "88cdf5ff717860eb3743c7e92ffddc6770042fe837fea85c9987e8c4521893ce",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ff9fc614-9e16-4f8b-863d-2a3a2683b678",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "5ba05af25f344ded7e53e24c0511d1a56a7e44e742f206cecebe5149fd3d83af",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ff7735d9-d32b-4a3a-9a24-0b6dba1b82c7",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ff5a08bc-5557-4d4a-90b0-fd073795c725",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ff47e0d2-57f6-46ef-8a78-f71aff2da20a",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "ff0a12a7-80c4-42f1-95a0-d48e9a4d6aa2",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "23e2d89db4bb7924400210d3555eaa2c153317a415c73b955a03312fa748d427",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fee211d3-5248-40a8-b706-ea6db95d7678",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "9ce349796a3249db66d6fbc1cf7fcb05da82a8e0983f1783f5b06732b964c3b2",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fed98406-b39d-4a3c-aa54-95b24cfbce7c",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "feced4a7-785b-4fac-8d44-2a27afd75de0",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "35878936f057b92085cacfa9bbdcb31d261b5eff078085a99d934a3f76c8f5ec",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fe66df9e-2dc2-4ba9-9711-a2092a4036f8",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "d1f8c8b0d8e0e492dcfccd248f85e60f9a6eb616160fd7c960d39bc206bb6dcb",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fe4f7981-7f8a-4100-9cda-2f2724f6ac71",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fe11440f-ccc5-473d-9fe9-d1cabfead460",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fe0530dc-10e5-48b8-b657-4a3cc7261846",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": null,
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fdfef49c-7fee-4a0c-98b8-64f4de93b53f",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            },
+            {
+                "SubjectID": "949ac8397a923cff0358b510f58705bc3112b89c6dd665e072b060e706d6e7d1",
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "fdf9f7af-402b-4ca8-b924-71985af9d60f",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology"
+            }
+        ],
+        "sort": {
+            "field": "Subject_Unq_ID",
+            "order": "DESC"
+        },
+        "pagination": {
+            "totalCount": 2404,
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "idp_unq_id": "0628e6b9-95a3-4749-9b27-dd49f9bdbca5",
+            "idp_name": "ss 22 idp",
+            "status": "active",
+            "createdby": "Priyanka Soni",
+            "currentversion": 1,
+            "createdat": "11/14/2024",
+            "updatedat": "11/14/2024",
+            "subjects": 1202,
+            "files": 75854,
+            "sessions": 7709,
+            "acquisitions": 63854,
+            "modality": "CT, CR, OT, NM, PT, MR",
+            "datasources": "Imaging, Clinical"
+        },
+        "filters": [
+            {
+                "id": "SubjectID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "23e2d89db4bb7924400210d3555eaa2c153317a415c73b955a03312fa748d427",
+                    "35878936f057b92085cacfa9bbdcb31d261b5eff078085a99d934a3f76c8f5ec",
+                    "5ba05af25f344ded7e53e24c0511d1a56a7e44e742f206cecebe5149fd3d83af",
+                    "5dd0ab19d080cf47a47ffb5a72b49a1044195c246ee093dba90b254a155a702b",
+                    "88cdf5ff717860eb3743c7e92ffddc6770042fe837fea85c9987e8c4521893ce",
+                    "949ac8397a923cff0358b510f58705bc3112b89c6dd665e072b060e706d6e7d1",
+                    "99a02ad8765d027c179d4365903df92bc11bca0d3e13a9488cf4621a2be49de9",
+                    "9ce349796a3249db66d6fbc1cf7fcb05da82a8e0983f1783f5b06732b964c3b2",
+                    "d1f8c8b0d8e0e492dcfccd248f85e60f9a6eb616160fd7c960d39bc206bb6dcb"
+                ]
+            },
+            {
+                "id": "SubjectEnrollmentSiteId",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "Subject_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "fdf9f7af-402b-4ca8-b924-71985af9d60f",
+                    "fdfef49c-7fee-4a0c-98b8-64f4de93b53f",
+                    "fe0530dc-10e5-48b8-b657-4a3cc7261846",
+                    "fe11440f-ccc5-473d-9fe9-d1cabfead460",
+                    "fe4f7981-7f8a-4100-9cda-2f2724f6ac71",
+                    "fe66df9e-2dc2-4ba9-9711-a2092a4036f8",
+                    "feced4a7-785b-4fac-8d44-2a27afd75de0",
+                    "fed98406-b39d-4a3c-aa54-95b24cfbce7c",
+                    "fee211d3-5248-40a8-b706-ea6db95d7678",
+                    "ff0a12a7-80c4-42f1-95a0-d48e9a4d6aa2",
+                    "ff47e0d2-57f6-46ef-8a78-f71aff2da20a",
+                    "ff5a08bc-5557-4d4a-90b0-fd073795c725",
+                    "ff7735d9-d32b-4a3a-9a24-0b6dba1b82c7",
+                    "ff9fc614-9e16-4f8b-863d-2a3a2683b678",
+                    "ffb062f3-6cca-413e-8e3f-f9d7927cbeb3",
+                    "ffbe395e-36a7-4919-bd6b-1dbfb61de820",
+                    "ffdfa2da-5a9d-4a5d-bd22-804d32bea711",
+                    "ffe8b6b8-c13a-44cc-ad46-0de570830e65",
+                    "ffefff73-7061-48d6-99f2-54a1c3d30a32",
+                    "fff26d90-d64e-4e36-abe9-67a69d6ab079"
+                ]
+            },
+            {
+                "id": "SubjectEthnicity",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectRace",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectSex",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "female",
+                    "male"
+                ]
+            },
+            {
+                "id": "StudyNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GO29436"
+                ]
+            },
+            {
+                "id": "StudyIndication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Lung cancer"
+                ]
+            },
+            {
+                "id": "StudyThemeMolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Tecentriq"
+                ]
+            },
+            {
+                "id": "StudyPhase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "StudyType",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "StudyScientificArea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Respiratory Disease | Oncology"
+                ]
+            },
+            {
+                "id": "StudyStatus",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Clinical Closure"
+                ]
+            },
+            {
+                "id": "StudyAcronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "IMpower 150"
+                ]
+            },
+            {
+                "id": "StudyThemeNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "30019"
+                ]
+            }
+        ]
+    }
+}

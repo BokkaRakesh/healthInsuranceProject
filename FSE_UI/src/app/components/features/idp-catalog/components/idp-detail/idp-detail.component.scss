@@ -1,0 +1,45 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+ 
+.idp-name {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-grey-900;
+}
+
+.favourite-heart {
+    content: url(../../../../../../assets/images/outlined-heart.svg);
+}
+
+.favourite-heart-blue {
+    content: url(../../../../../../assets/images/favourite.svg);
+}
+
+.idp-down {
+    content: url(../../../../../../assets/images/chevron_down.svg);
+}
+
+.filter-btn {
+    font-size: 16px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-blue-primary;
+}
+
+.filter-btn:hover {
+    background-color: transparent;
+    color: $roche-blue-primary;
+}
+
+.filter-btn-icon {
+    content: url("../../../../../../assets/images/filter.svg");
+    vertical-align: middle;
+}
+
+.filter-list-label {
+    cursor: pointer;
+}
+
+.right-panel-summary {
+    height: 800px;
+    overflow-y: auto;
+}

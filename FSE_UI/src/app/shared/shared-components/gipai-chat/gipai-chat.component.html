@@ -1,0 +1,85 @@
+<kendo-dialog title="dsd" (close)="close()" [minWidth]="550" [width]="dialogWidth" [height]="dialogHeight">
+    <div class="dialog-body">
+        <div class="container-fluid gipai">
+            <div class="row  container-hight">
+                <div class="col-md-3 chat-left-panel-top">
+                    <div class="chat-wrapper">
+                        <h5 class="chat-history">Chat history</h5>
+                        <span class="chat-history-edit pe-1"></span>
+                    </div>
+                </div>
+                <div class="col-md-9 header-icon">
+                    <div class="gip-head-title">
+                        <span class="align-text-bottom pe-1"></span>
+                        <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+                    </div>
+                </div>
+                <div class="col-md-3 chat-left-panel">
+                   
+                    <div class="scroll-wrapper">
+                        <div class="history" *ngFor="let day of historyList.history">
+                          <span class="days-chat">{{day.date}}</span>
+                      <div class="hover-div" *ngFor="let msg of day.message">
+                        <p class="recent-queries"  (click)="OnSelectData(msg.text)">
+                           <span class="msg-text">{{ msg.text }}</span>  <img class="arrow-icon" src="../assets/images/carat.svg" />
+                          </p>
+                         
+                      </div>
+                        
+                        </div>
+                      </div>
+                </div>
+                  <!-- Chat Box left-panel Component -->
+                <div class="col-md-9 col-md-8 chat-right-panel ">
+                   <div class="messages-chat-header">
+
+                  
+                    <div class="chat-one-container" *ngIf="gipaiChat.length==0">
+                        <p class="question">What Can I Help you with?</p>
+                        <div class="searchTextBox">
+                            <app-gipai-chat-search (search)="searchedQuery($event)" [backgroundColor]="textBackgroundColor"
+                                [placeHolder]="placeHolder"  [tooltipContentData]="tooltipContentArray"></app-gipai-chat-search>
+                                <span class="center-text">GIPAI can make mistakes. Check important information.</span>
+                        </div>
+                    
+                        <div class="examples mt-2">
+                            <button *ngFor="let example of  examples.examples" kendoButton look="outline"
+                            (click)="OnSelectData(example)" class="rounded-text example-button suggestion-btn rounded-pill"
+                            [innerHTML]="formatText(example)">
+                    </button>    
+                        </div>
+                    </div>
+
+                    <div class="chat-two-container" *ngIf="gipaiChat.length!=0">
+                        <div class="messages-chat" #scrollBottom>
+                            <div *ngFor="let gipai of gipaiChat">
+                                 <div class="message text-only  ms-0" *ngIf="gipai.system">
+                                    <div class="request">
+                                        <img class="gip-sys-icon" src="../assets/images/gipai-chat-response.svg">
+                                        <p class="text m-0"> {{gipai.text}}</p>
+                                     </div>
+                                </div>
+                                <div class="message text-only" *ngIf="!gipai.system">
+                                    <div class="response">
+                                    <p class="response-text ms-5"> {{gipai.text}} </p>
+                                </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="searchTextBox mt-3">
+                            <app-gipai-chat-search (search)="searchedQuery($event)" [backgroundColor]="textBackgroundColor" [placeHolder]="placeHolder2" [tooltipContentData]="tooltipContentArray"></app-gipai-chat-search>
+                            <span class="center-text">GIPAI can make mistakes. Check important information.</span>
+                             </div>
+                    </div>
+
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</kendo-dialog>
+
+

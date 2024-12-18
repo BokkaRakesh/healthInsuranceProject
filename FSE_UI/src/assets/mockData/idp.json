@@ -1,0 +1,403 @@
+{
+    "data": {
+        "items": [
+            {
+                "StudyID": "577aa911-cd9d-4994-83a6-19a1f4e93698",
+                "StudyNumber": "GO29436",
+                "StudyType": "Interventional",
+                "StudyAcronym": "IMpower 150",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "Subjects": 1202,
+                "Files": 75854,
+                "Sessions": 7709,
+                "Aquisitions": 63854,
+                "Modality": "",
+                "DataSources": [
+                    {
+                    "id": "Imaging",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": false,
+                    "requested": false
+                    },
+                    {
+                    "id": "Omics",
+                    "access": true,
+                    "requested": false
+                    }
+                     ],
+                "StudyPCDActual": "2019-09-13",
+                "StudyCreateUser": null
+            },
+            {
+                "StudyID": "00001bd9-da12-4f55-bdb0-a95a392a7640",
+                "StudyNumber": "ML21768",
+                "StudyType": "Interventional",
+                "StudyAcronym": "MAINTENANCE",
+                "StudyScientificArea": "Oncology | Gastroenterology",
+                "StudyThemeMolecule": "Avastin",
+                "StudyIndication": "Colorectal cancer",
+                "StudyPhase": "Phase III",
+                "Subjects": null,
+                "Files": null,
+                "Sessions": null,
+                "Aquisitions": null,
+                "Modality": "",
+                "DataSources": [
+                    {
+                    "id": "Imaging",
+                    "access": true,
+                    "requested": false
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Omics",
+                    "access": false,
+                    "requested": true
+                    }
+                     ],
+                "StudyPCDActual": null,
+                "StudyCreateUser": ""
+            },
+            {
+                "StudyID": "02504842-d0e3-418d-b34c-cffce21323b8",
+                "StudyNumber": "GO42909",
+                "StudyType": "Interventional",
+                "StudyAcronym": "",
+                "StudyScientificArea": "Hematology | Oncology",
+                "StudyThemeMolecule": "Avastin",
+                "StudyIndication": "Colorectal cancer",
+                "StudyPhase": "Phase III",
+                "Subjects": null,
+                "Files": null,
+                "Sessions": null,
+                "Aquisitions": null,
+                "Modality": "",
+                "DataSources": [
+                    {
+                    "id": "Imaging",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": true,
+                    "requested": false
+                    },
+                    {
+                    "id": "Omics",
+                    "access": true,
+                    "requested": false
+                    }
+                     ],
+                "StudyPCDActual": null,
+                "StudyCreateUser": ""
+            },
+            {
+                "StudyID": "00001bd9-da12-4f55-bdb0-a95a392a7641",
+                "StudyNumber": "ML21769",
+                "StudyType": "Interventional",
+                "StudyAcronym": "MAINTENANCE",
+                "StudyScientificArea": "Oncology | Gastroenterology",
+                "StudyThemeMolecule": "Avastin",
+                "StudyIndication": "Colorectal cancer",
+                "StudyPhase": "Phase III",
+                "Subjects": null,
+                "Files": null,
+                "Sessions": null,
+                "Aquisitions": null,
+                "Modality": "",
+                "DataSources": [
+                    {
+                    "id": "Imaging",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Omics",
+                    "access": false,
+                    "requested": true
+                    }
+                     ],
+                "StudyPCDActual": null,
+                "StudyCreateUser": ""
+            },
+            {
+                "StudyID": "00001bd9-da12-4f55-bdb0-a95a392a7610",
+                "StudyNumber": "ML21769",
+                "StudyType": "Interventional",
+                "StudyAcronym": "MAINTENANCE",
+                "StudyScientificArea": "Oncology | Gastroenterology",
+                "StudyThemeMolecule": "Avastin",
+                "StudyIndication": "Colorectal cancer",
+                "StudyPhase": "Phase III",
+                "Subjects": null,
+                "Files": null,
+                "Sessions": null,
+                "Aquisitions": null,
+                "Modality": "",
+                "DataSources": [
+                    {
+                    "id": "Imaging",
+                    "access": true,
+                    "requested": false
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": true,
+                    "requested": false
+                    },
+                    {
+                    "id": "Omics",
+                    "access": true,
+                    "requested": false
+                    }
+                     ],
+                "StudyPCDActual": null,
+                "StudyCreateUser": ""
+            }
+        ],
+        "sort": {
+            "field": "Subjects",
+            "order": "DESC"
+        },
+        "pagination": {
+            "totalCount": 613,
+            "page": 1,
+            "pageSize": 20
+        },
+        "filters": [
+            {
+                "id": "Study_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "0366965f-9baa-4b92-9842-f82f4737e140",
+                    "02c859df-c18a-4f4b-9b0d-ac62e0f3c341",
+                    "018f46da-26af-4441-a234-9dc20f881030",
+                    "05a91fc2-577c-4461-8ab5-79f7b52db351",
+                    "03aa9ecc-9cec-41fe-a6ea-5b53f785c833",
+                    "0334c922-96fd-460a-b528-f1db564e9de6",
+                    "069e50f1-208e-4deb-a209-d84aea149687",
+                    "007b681a-77c7-43b1-8297-2696d46e0e88",
+                    "010769d2-bb1c-44de-9c58-0f584b66e471",
+                    "04d60a54-278f-4959-86b9-9e1f2ba6d563",
+                    "02504842-d0e3-418d-b34c-cffce21323b8",
+                    "027b542d-14c9-4306-bbb1-97a89f111ef8",
+                    "04693582-5a8e-4314-9901-706995b132b7",
+                    "029cb64b-18f6-4332-938d-ee01c4ff8216",
+                    "0244500d-b532-488f-8ceb-f34cea490b62",
+                    "05922e4d-e37c-4dfe-ba04-22af316910ad",
+                    "043af854-72f9-4659-aa0e-03a0886cfa33",
+                    "057fc55b-8fdb-4faa-8031-bc5563309465",
+                    "00001bd9-da12-4f55-bdb0-a95a392a7640",
+                    "577aa911-cd9d-4994-83a6-19a1f4e93698"
+                ]
+            },
+            {
+                "id": "StudyNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "MO28365",
+                    "MO17301",
+                    "AVF3694G",
+                    "AVF3729G",
+                    "ML43171",
+                    "ML21768",
+                    "CO45042",
+                    "BX44273",
+                    "ML28784",
+                    "MO39212",
+                    "MO18264",
+                    "MO28600",
+                    "GO42909",
+                    "ML18531",
+                    "AVF2107G",
+                    "MO29382",
+                    "BO20094",
+                    "BH20198",
+                    "MO22923",
+                    "GO29436"
+                ]
+            },
+            {
+                "id": "StudyType",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "",
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "StudyAcronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "",
+                    "evERA Breast Cancer",
+                    "RIBBON 1",
+                    "IMpower 150",
+                    "BBP",
+                    "PAOLA1",
+                    "AGO-OVAR-2.29",
+                    "ROSIA",
+                    "MAINTENANCE",
+                    "UMbrellaMAX",
+                    "PriMA GELA",
+                    "STRATEGIC 1"
+                ]
+            },
+            {
+                "id": "StudyScientificArea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Hematology | Oncology",
+                    "Oncology | Gastroenterology",
+                    "Gynecology | Oncology",
+                    "Oncology",
+                    "Respiratory Disease | Oncology"
+                ]
+            },
+            {
+                "id": "StudyThemeMolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "",
+                    "Lunsumio",
+                    "divarasib",
+                    "BONDRONAT",
+                    "Herceptin",
+                    "giredestrant",
+                    "Avastin",
+                    "NeoRecormon",
+                    "Tecentriq",
+                    "Mabthera"
+                ]
+            },
+            {
+                "id": "StudyIndication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Neoplastic disease anemia",
+                    "Metastatic colorectal cancer",
+                    "Lung cancer",
+                    "Cervical cancer",
+                    "Breast cancer",
+                    "Cancer",
+                    "Metastatic non-small cell lung cancer",
+                    "Follicular lymphoma",
+                    "Colorectal cancer",
+                    "Ovarian cancer"
+                ]
+            },
+            {
+                "id": "StudyPhase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "Subjects",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    null,
+                    1202
+                ]
+            },
+            {
+                "id": "Files",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    null,
+                    75854
+                ]
+            },
+            {
+                "id": "Sessions",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    null,
+                    7709
+                ]
+            },
+            {
+                "id": "Aquisitions",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    null,
+                    63854
+                ]
+            },
+            {
+                "id": "Modality",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    null
+                ]
+            },
+            {
+                "id": "DataSources",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "AIMS",
+                    "MDMS",
+                    "TRIALWORKS"
+                ]
+            },
+            {
+                "id": "StudyPCDActual",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "2019-09-13",
+                    null
+                ]
+            },
+            {
+                "id": "StudyCreateUser",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "",
+                    null,
+                    "AVASSEL",
+                    "JESSOPS",
+                    "JONESB11",
+                    "HANDSCR1",
+                    "HAHNJ3"
+                ]
+            }
+        ],
+        "text2sql": [
+            " SELECT study.*\nFROM study\nWHERE studyscientificarea LIKE '%Oncology%'\nAND studyphase LIKE '%III%'"
+        ]
+    }
+}

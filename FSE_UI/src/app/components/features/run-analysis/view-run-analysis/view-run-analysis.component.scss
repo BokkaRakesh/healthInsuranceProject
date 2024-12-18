@@ -1,0 +1,41 @@
+.run-analysis {
+    text-align: left;
+    font: normal normal medium 20px/28px Roche Sans;
+    letter-spacing: 0px;
+    color: #000000E6;
+    height: 27px;
+    font-weight: bold;
+}
+
+.view-analysis-header {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    .new-analysis {
+        border-radius: 2px;
+        color: #FFFFFF;
+        font-size: 14px;
+        margin-left: 20px;
+        width: 127px;
+        height: 27px;
+        background-color: #0B41CD;
+        border: 1px solid #0B41CD !important;
+        img {
+            filter:  brightness(0) invert(1);
+        }
+    }
+    .close-icon {
+        margin-left: 1%;
+        cursor: pointer;
+        margin-right: 8px;
+        float: right;
+      }
+}
+
+.cancelBtn {
+    background: #FFFFFF00;
+    border: 1px solid #0B41CD;
+    border-radius: 2px;
+    width: 81px;
+    height: 34px;
+    float: right;
+}

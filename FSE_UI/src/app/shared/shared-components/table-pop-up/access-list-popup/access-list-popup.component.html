@@ -1,0 +1,16 @@
+<kendo-popup *ngIf="anchor" [anchor]="anchor" [animate]="animate" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign">
+  <form [formGroup]="permissionForm">
+    <ul class="popup-menu">
+      <li *ngFor="let permission of permissionList; let i = index">
+        <span class="align-access-list">
+          <label [for]="'radio' + permission.permission">{{ permission.label }} </label>
+          <span class="align-radio-pointer">
+            <kendo-radiobutton #checked [value]="permission.permission"
+              formControlName="permissionType" type="radio" [id]="'radio' + permission.permission"
+              (click)="onPermissionChange(permission, i)"></kendo-radiobutton>
+          </span>
+        </span>
+      </li>
+    </ul>
+  </form>
+</kendo-popup>

@@ -1,0 +1,344 @@
+{
+    "data": {
+        "items": [
+            {
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "5153d389-2ab0-4611-9678-ea7664816c2e",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "CreatedAt": "15-11-2019",   
+                "acquisitions": 739,
+                "studynosoffiles": 10514,
+                "subjects": 739,
+                "files": 739,
+                "session": 739,
+                "modality": 10514,
+                "Access": "Private",
+                "Name": "data1",
+                "visits":"123",
+                "CreatedBy":"abc",
+                "ARDUniqID":1222,
+                "File_Unq_ID": "2332323232-2ab0-4611-9678-ea7664816c2e"
+            },
+            {
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "5b5acbff-3c90-4992-aee8-829b0523f323",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "CreatedAt": "15-11-2019",   
+                "acquisitions": 739,
+                "studynosoffiles": 10514,
+                "subjects": 739,
+                "files": 739,
+                "session": 739,
+                "modality": 10514,
+                "Access": "AZ,PV,DL",
+                "Name": "data2",
+                "visits":"123",
+                "CreatedBy":"abc",
+                "ARDUniqID":1222,
+                "File_Unq_ID": "6676776-2ab0-4611-9678-ea7664816c2e"
+            },
+            {
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "53894535-6777-4e95-b388-1ff0e45c4a29",
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "CreatedAt": "15-11-2019",   
+                "acquisitions": 739,
+                "studynosoffiles": 10514,
+                "subjects": 739,
+                "files": 739,
+                "session": 739,
+                "modality": 10514,
+                "Access": "Everyone",
+                "Name": "data3",
+                "visits":"123",
+                "CreatedBy":"abc",
+                "ARDUniqID":1222,
+                "File_Unq_ID": "3443443-2ab0-4611-9678-ea7664816c2e"
+            },
+            {
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "39b80478-855e-4130-8973-a62a2ea1c149",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "CreatedAt": "15-11-2019",   
+                "acquisitions": 739,
+                "studynosoffiles": 10514,
+                "subjects": 739,
+                "files": 739,
+                "session": 739,
+                "modality": 10514,
+                "Access": "Private",
+                "Name": "data4",
+                "visits":"123",
+                "CreatedBy":"abc",
+                "ARDUniqID":1222,
+                "File_Unq_ID": "88998-2ab0-4611-9678-ea7664816c2e"
+            },
+            {
+                "SubjectEnrollmentSiteId": null,
+                "Subject_Unq_ID": "6851b0cd-6757-40a7-b1b8-076c5a5383fc",
+                "SubjectEthnicity": null,
+                "SubjectRace": null,
+                "SubjectSex": null,
+                "StudyNumber": "GO29436",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyIndication": "Lung cancer",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "CreatedAt": "15-11-2019",   
+                "acquisitions": 739,
+                "studynosoffiles": 10514,
+                "subjects": 739,
+                "files": 739,
+                "session": 739,
+                "modality": 10514,
+                "Access": "Everyone",
+                "Name": "data5",
+                "visits":"123",
+                "CreatedBy":"abc",
+                "ARDUniqID":1222,
+                "File_Unq_ID": "11111-2ab0-4611-9678-ea7664816c2e"
+            }
+        ],
+        "sort": {
+            "field": "StudyNumber",
+            "order": "ASC"
+        },
+        "pagination": {
+            "totalCount": "2504",
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "idp_unq_id": "535d2f85-a5eb-405d-b43c-1ffb214f6525",
+            "idp_name": "GO 29436",
+            "status": "INPROGRESS",
+            "createdby": "Pradeep Shrivastava",
+            "updatedby": "Pradeep Shrivastava",
+            "currentversion": "1.0",
+            "createdat": "10/24/2024",
+            "updatedat": "10/24/2024",
+            "subjects": 1302,
+            "files": 94898,
+            "sessions": 8338,
+            "acquisitions": 70820,
+            "modality": "CT, PT, DOC, CR, SC, NM, DX, MR, OT",
+            "datasources": "GIP, OMICS"
+        },
+        "filters": [
+            {
+                "id": "arduniqid",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "ba91c50e-9090-426a-bee2-483b2e997e15"
+                ]
+            },
+            {
+                "id": "name",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "ard gip"
+                ]
+            },
+            {
+                "id": "createdat",
+                "type": "datetime",
+                "inclusion": true,
+                "values": [
+                    "11/18/2024"
+                ]
+            },
+            {
+                "id": "createdby",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "76"
+                ]
+            },
+            {
+                "id": "subjects",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    1
+                ]
+            },
+            {
+                "id": "sessions",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    3
+                ]
+            },
+            {
+                "id": "aquisitions",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    6
+                ]
+            },
+            {
+                "id": "files",
+                "type": "range",
+                "inclusion": true,
+                "values": [
+                    12
+                ]
+            },
+            {
+                "id": "subjectenrollmentsiteid",
+                "type": "NoneType",
+                "inclusion": true,
+                "values": [
+                    null
+                ]
+            },
+            {
+                "id": "studynumber",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "MO39196"
+                ]
+            },
+            {
+                "id": "studyindication",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Breast cancer"
+                ]
+            },
+            {
+                "id": "studythememolecule",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Tecentriq"
+                ]
+            },
+            {
+                "id": "studyphase",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "studytype",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "studyscientifictitle",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "A PHASE III",
+                    "DOUBLE-BLIND",
+                    "MULTICENTER",
+                    "RANDOMISED",
+                    "PLACEBO-CONTROLLED STUDY OF ATEZOLIZUMAB (ANTI\u2212PD-L1 ANTIBODY) IN COMBINATION WITH PACLITAXEL COMPARED WITH PLACEBO WITH PACLITAXEL FOR PATIENTS WITH PREVIOUSLY UNTREATED INOPERABLE LOCALLY ADVANCED OR METASTATIC TRIPLE NEGATIVE BREAST CANCER"
+                ]
+            },
+            {
+                "id": "studystatus",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "studyacronym",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Impassion 131"
+                ]
+            },
+            {
+                "id": "studythemenumber",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "modality",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    ""
+                ]
+            },
+            {
+                "id": "datasource",
+                "type": "str",
+                "inclusion": true,
+                "values": [
+                    "Clinical",
+                    "Imaging",
+                    "{STUDYHASOMICS}"
+                ]
+            }
+        ]
+    }
+}

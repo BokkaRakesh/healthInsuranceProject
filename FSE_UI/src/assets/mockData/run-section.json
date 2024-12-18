@@ -1,0 +1,83 @@
+{
+    "data": {
+        "items": [
+            {
+                "algojobuniqid": "5bn76bf3-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisuniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisbatchuniqid": "1fnjfebc-ada9-4e4c-b8f7-c3df1ee08a4f",
+                "status": "create",
+                "errormessage": "ErrorMessage",
+                "location": "Location1",
+                "starttime": "2024-11-18 13:45:51",
+                "endtime": "2024-11-18 13:45:51",
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51"
+            },
+            {
+                "algojobuniqid": "5bn76bf5-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisuniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisbatchuniqid": "1fnjfebc-ada9-4e4c-b8f7-c3df1ee08a4f",
+                "status": "in_progress",
+                "errormessage": "ErrorMessage",
+                "location": "Location1",
+                "starttime": "2024-11-18 13:45:51",
+                "endtime": "2024-11-18 13:45:51",
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51"
+            },
+            {
+                "algojobuniqid": "5bn76bf7-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisuniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisbatchuniqid": "1fnjfebc-ada9-4e4c-b8f7-c3df1ee08a4f",
+                "status": "complete",
+                "errormessage": "ErrorMessage",
+                "location": "Location1",
+                "starttime": "2024-11-18 13:45:51",
+                "endtime": "2024-11-18 13:45:51",
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51"
+            },
+            {
+                "algojobuniqid": "5bn76bf9-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisuniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                "algoanalysisbatchuniqid": "1fnjfebc-ada9-4e4c-b8f7-c3df1ee08a4f",
+                "status": "fail",
+                "errormessage": "ErrorMessage",
+                "location": "Location1",
+                "starttime": "2024-11-18 13:45:51",
+                "endtime": "2024-11-18 13:45:51",
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51"
+            }
+        ],
+        "sort": {
+            "field": "algojobuniqid",
+            "order": "ASC"
+        },
+        "pagination": {
+            "page": 1,
+            "pageSize": 20
+        },
+        "filters": [
+            {
+                "id": "Status",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "create",
+                    "in_progress",
+                    "complete",
+                    "fail"
+                ]
+            }
+        ]
+    }
+}

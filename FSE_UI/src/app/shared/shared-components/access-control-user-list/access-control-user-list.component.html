@@ -1,0 +1,17 @@
+<ul class="access-control-list list-unstyled mt-2">
+<ng-container *ngIf="users.length > 0; else noDataTemplate">
+    <ng-container *ngFor="let user of users;let i= index">
+        <li class="access-control-item">
+            <div class="initials-icon">{{ user.initials }}</div>
+            <div class="user-name">{{ user.name }}</div>
+            <div class="access-type">{{ user.permissionDisplayName }}</div>
+            <span *ngIf="isShowThreeDot" class="three-dot" (click)="onThreeDotClick($event, user, i+1)"></span>
+        </li>
+    </ng-container>
+    </ng-container>
+    <ng-template #noDataTemplate>
+        <li class="access-control-list align-no-text-found">
+            No Data Found
+        </li>
+    </ng-template> 
+</ul>

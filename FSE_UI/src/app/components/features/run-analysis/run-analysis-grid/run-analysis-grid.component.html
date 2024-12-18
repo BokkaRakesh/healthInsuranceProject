@@ -1,0 +1,67 @@
+<kendo-grid
+  [data]="gridData"
+  kendoGridSelectBy="StudyID"
+  [(selectedKeys)]="mySelection"
+  [pageSize]="pageSize"
+  [pageable]="false"
+  [sortable]="true"
+  [groupable]="false"
+  [selectable]="false"
+  [height]="500"
+  [sort]="sort"
+  (sortChange)="sortChange($event)"
+  (scrollBottom)="loadMoreData()"
+  (cellClick)="onRowClick($event)"
+>
+  <!-- <ng-template kendoGridToolbarTemplate>
+    <div class="row pb-3">
+      <div class="col-3 d-flex justify-content-start align-items-center">
+        <app-table-columns
+          [gridColumns]="gridColumnsTitle"
+          (selectedColumn)="showSelectedColumns($event)"
+          (resetColumns)="showResetColumns($event)"
+        ></app-table-columns>
+        <div class="d-flex ms-2">
+          <span class="pe-1 pagination-info">Showing</span>
+          <span class="pagination">1-{{ pageSize }}</span>
+          <span class="px-1 pagination-info">of</span>
+          <span class="pagination">{{ pagination.totalCount }}</span>
+          <span class="ps-1 pagination-info">results</span>
+        </div>
+      </div>
+      <div class="col">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </ng-template> -->
+
+  <ng-container   *ngFor="let gridColumn of gridColumnsData">
+      <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+      *ngIf="gridColumn.id !== 'Access'">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <ng-container>
+          <div class="d-flex justify-content-start align-items-center">
+            <img *ngIf="gridColumn.hasIcon  &&  dataItem[gridColumn.id]" class="pe-1 pb-1" src="../assets/images/{{ gridColumn.icon }}.svg" alt="" />
+            <span>{{ dataItem[gridColumn.id] ? dataItem[gridColumn.id] : '-' }}</span>
+            <span *ngIf="gridColumn.toolTipIcon && dataItem[gridColumn.id]" kendoTooltip [title]="dataItem[gridColumn.id]" class="ms-1">
+              <img class="pe-1 pb-1" src="../assets/images/{{ gridColumn.toolTipIcon }}.svg" alt="" />
+            </span>
+          </div>
+        </ng-container>
+      </ng-template>
+    </kendo-grid-column>
+  </ng-container>
+  <!-- <ng-container>
+    <kendo-grid-column
+      *ngIf="threeDotMenu"
+      field="menu"
+      title=""
+      [width]="50"
+      [sticky]="true"
+    >
+      <ng-template kendoGridCellTemplate let-dataItem="dataItem" let-rowIndex="rowIndex">
+        <span [ngClass]="'three-dot-' + rowIndex" (click)="openMenu($event, dataItem, rowIndex); $event.stopPropagation()" #threeDotButton></span>
+      </ng-template>
+    </kendo-grid-column> -->
+  <!-- </ng-container> -->
+</kendo-grid>

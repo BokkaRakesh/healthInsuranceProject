@@ -1,0 +1,39 @@
+[  
+   
+    {
+        "name": "Timestamp",
+        "id": "updatedat",
+        "type": true,
+        "default": true,
+        "checked": true,
+        "width": 300,
+        "order": 1,
+        "hasIcon": true,
+        "icon": "file",
+        "hasTooltip": false
+    },
+    {
+        "name": "Name",
+        "id": "name",
+        "type": true,
+        "default": true,
+        "checked": true,
+        "width": 280,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false
+
+        
+    },
+    {
+        "name": "Type",
+        "id": "type",
+        "type": true,
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 3,
+        "hasIcon": false,
+        "hasTooltip": false
+    }
+]

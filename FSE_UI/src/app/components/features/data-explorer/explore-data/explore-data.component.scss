@@ -1,0 +1,55 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/fonts.scss';
+
+.page-label > span {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-grey-900;
+}
+
+
+.gip-chat-btn {
+    background-color: $roche-blue-primary;
+    border-color: $roche-blue-primary;
+    span:nth-child(1) {
+        content: url("../../../../../assets/images/chat-icon.svg");
+    }
+    span:nth-child(2) {
+        font-family: $Roche-Sans-Medium;
+        font-size: 16px;
+    }
+    span:nth-child(3) {
+        font-family: $Roche-Sans-Light;
+        font-size: 16px;
+    }
+}
+
+.filter-btn {
+    content: url("../../../../../assets/images/filter.svg");
+    cursor: pointer;
+}
+
+.filter-list-label {
+    cursor: pointer;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+ 
+.scroll-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #bababa;
+}
+
+.filter-btn-icon {
+    content: url('../../../../../assets/images/filter.svg');
+    vertical-align: middle;
+}
+
+.filter-btn:hover {
+    background-color: transparent;
+    color: $roche-blue-primary;
+}

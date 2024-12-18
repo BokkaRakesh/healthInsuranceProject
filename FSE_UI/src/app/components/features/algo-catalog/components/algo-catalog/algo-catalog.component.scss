@@ -1,0 +1,19 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+
+.page-label > span {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-grey-900;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+ 
+.scroll-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #bababa;
+}

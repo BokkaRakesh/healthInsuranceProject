@@ -1,0 +1,116 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+
+.page-label > span {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-grey-900;
+}
+
+.metadata-section > span {
+    font-family: $Roche-Sans-Regular;
+    font-size: 14px;
+    color: $roche-grey-900;
+}
+
+.gip-chat-btn {
+    background-color: $roche-blue-primary;
+    border-color: $roche-blue-primary;
+    span:nth-child(1) {
+        content: url("../../../../../../assets/images/chat-icon.svg");
+    }
+    span:nth-child(2) {
+        font-family: $Roche-Sans-Medium;
+        font-size: 16px;
+    }
+    span:nth-child(3) {
+        font-family: $Roche-Sans-Light;
+        font-size: 16px;
+    }
+}
+
+.filter-btn {
+    content: url("../../../../../../assets/images/filter.svg");
+    cursor: pointer;
+    vertical-align: middle;
+}
+.archieve-label{
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 100px;
+}
+.filter-list-label {
+    cursor: pointer;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+ 
+.scroll-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #bababa;
+}
+
+.grid-projected-content {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+::ng-deep {
+    .k-switch-label-on {
+        display: none;
+    }
+
+    .k-switch-label-off {
+        display: none;
+    }
+
+   .k-switch-on .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-off .k-switch-track {
+        border-color: $roche-blue-light;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-light;
+    }
+    
+    .k-switch-on .k-switch-thumb {
+        border-color: $roche-blue-primary;
+        color: $roche-blue-primary;
+        background-color: $roche-blue-primary;
+      
+    }
+    .k-switch-sm.k-switch-off .k-switch-thumb-wrap {
+        left: 10px;
+    }
+    .k-switch-sm .k-switch-thumb {
+        width: 20px;
+        height: 20px;
+    }
+    .k-switch-sm .k-switch-track {
+        height: 20px;
+        width: 20px;
+    }
+    .k-switch-sm.k-switch-on .k-switch-thumb-wrap {
+        left: calc(100% - 11px);
+    }
+    .k-switch-sm {
+        width: 45px;
+        height: 26px;
+        font-size: 10px;
+    }
+    // .k-switch-md{
+    //     width: 40px;
+    //     height: 30px;
+    //     font-size: 10px;
+    // }
+    
+}

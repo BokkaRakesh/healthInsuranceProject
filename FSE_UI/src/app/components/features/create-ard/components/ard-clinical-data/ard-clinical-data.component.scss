@@ -1,0 +1,100 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.grid-projected-content {
+    span {
+        font-size: 12px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+
+    button {
+        background-color: $roche-blue-primary;
+        color: $roche-background;
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+    }
+}
+
+.grid-projected-content {
+    button:nth-child(2)>span {
+        content: url(../../../../../../assets/images/create_ard.svg);
+        vertical-align: middle;
+    }
+
+    button:nth-child(3)>span {
+        content: url(../../../../../../assets/images/run_analysis.svg);
+        vertical-align: middle;
+    }
+}
+
+.three-dot {
+    content: url(../../../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.create-ard-btn.disabled {
+    background-color: $roche-grey-200;
+    color: $roche-brown-100;
+
+    img {
+        filter: invert(66%) sepia(5%) saturate(531%) hue-rotate(339deg) brightness(90%) contrast(86%);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 300px;
+}
+
+.access-control-item {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr auto;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid $roche-border;
+
+    .user-name {
+        font-size: 14px;
+        font-family: $Roche-Sans-Regular;
+        color: $roche-grey-900;
+    }
+
+    .acess-type {
+        font-size: 14px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+}
+
+.access-control-list {
+    max-height: 170px;
+    overflow-y: auto;
+}
+
+.show-more {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    color: $roche-blue-primary;
+    font-size: 12px;
+    font-family: $Roche-Sans-Regular;
+}
+
+.study-details {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #bababa;
+}

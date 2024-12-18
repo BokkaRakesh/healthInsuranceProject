@@ -1,0 +1,30 @@
+{
+    "data": {
+        "ard_study_details": {
+            "studyscientificarea": "Psychiatry | Neurology, Respiratory Disease | Oncology",
+            "studyindication": "Alzheimer disease, Lung cancer",
+            "studyphase": "Phase I, Phase III"
+        },
+        "summary": {
+            "total": 2,
+            "subjects": 1302,
+            "files": 94898,
+            "sessions": 8338,
+            "acquisitions": 70820,
+            "datasources": "CDSE,GIP",
+            "modality": "CR, CT, DOC, DX, MR, OT, SC",
+            "arduniqid": "c38f5c49-6cb2-4127-9113-d0ce6e67ebb7",
+            "createdat": "2024-11-06 05:31:27",
+            "updatedat": "2024-11-06 05:31:27",
+            "createdby": "1",
+            "updatedby": null,
+            "name": "Taesssst visit",
+            "description": null,
+            "status": "active",
+            "currentversion": 1,
+            "updateavailable": false,
+            "dataproductuniqid": "c183bca0-a890-448f-a6f2-96cdfe3e289a",
+            "dataproductversionuniqid": "88731202-38b6-4ce0-910a-d078b9384275"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+export const IdpDetailPageMapping = [
+    { uiLabel: 'Study Number', dbColumn: 'studynumber', highlight: true },
+    { uiLabel: 'Clinical Phase', dbColumn: 'studyphase', highlight: true },
+    { uiLabel: 'Indication', dbColumn: 'studyindication', highlight: true },
+    { uiLabel: 'Scientific Area', dbColumn: 'studyscientificarea', highlight: true },
+    { uiLabel: 'Data Classification', dbColumn: 'studyscientificarea', highlight: true },
+    { uiLabel: 'Dataset Supplier', dbColumn: '', highlight: false },
+    { uiLabel: 'Digital Repository', dbColumn: '', highlight: false },
+    { uiLabel: 'Data Privacy Level', dbColumn: '', highlight: false },
+    { uiLabel: 'Apollo Dataset ID', dbColumn: '', highlight: false },
+    { uiLabel: 'Data Owner', dbColumn: 'createdby', highlight: false },
+    { uiLabel: 'Data Source', dbColumn: 'studysource', highlight: false },
+    { uiLabel: 'Data Source Type', dbColumn: 'studytype', highlight: false },  
+    { uiLabel: 'Data Type', dbColumn: '', highlight: false },
+    { uiLabel: 'Geographic coverage', dbColumn: '', highlight: false },
+]

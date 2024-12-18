@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-auto">
+            <app-breadcrumb-navigation></app-breadcrumb-navigation>
+        </div>
+        <div class="col align-items-center">
+            <app-filter-badge (batchEmit)="getBatchesData($event)" (emitBatchDetailForEdit)="editBatchDetail($event)"></app-filter-badge>
+        </div>    
+    </div>
+    <div class="row mb-2">
+        <div class="col-auto d-flex align-items-center" *ngIf="idpResult">
+            <span class="idp-name px-1">{{idpName}}</span>
+            <span class="px-1 pb-1 idp-down"></span>
+            <span class="px-1 favourite-heart" [ngClass]="favouriteSelection ? 'favourite-heart-blue' : 'favourite-heart'" (click)="selectFavourite()"></span>
+        </div>
+        <div class="col text-end" *ngIf="selectedTab != 'IDP_Documentation'">
+            <button class="filter-btn btn btn-outline-primary mx-1 pe-1" #filter (click)="openFilterOptionsPopup()">
+                Filter
+                <span class="filter-btn-icon"></span>
+            </button> 
+        </div>
+    </div>
+
+    <div class="row">
+        <ng-container>
+            <div class="col-9 p-0" *ngIf="idpResult">
+                <app-tab-navigation
+                [navigation]="parentTabs"
+                [statusInfo]="statusInfo"
+                (tabInfo)="getSelectedTabInfo($event)">
+                </app-tab-navigation>
+                <!-- IDP Detail result -->
+                 <ng-container [ngSwitch]="selectedTab">
+                     <app-idp-documentation *ngSwitchCase="'IDP_Documentation'" [idpResult]="idpResult" (emitShowMoreStudy)="showMoreStudy()" [isLastPage]="isLastPage" [studiesList]="studiesList"></app-idp-documentation>
+                     <app-idp-subjects *ngSwitchCase="'Subjects'" (subjectSortEmitter)="sortSubjects($event)" (subjectNextPageEmitter)="paginateSubjects($event)" [paginationDetailSubject]="paginationDetailSubject" ></app-idp-subjects>
+                     <app-idp-files *ngSwitchCase="'Files'" (filesSortEmitter)="sortFiles($event)" (filesNextPageEmitter)="paginateFiles($event)" [paginationDetailFiles]="paginationDetailFiles" ></app-idp-files>
+                     <app-idp-clinical-data *ngSwitchCase="'Clinical_Data'" [studiesList]="studiesList"></app-idp-clinical-data>
+                     <app-idp-ards *ngSwitchCase="'ARDs'" (subjectSortEmitter)="sortArds($event)" (subjectNextPageEmitter)="paginateArds($event)" [paginationDetailARD]="paginationDetailARD"></app-idp-ards>
+                     <div *ngSwitchCase="'Activities'">Activities</div>
+                 </ng-container>
+            </div>
+            <div class="col-3 p-0 right-panel-summary">
+                <!-- IDP Summary Component -->
+                <app-idp-summary *ngIf="statusInfo=='in_progress'" [selectedStudies]="selectedStudiesList"
+                    [idpInitiatedDate]="idpInitiatedDate"></app-idp-summary>
+                <app-data-summary-detail *ngIf="statusInfo!=='in_progress'" [summary]="summary" [summaryDetails]="summaryDetails"></app-data-summary-detail>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+<kendo-popup #popup class="filter-option scroll-bar" *ngIf="isFilterOptionsVisible" [anchor]="filter" [animate]="false"
+  style="max-height: 300px;overflow-y: scroll;" [anchorAlign]="{ vertical: 'bottom', horizontal: 'center' }"
+  [popupAlign]="{ vertical: 'top', horizontal: 'right' }" (close)="isFilterOptionsVisible = false">
+  <div class="popup-menu mx-4 my-3">
+    <div class="title mb-2">
+      <p class="mb-0 fw-bold">Filter Options</p>
+    </div>
+    <div>
+      <ng-container *ngFor="let filter of popupFilterList">
+        <p class="mb-0 mt-3 filter-list-label" (click)="onClickOfFilterOption(filter)">{{ filter.label }}</p>
+        <hr class="m-0 mt-1">
+      </ng-container>
+    </div>
+  </div>
+</kendo-popup>
+
+<app-idp-filter-dialog *ngIf="isDialogOpen" [dialogOpened]="isDialogOpen" [filterMap]="filterMap" [filterData]="filterData"
+    [selectedFilterOption]="selectedFilterOption" (filterEmitter)="getFilteredData($event)"
+    (batchEmit)="getBatchesData($event)" (isDialogOpen)="isDialogOpened()"></app-idp-filter-dialog>

@@ -1,0 +1,27 @@
+<div class="carousel-container">
+ 
+  <img src="../assets/images/chevron-right.svg" [ngClass]="{ 'inactive': isAtStart }" class="left-chevron"
+    *ngIf="batches.length > showbatchCount" (click)="leftScroll()">
+  
+    <div class="carousel-content">
+      <div *ngFor="let batch of batches;let i = index" class="badge-align">
+        <label class="batch-label-align">
+          <img *ngIf="batch.isFilter" height="14.5" width="14.5" src="../assets/images/edit_pen.svg" alt="pencil-icon"
+            class="align-reset-icon pencil-icon-align cursor-pointer" (click)="onBatchEdit(batch)">
+          {{batch.displayName}}
+          <label class="badge-align-value">{{batch.inclusion}} / {{batch.value}}
+            <img *ngIf="batch.isFilter" height="14.5" width="14.5" src="../assets/images/close_icon.svg" alt="close-icon" class="align-reset-icon cursor-pointer"
+              (click)="onBatchDeletion(i)">                           
+          </label>
+        </label>
+      </div>
+    </div>
+  
+  <img src="../assets/images/chevron-right.svg" class="right" *ngIf="batches.length > showbatchCount"
+    [ngClass]="{ 'inactive': isAtEnd }" (click)="rightScroll()">
+  <span class="clear-btn" *ngIf="batches.length > 0" (click)="onClearBadge()">
+    <img src="../assets/images/clear_badge.svg" alt="arrow-icon" class="align-reset-icon">
+    <label class="clear-btn-label">clear</label>
+  </span>
+  
+</div>

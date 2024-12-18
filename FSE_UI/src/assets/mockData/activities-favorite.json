@@ -1,0 +1,11 @@
+{
+    "activities": [
+         {"Activity":"Run analysis: CAFE-15 CT RESIT on ARD_BP29842-BP29843_2024-11-04","Hrs":"3"},
+         {"Activity":"Run analysis: CAFE-15 CT RESIT on ARD_BP29842-BP29843_2024-11-04","Hrs":"2"},
+         {"Activity":"Run analysis: CAFE-15 CT RESIT on ARD_BP29842-BP29843_2024-11-04","Hrs":"4"},
+         {"Activity":"Run analysis: CAFE-15 CT RESIT on ARD_BP29842-BP29843_2024-11-04","Hrs":"5"}
+         ],
+    "favorites":[
+        "GR40306 TENAYA","BR29752 Lighthouse","CAFE-17 aTMTV","CAFE-27 aTTB","SER00005.dicom.zip","8668443"
+      ]
+}

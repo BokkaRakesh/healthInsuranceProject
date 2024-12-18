@@ -1,0 +1,44 @@
+<div class="summaryContainer">
+  <div class="summarylist">
+
+    <div class="title text">Data Summary</div>
+    <div class="summaryCard" *ngFor="let summaryCard of summary">
+      <kendo-progressbar class="progressbar" [value]="summaryCard.progressValue"
+        [progressCssStyle]='summaryCard.progressCssStyle'></kendo-progressbar>
+      <div class="k-hstack">
+        <div class="k-icon">
+          <img src="../assets/images/{{summaryCard.icon}}.svg" alt="{{summaryCard.icon}}" />
+        </div>
+        <div class="cardName">
+          <span >{{ summaryCard.name }}</span>
+        </div>
+        <div class="cardValue">
+          <span >{{ summaryCard.value }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="sources">
+      <div class="dataSourcesContainer">
+        <div class="row">
+          <div class="datasourcestitle text">Data Sources</div>
+        </div>
+        <span *ngFor="let sname of sources">
+          <span class="dataSources">{{ sname.name }}</span>
+          <span class="dataSources">,</span>
+        </span>
+      </div>
+
+      <div class="modalityContainer">
+        <div class="row">
+          <div class="datasourcestitle text">Modality</div>
+        </div>
+        <span *ngFor="let mname of modality">
+          <span class="dataSources">{{ mname.name }}</span>
+          <span class="dataSources">,</span>
+        </span>
+      </div>
+    </div>
+    <!-- </div> -->
+
+  </div>
+</div>

@@ -1,0 +1,517 @@
+{
+    "data": {
+        "items": [
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20160630,
+                "DicomAcquisitionTime": 191057,
+                "DicomBodypartexamined": "",
+                "FileModality": "CT",
+                "SubjectID": "5b036110b83f8264e324aeeca260d1d2e98c19e03872551e8dae88dd93f810eb",
+                "FileName": "1914_606_Lung window_Localizer.dicom.zip",
+                "File_Unq_ID": "00040bb9-01ee-4a7e-b6de-bed4556efd69"
+            },
+            {
+                "StudyNumber": "G225436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20170702,
+                "DicomAcquisitionTime": 125425,
+                "DicomBodypartexamined": "",
+                "FileModality": "CT",
+                "SubjectID": "1e69d81fe0d39bf4ea5e2ff81b06599db86adf2f332d395ad8e64ac7171ecfd8",
+                "FileName": "1757_401_Lung window_Localizer.dicom.zip",
+                "File_Unq_ID": "00035e49-c2b8-48dd-b9f0-93a67c649913"
+            },
+            {
+                "StudyNumber": "GO22336",
+                "StudyIndication": "Skin cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20160723,
+                "DicomAcquisitionTime": 162919,
+                "DicomBodypartexamined": "",
+                "FileModality": "CT",
+                "SubjectID": "634def317c8d862952e225975caec10a8e09d02c0e663f51754a27d8f35164bb",
+                "FileName": "1628_6_Delayed.dicom.zip",
+                "File_Unq_ID": "0008b60f-d5b6-43a3-b8cc-13457de9a73d"
+            },
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20170710,
+                "DicomAcquisitionTime": 162833,
+                "DicomBodypartexamined": "",
+                "FileModality": "CT",
+                "SubjectID": "909d1404c567c80369a083614ed779de21f3c97a7dc9436b7645c2998ca330b4",
+                "FileName": "1628_1_Scout.dicom.zip",
+                "File_Unq_ID": "000d78d9-3f14-4da4-92c6-1a5d7ab5ce8a"
+            },
+            {
+                "StudyNumber": "G556436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20170428,
+                "DicomAcquisitionTime": 144808,
+                "DicomBodypartexamined": "CHEST",
+                "FileModality": "CT",
+                "SubjectID": "2e9565d4cb3bb74640b690459b6a75d964f93675f1764561354bb0ca15290a4e",
+                "FileName": "1449_7_Coronal lung window.dicom.zip",
+                "File_Unq_ID": "000f2e55-fa8b-416a-9a08-c8126c910d19"
+            },
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20170623,
+                "DicomAcquisitionTime": 141730,
+                "DicomBodypartexamined": "CHEST_ABD_PEL",
+                "FileModality": "CT",
+                "SubjectID": "1f4e9bbf16affaac4813aaf572b6f9b9ba90b911ead2e9602efdeaff68a5a85b",
+                "FileName": "1420_6_Sagittal_5493302.dicom.zip",
+                "File_Unq_ID": "0010cd7e-5f7e-4519-b86e-7dc840c00d25"
+            },
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20160308,
+                "DicomAcquisitionTime": 133642,
+                "DicomBodypartexamined": "",
+                "FileModality": "CT",
+                "SubjectID": "c618d898b12c6e2c7dc0bf992c0e18782478464bcbbf7dcb996b819f7e5cb1c5",
+                "FileName": "1334_2_w_IV contrast.dicom.zip",
+                "File_Unq_ID": "000f7b91-85da-4778-9f4d-e983b1c73249"
+            },
+            
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20160812,
+                "DicomAcquisitionTime": 112130,
+                "DicomBodypartexamined": "CHEST",
+                "FileModality": "CT",
+                "SubjectID": "c75283fba62810396cb5c59c426c84b2b8c0cdd9f21ad6a004d7c5497c32b951",
+                "FileName": "1121_4_w_IV contrast.dicom.zip",
+                "File_Unq_ID": "0003df00-28be-47a9-9a0f-858bc25af081"
+            },
+            {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "male",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20160819,
+                "DicomAcquisitionTime": 105056,
+                "DicomBodypartexamined": "CHEST",
+                "FileModality": "CT",
+                "SubjectID": "e855a2659ae409efaa50db263e674c83a1bcd5f81b54ca498b0bd60859abf6ad",
+                "FileName": "1052_5_Coronal_Localizer.dicom.zip",
+                "File_Unq_ID": "0009f24c-b1a5-40c6-b655-69d3ba4f96d8"
+            },
+         {
+                "StudyNumber": "GO29436",
+                "StudyIndication": "Lung cancer",
+                "StudyThemeMolecule": "Tecentriq",
+                "StudyPhase": "Phase III",
+                "StudyType": "Interventional",
+                "StudyScientificArea": "Respiratory Disease | Oncology",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "IMpower 150",
+                "StudyThemeNumber": "30019",
+                "SubjectEnrollmentSiteId": null,
+                "SubjectEthnicity": "",
+                "SubjectRace": "",
+                "SubjectSex": "female",
+                "VisitAge": null,
+                "AcquistionParentsProjects": null,
+                "DicomAcquisitionDate": 20170613,
+                "DicomAcquisitionTime": 84121,
+                "DicomBodypartexamined": "",
+                "FileModality": "MR",
+                "SubjectID": "9b0a339c60602fa1dd1dcccb7af8ad3288c7d4378e1cb56d8c9cb45ecc11a8bc",
+                "FileName": "0841_9_Ax T1memp.dicom.zip",
+                "File_Unq_ID": "00072214-430e-4d84-8931-482d60cc91f6"
+            }
+        ],
+        "sort": {
+            "field": "FileName",
+            "order": "Desc"
+        },
+        "pagination": {
+            "totalCount": 75854,
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "subjects": 1202,
+            "files": 75854,
+            "sessions": 7709,
+            "acquisitions": 63854,
+            "datasources": "CDSE, GIP",
+            "modality": "CR, CT, MR, NM, OT, PT",
+            "createdby": "Payal Sharma",
+            "createdat": "11/05/2024",
+            "updatedby": null,
+            "updatedat": "11/05/2024",
+            "currentversion": 1,
+            "idp_unq_id": "c183bca0-a890-448f-a6f2-96cdfe3e289a",
+            "idp_name": "lung datatest new api dadd1",
+            "status": "active"
+        },
+        "filters": [
+            {
+                "id": "Studynumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GO29436"
+                ]
+            },
+            {
+                "id": "Studyindication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Lung cancer"
+                ]
+            },
+            {
+                "id": "Studythememolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Tecentriq"
+                ]
+            },
+            {
+                "id": "Studyphase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "Studytype",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "Studyscientificarea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Respiratory Disease | Oncology"
+                ]
+            },
+            {
+                "id": "Studystatus",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Clinical Closure"
+                ]
+            },
+            {
+                "id": "Studyacronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "IMpower 150"
+                ]
+            },
+            {
+                "id": "Studythemenumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "30019"
+                ]
+            },
+            {
+                "id": "Subjectenrollmentsiteid",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "Subjectethnicity",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "Subjectrace",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "Subjectsex",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "female",
+                    "male"
+                ]
+            },
+            {
+                "id": "Subjectid",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "909d1404c567c80369a083614ed779de21f3c97a7dc9436b7645c2998ca330b4",
+                    "bbb831c17c6b9311c617773bd1c7a20b6427bcab154028699e5c276c6eb5f229",
+                    "2e9565d4cb3bb74640b690459b6a75d964f93675f1764561354bb0ca15290a4e",
+                    "1e69d81fe0d39bf4ea5e2ff81b06599db86adf2f332d395ad8e64ac7171ecfd8",
+                    "634def317c8d862952e225975caec10a8e09d02c0e663f51754a27d8f35164bb",
+                    "3ef8b8eb6d7e803907e5aa1c35bbb5c640dbca23fe1ed319eaeb96a1c05c4215",
+                    "e2d2751a284bb50ca792c4ca8c86c844180121d0b1b96a65a6103102351184c8",
+                    "c75283fba62810396cb5c59c426c84b2b8c0cdd9f21ad6a004d7c5497c32b951",
+                    "e855a2659ae409efaa50db263e674c83a1bcd5f81b54ca498b0bd60859abf6ad",
+                    "a294b061f1093fbf98484e6fc9cfc56d841f9a179b957a7f62e5cc08f8c9b64d",
+                    "5b036110b83f8264e324aeeca260d1d2e98c19e03872551e8dae88dd93f810eb",
+                    "1f4e9bbf16affaac4813aaf572b6f9b9ba90b911ead2e9602efdeaff68a5a85b",
+                    "9b0a339c60602fa1dd1dcccb7af8ad3288c7d4378e1cb56d8c9cb45ecc11a8bc",
+                    "feae5dabb7fedc3f1af2789dce53739bd842491074a697c8dccbc99d53aac347",
+                    "c618d898b12c6e2c7dc0bf992c0e18782478464bcbbf7dcb996b819f7e5cb1c5"
+                ]
+            },
+            {
+                "id": "Dicomacquisitiondate",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    20170208,
+                    20160806,
+                    20170217,
+                    20160812,
+                    20170702,
+                    20160723,
+                    20160308,
+                    20170101,
+                    20160630,
+                    20170710,
+                    20160819,
+                    20170422,
+                    20170613,
+                    20170428,
+                    20170623
+                ]
+            },
+            {
+                "id": "Dicomacquisitiontime",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    105056,
+                    141730,
+                    112130,
+                    162919,
+                    144808,
+                    133642,
+                    114608,
+                    191057,
+                    125425,
+                    162833,
+                    113426,
+                    124502,
+                    85944,
+                    84121,
+                    100125
+                ]
+            },
+            {
+                "id": "Dicombodypartexamined",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "CHEST_ABD_PEL",
+                    "ABDPEL",
+                    "ABDOMEN",
+                    "CHEST"
+                ]
+            },
+            {
+                "id": "Filemodality",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "MR",
+                    "CT"
+                ]
+            },
+            {
+                "id": "Filename",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "1146_4_AX T2.dicom.zip",
+                    "1914_606_Lung window_Localizer.dicom.zip",
+                    "1449_7_Coronal lung window.dicom.zip",
+                    "1628_6_Delayed.dicom.zip",
+                    "1628_1_Scout.dicom.zip",
+                    "0959_7_Bone window.dicom.zip",
+                    "1121_4_w_IV contrast.dicom.zip",
+                    "1757_401_Lung window_Localizer.dicom.zip",
+                    "1144_10_w_IV contrast.dicom.zip",
+                    "0901_1_w_IV contrast.dicom.zip",
+                    "0841_9_Ax T1memp.dicom.zip",
+                    "1052_5_Coronal_Localizer.dicom.zip",
+                    "1334_2_w_IV contrast.dicom.zip",
+                    "1244_1_Scout.dicom.zip",
+                    "1420_6_Sagittal_5493302.dicom.zip"
+                ]
+            },
+            {
+                "id": "File unq id",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "001041d1-e4f1-404e-87af-f36220065ce5",
+                    "000d78d9-3f14-4da4-92c6-1a5d7ab5ce8a",
+                    "000190db-1b31-41f9-8fbe-150062b0495e",
+                    "000f2e55-fa8b-416a-9a08-c8126c910d19",
+                    "00040bb9-01ee-4a7e-b6de-bed4556efd69",
+                    "00005cd1-677c-40a5-8036-fab744b22ab3",
+                    "00072214-430e-4d84-8931-482d60cc91f6",
+                    "0004684f-b934-40c0-bc9a-884ad6cab077",
+                    "0010cd7e-5f7e-4519-b86e-7dc840c00d25",
+                    "00035e49-c2b8-48dd-b9f0-93a67c649913",
+                    "0003df00-28be-47a9-9a0f-858bc25af081",
+                    "0008b60f-d5b6-43a3-b8cc-13457de9a73d",
+                    "000866db-f21f-4181-9e5e-2411fd9378fa",
+                    "000f7b91-85da-4778-9f4d-e983b1c73249",
+                    "0009f24c-b1a5-40c6-b655-69d3ba4f96d8"
+                ]
+            },
+            {
+                "id": "Visitage",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "Datasource",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GIP"
+                ]
+            }
+        ]
+    }
+}

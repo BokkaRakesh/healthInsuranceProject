@@ -1,0 +1,16 @@
+<div class="card px-3 py-2">
+    <div class="d-flex justify-content-between">
+        <span>Access Control</span>
+        <span role="button">Manage Access</span>
+    </div>
+    <ul class="access-control-list list-unstyled mt-2">
+        <ng-container *ngFor="let user of users">
+            <li class="access-control-item">
+                <div class="initials-icon">{{ user.initials }}</div>
+                <div class="user-name">{{ user.name }}</div>
+                <div class="access-type">{{ user.permission }}</div>
+                <span class="three-dot"></span>
+            </li>
+        </ng-container>
+    </ul>
+</div>

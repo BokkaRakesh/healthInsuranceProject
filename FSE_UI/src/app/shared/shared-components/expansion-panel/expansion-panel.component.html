@@ -1,0 +1,23 @@
+<div class="expansion-panel-container">
+    <!-- Panel Header -->
+    <div class="panel-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img class="pe-1" src="../assets/images/{{icon}}.svg" alt="icon" />
+            <span class="panel-title">{{ title }}</span>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <a class="request-access-link" *ngIf="requestAccess" href="javascript:void(0)" (click)="onRequestAccess()">
+                Request Access
+            </a>
+            <button class="btn btn-icon" (click)="toggleExpansion()" aria-label="Toggle">
+                <span [ngClass]="isExpanded ? 'arrow-chevron-up' : 'arrow-chevron-down'"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Panel Content -->
+    <div class="panel-content" *ngIf="isExpanded">
+        <ng-content></ng-content>
+    </div>
+</div>

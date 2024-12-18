@@ -1,0 +1,19 @@
+<kendo-textbox #textBox type="text" class="search-input" [placeholder]="placeHolder"
+[ngClass]="{'expanded': expandSearchBox }" (focus)="onFocus()" (blur)="onBlur()">
+<ng-template kendoTextBoxPrefixTemplate>
+  <span class="search-icon px-1"></span>
+</ng-template>
+
+<ng-template kendoTextBoxSuffixTemplate>
+  <!-- clear button -->
+  <button class="clear-btn mx-1" (click)="clearSearch()" *ngIf="textBox.value">
+    <span></span>clear
+  </button>
+
+  <!-- Search Button -->
+  <button kendoButton [size]="'large'" [fillMode]="'solid'" class="search-btn mx-1"
+    *ngIf="textBox.value" (click)="performSearch()">
+    <span class="align-text-top"></span>
+  </button>
+</ng-template>
+</kendo-textbox>

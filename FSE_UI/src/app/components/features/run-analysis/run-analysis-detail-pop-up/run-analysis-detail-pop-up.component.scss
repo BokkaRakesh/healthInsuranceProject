@@ -1,0 +1,152 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/fonts.scss';
+
+.modal-title {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-light-black;
+}
+
+.name{ 
+    font-family: $Roche-Sans-Medium; 
+    font-size: 14px;
+    color: $roche-grey-900;
+}
+
+.summaryInfo{
+  margin-top: 5%;
+}
+  ::ng-deep kendo-dialog.k-dialog-wrapper{
+    position: fixed !important;
+    float: right !important;
+    // width: 100% !important;
+    align-items: end !important;
+    justify-content: center !important;
+  }
+
+ 
+  ::ng-deep  .k-dialog-titlebar{
+    background: #fff;
+    border: none !important;
+  }
+
+
+  .custom-dialog-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-dialog-title .close-icon {
+    margin-left: 1%;
+    cursor: pointer;
+    margin-right: 8px; /* Adjust the spacing as needed */
+    width: 21px;
+  }
+  .dialog-title{
+    margin: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: $Roche-Sans-Medium;
+  }
+  .dataSetList{
+    height: 40vh;
+  }
+  .card.ard-details , .card.datasetDetails{
+    border: none !important;
+  }
+
+  .info-box {
+    background-color: $roche-background;
+    border: 1px solid $roche-grey-200;
+    border-radius: 5px;
+    min-height: 90px;
+    height: 50px;
+    width: 22%;
+    color: $roche-grey-900;
+    font-size: 14px;
+  
+    .label {
+      font-family: $Roche-Sans-Medium;
+    }
+    .value {
+      font-family: $Roche-Sans-Light;
+    }
+  }
+  
+  .info-box:hover {
+    border: 1px solid $roche-blue-primary;
+  }
+  
+.dataset-list {
+  max-height: 170px;
+  overflow-y: auto;
+}
+.desc_text{
+  font-weight: 700;
+  font-family: $Roche-Sans-Medium;
+}
+.desc_text_value{
+  font-family: $Roche-Sans-Light;
+}
+.dataset-item {
+  display: flex;
+  grid-template-columns: 40px 1fr 1fr auto;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid $roche-border;
+  .user-name {
+      font-size: 14px;
+      font-family: $Roche-Sans-Regular;
+      color: $roche-grey-900;
+      width: 50%;
+  }
+  .access-type {
+      font-size: 14px;
+      font-family: $Roche-Sans-Light;
+      color: $roche-grey-900;
+  }
+}
+
+.download-config-btn{
+    float: right;
+    border: 1px solid $roche-blue-primary;
+    background-color: #fff;
+    color: $roche-blue-primary;
+    top: 154px;
+    left: 1300px;
+    width: 147px;
+  height: 30px;
+/* UI Properties */
+
+text-align: left;
+font: normal normal normal 14px/20px Roche Sans;
+letter-spacing: 0px;
+opacity: 1
+}
+
+.runConfigurationLabel{
+    font-weight: bold;
+}
+
+.configuration-content{
+    background-color: $roche-grey-200;
+    height: 100vh;
+}
+
+
+.filesDiv{
+    height: 121px;
+}
+
+.reRunBtn{
+    width: 81px;
+    margin-top: 16px;
+    margin-left: -54px;
+    border-radius: 5px;
+    height: 27px;
+}
+
+.repeatImg{
+    height: 16px;
+}

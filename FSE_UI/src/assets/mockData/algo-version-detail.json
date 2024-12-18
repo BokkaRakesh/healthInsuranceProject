@@ -1,0 +1,37 @@
+{
+  "data": {
+    "items": {
+      "HPC": [
+        {
+          "location": "s3://gip-data-main/idp/a3d24c2d-c5fd/ard/da4ef7b9-2a97/analysis/bb97970b-e766/",
+          "type": "HPC"
+        }
+      ],
+      "Desktop": [
+        {
+          "location": "s3://gip-data-main/idp/a3d24c2d-c5fd/ard/da4ef7b9-2a97/analysis/bb97970b-e766/",
+          "type": "Mac"
+        },
+        {
+          "location": "s3://gip-data-main/idp/a3d24c2d-c5fd/ard/da4ef7b9-2a97/analysis/bb97970b-e766/",
+          "type": "Windows"
+        }
+      ]
+    },
+    "summary": {
+      "description": "Checks PET image orientation, checks for artifacts, and standardizes series descriptions. Expects a single DICOM volume with 3 or more frames, each of which is a time point in a dynamic scan",
+      "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+      "name": "GA-Progression",
+      "version": 1,
+      "versionref": "1.0-ga",
+      "type": "Analysis",
+      "api_key_required": "Yes",
+      "source": "Desktop, HPC",
+      "url": "s3://gip-data-main/idp/a3d24c2d-c5fd/ard/da4ef7b9-2a97/analysis/bb97970b-e766/",
+      "createdby": "Payal Sharma",
+      "updatedby": "Payal Sharma",
+      "createdat": "2024-11-18 14:45:22",
+      "updatedat": "2024-11-18 14:45:22"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<kendo-dialog title="{{modalTitle}}" (close)="close()" [width]="1057" [height]="500">
+    <!-- <app-run-analysis-grid [gridData]="gridData"></app-run-analysis-grid> -->
+    <kendo-grid [data]="gridARDData" kendoGridSelectBy="StudyID" [(selectedKeys)]="mySelection" [pageSize]="pageSize" *ngIf="selectedCatalog === 'ARD'"
+        [pageable]="false" [sortable]="true" [groupable]="false" [selectable]="false" [height]="500" [sort]="sort"
+        (sortChange)="sortChange($event)" (scrollBottom)="loadMoreData()" (cellClick)="onRowClick($event)">
+        <ng-container *ngFor="let gridColumn of gridColumnsData">
+            <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+                *ngIf="gridColumn.id !== 'Access'">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    <ng-container>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <img *ngIf="gridColumn.hasIcon  &&  dataItem[gridColumn.id]" class="pe-1 pb-1"
+                                src="../assets/images/{{ gridColumn.icon }}.svg" alt="" />
+                            <span>{{ dataItem[gridColumn.id] ? dataItem[gridColumn.id] : '-' }}</span>
+                            <span *ngIf="gridColumn.toolTipIcon && dataItem[gridColumn.id]" kendoTooltip
+                                [title]="dataItem[gridColumn.id]" class="ms-1">
+                                <img class="pe-1 pb-1" src="../assets/images/{{ gridColumn.toolTipIcon }}.svg" alt="" />
+                            </span>
+                        </div>
+                    </ng-container>
+                </ng-template>
+            </kendo-grid-column>
+        </ng-container>
+        <ng-container>
+            <kendo-grid-column field="menu" title="" [width]="50" [sticky]="true">
+                <ng-template kendoGridCellTemplate let-dataItem="dataItem" let-rowIndex="rowIndex">
+                    <span [ngClass]="'three-dot-' + rowIndex"
+                        (click)="selectedRow($event, dataItem, rowIndex); $event.stopPropagation()"
+                        #threeDotButton></span>
+                    <button kendobutton class="row-selection-btn"  
+                        (click)="selectedRow($event, dataItem, rowIndex)"> 
+                        <img class="img-arrow-align" src="../assets/images/arrow_right_white.svg" alt="navigationArrow"></button>
+                </ng-template>
+            </kendo-grid-column>
+        </ng-container>
+    </kendo-grid>
+
+    <ng-container *ngIf="showGrid && gridData">
+        <app-grid-detail [pageSize]="gridData.length" [gridData]="gridData" [pagination]="pagination" [inRunAlgo]="true" [noPagination]="true"
+            [redirectIcon]="true" [gridColumns]="gridColumnsALgo" (sendSortData)="getSortedData($event)"
+            (sendscrollData)="getPaginatedData($event)" (actionMenuEmitter)="openAlgoDetails($event)" >
+        </app-grid-detail>
+    </ng-container>
+
+    <!-- <app-algo-detail-view *ngIf="isDetailViewOpen"
+        [algorithmVersionDetails]="algorithmVersionDetails" (closeDetailViewerEmitter)="closeDetailView()"></app-algo-detail-view> -->
+
+    <!-- <button kendoButton class="row-selection-btn" themeColor="primary" [svgIcon]="svgRowSelection"></button> -->
+    <kendo-dialog-actions>
+        <div class="modal-btn">
+            <button class="btn btn-outline mx-1 cancelBtn" style=" border: 1px solid #0d6efd;color: #0d6efd;" (click)="close()">Cancel</button>
+        </div>
+        <!-- <button kendoButton (click)="close()">Cancel</button> -->
+        <!-- <button kendoButton (click)="action('yes')" themeColor="primary">
+            Yes
+        </button> -->
+    </kendo-dialog-actions>
+</kendo-dialog>

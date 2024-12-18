@@ -1,0 +1,62 @@
+<kendo-dialog title="GIPAI" (close)="close()" 
+[minWidth]="550" 
+[width]="dialogWidth" 
+[height]="dialogHeight">
+    <div class="dialog-body">
+        <div class="container gipai">
+            <div class="row  hi">
+                <div class="col-md-6 left-panel">
+                    <!-- Search Box left-panel Component -->
+                     <div class="searchTextBox">
+                             <app-search-box (search)="searchedQuery($event)" [backgroundColor]="textBackgroundColor" [placeHolder]="placeHolder"></app-search-box>
+                            <span class="capabilities mt-1">capabilities<img class="" kendoTooltip [title]="tooltipContentAsString" position="bottom" src="../assets/images/circle_info.svg" alt="" /></span>
+                            </div>
+                      <kendo-panelbar>
+                        <kendo-panelbar-item [title]="examples.Data" [expanded]="true">
+                            <ng-template kendoPanelBarContent>
+                                <div class="examples mt-2">
+                                    <button class="rounded-text" *ngFor="let example of examples?.examples" kendoButton look="outline"  (click)="OnSelectData(example)"
+                                        class="example-button suggestion-btn rounded-pill">
+                                        {{ example }}
+                                    </button>
+                                </div>
+                            </ng-template>
+                        </kendo-panelbar-item>
+                        <!-- History Section as a Panel Item -->
+                        <kendo-panelbar-item [title]="history.Data" [expanded]="true">
+                            <ng-template kendoPanelBarContent>
+                                <div class="history" *ngFor="let day of history.history">
+                                    <span class="days-chat"><b>{{day.date}}</b></span>
+                                    <ul>
+                                        <li class="recent-queries" *ngFor="let msg of day.message" (click)="OnSelectData(msg.text)">
+                                            {{ msg.text }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </ng-template>
+                        </kendo-panelbar-item>
+                    </kendo-panelbar>
+                </div>
+                  <!-- Chat Box left-panel Component -->
+                <div class="col-md-6 col-md-6 chat-right-panel hi">
+                    <div class="messages-chat hi">
+                        <div *ngFor="let gipai of gipaiChat">
+                            <div class="chat-you" *ngIf="!gipai.system">You</div>
+                            <div class="message text-only ms-0" *ngIf="!gipai.system">
+                                <p class="text ms-0"> {{gipai.text}} </p>
+                            </div>
+                            <div class="message text-only" *ngIf="gipai.system">
+                                <div class="response">
+                                    <div class="chat-from" *ngIf="gipai.system">GIPAI</div>
+                                    <p class="text me-0"> {{gipai.text}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</kendo-dialog>
+
+

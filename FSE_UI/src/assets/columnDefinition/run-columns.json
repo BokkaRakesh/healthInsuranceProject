@@ -1,0 +1,33 @@
+[
+    {
+        "name": " ",
+        "id": "status",
+        "default": false,
+        "checked": true,
+        "width": 25,
+        "order": 1,
+        "hasIcon": false,
+        "hasTooltip": false,
+        "onlyRAStatusIcon": true
+    },
+    {
+        "name": " ",
+        "id": "algoanalysisuniqid",
+        "default": false,
+        "checked": true,
+        "width": 100,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": " ",
+        "id": "starttime",
+        "default": false,
+        "checked": true,
+        "width": 180,
+        "order": 3,
+        "hasIcon": false,
+        "hasTooltip": false
+    }
+]

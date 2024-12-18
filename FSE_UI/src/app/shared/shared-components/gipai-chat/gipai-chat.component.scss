@@ -1,0 +1,320 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.tick {
+  content: url(../../../../assets/images/arrow_right.svg);
+  vertical-align: middle;
+  padding: 0px !important;
+}
+
+.container-hight {
+  .header-icon {
+    padding: 15px 15px 0px;
+    background: #FBFBFA;
+
+    .gip-head-title {
+      width: 100%;
+      text-align: center;
+
+      .align-text-bottom {
+        content: url("../../../../assets/images/gipai-chat-icon.svg");
+      }
+
+      .gipai-title {
+        color: #0B41CD;
+      }
+
+      .close-icon {
+        float: right;
+        color: #21201F;
+        cursor: pointer !important;
+      }
+    }
+  }
+
+  .chat-left-panel-top {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+    padding: 15px 17px 0px;
+    background: #F5F5F2;
+
+    .chat-wrapper {
+      display: flex;
+
+      .chat-history {
+        width: 100%;
+        width: 100%;
+        color: #21201F;
+        padding-top: 5px;
+        padding-left: 8px;
+        font-family: $Roche-Sans-Medium;
+      }
+
+      .chat-history-edit {
+        content: url("../../../../assets/images/chat-icon-edit.svg");
+        width: 40px;
+      }
+    }
+  }
+
+  .chat-left-panel {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+    padding: 13px 15px;
+    background: #F5F5F2;
+    height: 86.4vh;
+    overflow-y: auto;
+
+    .scroll-wrapper {
+      margin-top: 5%;
+
+      .history {
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+
+      .days-chat {
+        font-size: 13px;
+        padding: 0px 8px;
+        font-family: $Roche-Sans-Medium;
+        margin-bottom: 3px;
+        display: inline-block;
+      }
+
+      .hover-div:hover {
+        background: #ebebeb;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer !important;
+      }
+
+      .hover-div {
+        padding: 5px 10px;
+        cursor: pointer !important;
+      }
+
+      .recent-queries {
+        color: #21201F;
+        width: 345px;
+        display: flex;
+        margin-bottom: 2px;
+        font-family: $Roche-Sans-Light;
+
+        .msg-text {
+          width: 312px;
+          padding-right: 10px;
+        }
+
+        .arrow-icon {
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  .chat-right-panel {
+    background: #FBFBFA;
+
+    .messages-chat-header {
+      padding: 1rem;
+      height: 64vh;
+      .chat-one-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 12%;
+
+        .question {
+          margin-bottom: 3%;
+          color: #706B69;
+          font-size: 30px;
+          font-family: $Roche-Sans-Light;
+          font-weight: normal !important;
+        }
+
+        .searchTextBox {
+          padding: 10px 0px 0px;
+
+          .center-text {
+            display: inline-block;
+            padding-top: 2px;
+            color: #544F4F;
+            font-family: $Roche-Sans-Light;
+          }
+
+          img {
+            padding: 0px;
+            width: 15px;
+            cursor: pointer !important;
+          }
+
+          .tooltip-info {
+            float: right;
+          }
+
+        }
+
+        .examples {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          margin-top: 5% !important;
+          width: 75%;
+          margin: 0 auto;
+          justify-content: center;
+
+          .example-button {
+            width: 30%;
+            margin-bottom: 5px;
+          }
+
+          .suggestion-btn {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            border-color: #AEC0EE;
+            font-family: $Roche-Sans-Light;
+            color: #0D46D0;
+            cursor: pointer !important;
+            border-top: 2px solid #AEC0EE;
+            border-bottom: 2px solid #AEC0EE;
+            font-size: 15px;
+          }
+
+          .suggestion-btn b.bold {
+            font-weight: 500 !important;
+          }
+
+          .k-button-outline-base:hover {
+            border-radius: 50px;
+            border-color: #778fcd;
+            border-top: 2px solid #778fcd;
+            border-bottom: 2px solid #778fcd;
+            color: #0D46D0;
+            background: none;
+            cursor: pointer !important;
+          }
+        }
+      }
+
+      .chat-two-container {
+        .messages-chat {
+          height: 65vh;
+          overflow-y: auto;
+          overflow-x: hidden;
+          margin-top: 2%;
+
+          .message {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+          }
+
+          .request {
+            display: flex;
+            background-color: #F5F5F2;
+            padding: 7px 15px;
+            font-size: 15px;
+            border-radius: 5px;
+            color: #21201F;
+            font-family: $Roche-Sans-Light;
+
+            .gip-sys-icon {
+              margin-right: 5px;
+            }
+          }
+
+          .response-text {
+            margin: 0;
+            background-color: #F5F5F2;
+            color: #21201F;
+            padding: 7px 15px;
+            font-size: 15px;
+            border-radius: 5px;
+            font-family: $Roche-Sans-Light;
+          }
+
+          .text-only {
+            margin-left: 3px;
+          }
+
+          .response {
+            float: left;
+            margin-right: 8px !important;
+            margin-left: auto;
+            display: flex;
+
+            .text {
+              margin: 0 35px;
+              padding: 7px 15px;
+              font-size: 12px;
+              border-radius: 5px;
+              background-color: #F5F5F2 !important;
+              margin-right: 8px !important;
+            }
+
+
+          }
+        }
+
+        .searchTextBox {
+          padding: 10px 0px 0px;
+          text-align: center;
+
+          .center-text {
+            display: inline-block;
+            padding-top: 2px;
+            color: #544F4F;
+            font-family: $Roche-Sans-Light;
+          }
+
+          img {
+            padding: 0px;
+            width: 15px;
+            cursor: pointer !important;
+          }
+
+          .tooltip-info {
+            float: right;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+::ng-deep {
+  .k-dialog-content {
+    padding: 0px !important;
+  }
+
+  .k-dialog-title {
+    display: none;
+  }
+
+  kendo-dialog-titlebar {
+    display: none !important;
+  }
+
+  .k-button-text {
+    padding: 0px 5px 2px !important;
+    font-size: 13px;
+  }
+
+  kendo-dialog .kendo-dialog-content {
+    padding: 0px !important;
+  }
+
+  .k-icon {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .k-tooltip {
+    white-space: pre-line;
+    font-size: 10px;
+  }
+}

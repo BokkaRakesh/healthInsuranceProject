@@ -1,0 +1,62 @@
+@import "../../../../../../FSE_UI/src/styles/variables.scss";
+@import "../../../../../../FSE_UI/src/styles/fonts.scss";
+
+.navigation-tab:hover {
+  border-bottom: 3px solid $roche-light-black;
+}
+
+.navigation-tab {
+  cursor: pointer;
+  transition: width 2s, height 4s;
+
+  &.active {
+    border-bottom: 3px solid $roche-light-black;
+  }
+}
+
+.navbar-align {
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 16px 0px;
+  margin: 0px 16px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  text-align: left;
+  font-family: $Roche-Sans-Regular;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.nav-link.active {
+  color: $roche-light-black;
+}
+
+.nav-link.disabled {
+  color: $roche-grey-disabled;
+}
+
+.status-display {
+  float: right;
+  font-family: $Roche-Sans-Medium;
+  font-size: 14px;
+  color: $roche-grey-900;
+}
+
+::ng-deep {
+  .k-chip-solid-base {
+    border-color: var(--kendo-color-border, rgba(0, 0, 0, 0.08));
+    border-radius: 19px;
+    background-color: $roche-yellow-100;
+    font-family: $Roche-Sans-Regular;
+    letter-spacing: 0px;
+    color: $roche-grey-900;
+    cursor: auto;
+  }
+  
+}
+

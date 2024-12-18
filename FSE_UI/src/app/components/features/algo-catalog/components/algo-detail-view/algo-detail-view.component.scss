@@ -1,0 +1,174 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1001;
+}
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+
+    &.hidden {
+        transform: translateX(100%);
+    }
+
+    .drawer-tabs {
+        .tab-button {
+            flex: 1;
+            padding: 20px 10px;
+            text-align: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: $Roche-Sans-Regular;
+            color: $roche-grey-900;
+            &.active {
+                border-bottom: 2px solid $roche-dark-blue;
+            }
+        }
+    }
+
+    .expansion-panel {
+        .expansion-content {
+            margin-top: 10px;
+        }
+    }
+}
+
+.header-icon {
+    content: url(../../../../../../assets/images/monitor_settings.svg);
+    vertical-align: text-top;
+}
+.header-title {
+    font-size: 18px;
+    font-family: $Roche-Sans-Medium;
+    color: $roche-light-black;
+}
+
+.close-btn {
+    content: url(../../../../../../assets/images/close_icon.svg);
+    filter: brightness(0) saturate(100%) invert(12%) sepia(7%) saturate(254%) hue-rotate(349deg) brightness(94%) contrast(97%);
+    cursor: pointer;
+}
+
+.view-analysis-btn {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-blue-primary;
+    &:hover {
+        background-color: transparent;
+    }
+    span.icon {
+        content: url(../../../../../../assets/images/clock_timer.svg);
+        filter: invert(17%) sepia(100%) saturate(3043%) hue-rotate(221deg) brightness(86%) contrast(95%);
+        vertical-align: middle;
+    }
+}
+
+.run-analysis-btn {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-background;
+
+    span.icon {
+        content: url(../../../../../../assets/images/monitor_settings.svg);
+        filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(328deg) brightness(103%) contrast(101%);
+        vertical-align: middle;
+    }
+}
+
+.description-text {
+    font-size: 14px;
+    font-family: $Roche-Sans-Light;
+    color: $roche-grey-900;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    span {
+        font-size: 14px;
+        color: $roche-grey-900;
+    }
+    .label{
+        font-family: $Roche-Sans-Regular;
+    }
+    .value {
+        font-family: $Roche-Sans-Light;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.main-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+::ng-deep {
+    .k-panelbar .k-panelbar-header {
+        border: none;
+        box-shadow: none;
+    }
+
+    .k-expander {
+        border-width: 0px;
+        border-style: none;
+    }
+    
+    .k-expander:focus {
+        border-width: 0px;
+        border-style: none;
+    }
+
+    .k-expander-header:hover {
+        background-color: transparent;
+    }
+}
+
+.title > span {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-900;
+}
+
+.subtitle {
+    position: relative;
+    right: 0;
+    font-size: 12px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-blue-primary;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.download-btn {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-disabled;
+    background-color: $roche-grey-200;
+    border-radius: 2px;
+    .download-icon  {
+        content: url(../../../../../../assets/images/download.svg);
+        filter: brightness(0) saturate(100%) invert(69%) sepia(7%) saturate(364%) hue-rotate(341deg) brightness(85%) contrast(86%);
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "id": "arduniqid",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "ARDUniqID",
+        "showFilter": true
+    },
+    {
+        "id": "name",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Name",
+        "showFilter": true
+    },
+    {
+        "id": "createdat",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Created",
+        "showFilter": true
+    },
+    {
+        "id": "subjects",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Subjects",
+        "showFilter": true
+    },
+    {
+        "id": "sessions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Session",
+        "showFilter": true
+    },
+    {
+        "id": "aquisitions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Aquisitions",
+        "showFilter": true
+    },
+    {
+        "id": "files",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Files",
+        "showFilter": true
+    },
+    {
+        "id": "Modality",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Modality",
+        "showFilter": true
+    },
+    {
+        "id": "Access",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Access",
+        "showFilter": true
+    },
+    {
+        "id": "visits",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Visits",
+        "showFilter": true
+    },
+    {
+        "id": "aquisitions",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "Aquisitions",
+        "showFilter": true
+    },
+    {
+        "id": "createdby",
+        "type": "text",
+        "inclusion": true,
+        "dialogOptionType": "showddMulti",
+        "displayName": "CreatedBy",
+        "showFilter": false
+    }
+]

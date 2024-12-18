@@ -1,0 +1,81 @@
+.workflow-activities {
+    margin-top: 5%;
+}
+
+.activities-data {
+    width: 48%;
+}
+.favorite-data {
+    width: 40%;
+}
+.head-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-item-activity {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border: 1px solid #ddd;
+    margin-bottom: 1%;
+    font-size: 13px;
+
+    .activity-tick {
+        padding: 5px 10px;
+        border-right: 1px solid #ccc;
+    }
+
+    .tick {
+        content: url(../../../../assets/images/circle_checkmark_green.svg);
+        vertical-align: middle;
+        // padding: 0px !important;
+        display: inline-block;
+        width: 20px;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
+
+    .hrs {
+        width: 7%;
+        text-align: center;
+    }
+
+    .act-txt {
+        width: 80%;
+    }
+}
+
+.list-item-favorite {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 4px 0px;
+    font-size: 12px;
+
+    .fav-text {
+        width: 93%;
+        margin-left: 5px;
+    }
+
+    .favourite-heart {
+        content: url(../../../../assets/images/favourite.svg);
+        width: 5%;
+    }
+
+    .fav-icon {
+        content: url(../../../../assets/images/fav-book.svg);
+        width: 3%;
+        padding: 0 !important;
+    }
+}
+
+
+::ng-deep {
+    .k-listview-bordered {
+        border: none;
+    }
+}

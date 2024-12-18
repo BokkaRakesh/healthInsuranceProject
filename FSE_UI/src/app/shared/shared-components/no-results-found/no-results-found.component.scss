@@ -1,0 +1,50 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.container-fluid {
+  height: 100vh;
+}
+
+.k-icon {
+  height: 120px;
+  width: 120px;
+}
+
+.no-result {
+  font-family: $Roche-Sans-Light;
+  font-size: 18px;
+  color: $roche-grey-disabled;
+}
+
+.criteria {
+  font-family: $Roche-Sans-Light-Italic;
+  font-size: 14px;
+  color: $roche-grey-disabled;
+}
+
+.pagination-count {
+  font-size: 12px;
+  font-family: $Roche-Sans-Medium;
+  color: $roche-grey-800;
+  opacity: 1;
+}
+
+.pagination-info {
+  font-size: 12px;
+  font-family: $Roche-Sans-Light;
+  color: $roche-grey-disabled;
+  opacity: 1;
+}
+
+.gear-icon {
+
+  span {
+    font-family: $Roche-Sans-Light;
+    font-size: 12px;
+    color: $roche-grey-disabled;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}

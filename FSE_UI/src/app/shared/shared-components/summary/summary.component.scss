@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.summaryCard {
+    padding: 0.5rem;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: $roche-blue-50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-icons {
+    height: 19px !important;
+    width: 19px !important;
+    color: #544f4f !important;
+    padding-bottom: 1px;
+    color: $roche-grey-700 !important;
+}
+
+.card-value-box {
+    display: flex;
+    position: relative;
+}
+
+.card-name-box {
+    position: relative;
+}
+
+.card-name {
+    font-family: $Roche-Sans-Regular;
+    font-size: 14px;
+    color: $roche-grey-900;
+    text-align: left;
+}
+
+.card-value {
+    font-family: $Roche-Sans-Bold;
+    font-size: 18px;
+    float: right;
+}
+

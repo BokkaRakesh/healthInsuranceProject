@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-auto">
+            <app-breadcrumb-navigation></app-breadcrumb-navigation>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-auto d-flex align-items-center" *ngIf="ardResult">
+            <span class="navigate-back me-2" (click)="openIdpDetails()"></span>
+            <span class="idp-name px-1">{{ardResult.data.summary.name}}</span>
+            <span class="px-1 pb-1 idp-down"></span>
+            <span class="px-1 favourite-heart" [ngClass]="favouriteSelection ? 'favourite-heart-blue' : 'favourite-heart'" (click)="selectFavourite()"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <ng-container *ngIf="ardResult">
+            <div class="col-9 p-0">
+                <app-tab-navigation
+                [navigation]="parentTabs"
+                (tabInfo)="getSelectedTabInfo($event)">
+                <div class="grid-projected-content text-end mt-3">
+                    <!-- Todo: Need to navigate to Run analysis -->
+                    <span class="pe-1">I want to</span>
+                    <button class="btn btn-sm btn-primary mx-1" (click)="runAnalysis()">
+                        <span class="pe-1"></span>Run Analysis
+                    </button>
+              </div>
+
+                </app-tab-navigation>
+                <!-- ARD Detail result -->
+                    <ng-container [ngSwitch]="selectedTab"> 
+                        <app-ard-documentation-tab *ngSwitchCase="'Documentation'" [ardResult]="ardResult"></app-ard-documentation-tab>                     
+                        <app-idp-subjects *ngSwitchCase="'Subjects'" (subjectSortEmitter)="sortSubjects($event)"
+                            (subjectNextPageEmitter)="paginateSubjects($event)" [isARDNavigated]="isARDNavigated" [paginationDetailSubject]="paginationDetailSubject"></app-idp-subjects>
+                        <app-idp-files *ngSwitchCase="'Files'" (filesSortEmitter)="sortFiles($event)"
+                            (filesNextPageEmitter)="paginateFiles($event)" [isARDNavigated]="isARDNavigated" [paginationDetailFiles]="paginationDetailFiles"></app-idp-files>
+                        <div *ngSwitchCase="'Clinical Data'">Clinical Data</div>
+                        <div *ngSwitchCase="'Insights'">Insights</div>
+                        <div *ngSwitchCase="'Activities'">Activities</div>
+                        <div *ngSwitchCase="'Attachments'">Attachments</div>
+                    </ng-container>
+            </div>
+            <div class="col-3 p-0 right-panel-summary">
+                <!-- ARD Summary Component -->
+                <app-data-summary-detail    [summary]="summary" [summaryDetails]="summaryDetails"></app-data-summary-detail>
+            </div>
+        </ng-container>
+    </div>
+</div>

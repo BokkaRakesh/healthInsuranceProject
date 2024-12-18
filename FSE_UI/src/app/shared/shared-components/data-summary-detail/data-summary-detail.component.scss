@@ -1,0 +1,77 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.summaryContainer {
+    height: 100%;
+    border: 1px solid $roche-border;
+    overflow: auto;
+}
+
+.summarylist {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.summaryCard {
+    padding: 8px 14px;
+    margin-bottom: 4px;
+    height: 64px;
+}
+
+.k-hstack {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardName {
+    font-family: $Roche-Sans-Regular;
+    font-size: 14px;
+    text-align: left;
+    margin-right: auto;
+    padding: 13px;
+}
+
+.cardValue {
+    font-family: $Roche-Sans-Bold;
+    font-size: 18px;
+}
+
+.summary-icon {
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.icon-background {
+    background-color: $roche-blue-50;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.sources {
+    margin-top: 1%;
+}
+
+.dataSources {
+    font-family: $Roche-Sans-Light;
+    font-size: 14px;
+    color: $roche-grey-900;
+    margin-left: 10px;
+}
+
+.datasourcestitle {
+    font-size: 12px;
+    font-family: $Roche-Sans-Medium;
+    text-align: left;
+    font-weight: 600;
+    color: $roche-grey-900;
+    margin: 10px;
+}
+
+.modalityContainer {
+    margin-left: 12px;
+    margin-top: 10px;
+}

@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-auto">
+            <app-breadcrumb-navigation></app-breadcrumb-navigation>
+        </div>
+        <div class="col align-items-center">
+            <app-filter-badge (batchEmit)="getBatchesData($event)"
+                (emitBatchDetailForEdit)="editBatchDetail($event)"></app-filter-badge>
+        </div>
+    </div>
+    <div class="row justify-content-between align-items-center">
+        <div class="col-auto page-label" *ngIf="!showGridTitle">
+            <span>Explore Data</span>
+        </div>
+
+        <div class="col d-flex justify-content-start align-items-center flex-wrap">
+            <div class="metadata-section text-end me-3" *ngIf="!showGridTitle">
+                <app-summary [summary]="summaryInfo"></app-summary>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center flex-wrap">
+
+            <div class="search-and-buttons text-end d-flex align-items-center">
+                <div class="col text-end">
+                    <button class="filter-btn btn btn-outline-primary mx-1 pe-1" #filter
+                        (click)="openFilterOptionsPopup()">
+                        Filter
+                        <span class="filter-btn-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Grid Section -->
+    <div class="row mt-3">
+        <ng-container *ngIf="!showGrid">
+            <app-no-results-found [showNoRecords]="fetchDataInfo"></app-no-results-found>
+        </ng-container>
+        <ng-container *ngIf="showGrid">
+            <app-grid
+            [pageSize]="gridData.length"
+            [gridData]="gridData"
+            [gridColumns]="gridColumns"
+            [pagination]="pagination"
+            [threeDotMenu]="true"
+            [checkBoxSelection]="false"
+            (sendSortData)="getSortedData($event)"
+            (sendscrollData)="getPaginatedData($event)"
+            (actionMenuEmitter)="openRowMenu($event)"  (sendRowDataEmitter)="openExploreDocumentationDetails($event)"
+            >
+            </app-grid>
+        </ng-container>
+    </div>
+</div>
+
+<app-table-pop-up *ngIf="showRowPopup" [items]="rowMenuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign"
+    [popupAlign]="popupAlign" (itemClick)="onPopupItemClick($event)">
+</app-table-pop-up>
+
+
+<kendo-popup #popup class="filter-option scroll-bar" *ngIf="isFilterOptionsVisible" [anchor]="filter" [animate]="false"
+    style="max-height: 300px;overflow-y: scroll;" [anchorAlign]="{ vertical: 'bottom', horizontal: 'center' }"
+    [popupAlign]="{ vertical: 'top', horizontal: 'right' }" (close)="isFilterOptionsVisible = false">
+    <div class="popup-menu mx-4 my-3">
+        <div class="title mb-2">
+            <p class="mb-0 fw-bold">Filter Options</p>
+        </div>
+        <div>
+            <!-- <ng-container *ngFor="let filter of popupFilterList">
+                <p class="mb-0 mt-3 filter-list-label" (click)="onClickOfFilterOption(filter)">{{ filter.label }}</p>
+                <hr class="m-0 mt-1">
+            </ng-container> -->
+            <ng-container *ngFor="let studyFilter of popupFilterList">
+                <p class="mb-0 mt-3 filter-list-label" (click)="onClickOfFilterOption(studyFilter)">{{ studyFilter.label }}</p>
+                <hr class="m-0 mt-1">
+              </ng-container>
+        </div>
+    </div>
+</kendo-popup>
+
+<app-idp-filter-dialog *ngIf="isDialogOpen" [dialogOpened]="isDialogOpen" [filterMap]="filterMap"
+    [filterData]="filterData" [selectedFilterOption]="selectedFilterOption" (filterEmitter)="getFilteredData($event)"
+    (batchEmit)="getBatchesData($event)" (isDialogOpen)="isDialogOpened()"></app-idp-filter-dialog>
+
+
+    <div kendoDialogContainer></div>

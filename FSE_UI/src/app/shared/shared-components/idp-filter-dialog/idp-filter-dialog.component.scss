@@ -1,0 +1,23 @@
+.kendo-btn-align {
+    margin-left: auto;
+    margin-top: 15px; 
+}
+
+.k-window-title{
+    font-weight: bold;
+}
+
+.k-actions-horizontal{
+    width: 50%;
+    align-self: self-end;
+}
+
+.k-dialog-actions{
+    border-style: none;
+}
+
+::ng-deep .k-list-item.k-selected,
+.k-selected.k-list-optionlabel {
+    color: #FFFFFF !important;
+    background-color: #0B41CD !important;
+}

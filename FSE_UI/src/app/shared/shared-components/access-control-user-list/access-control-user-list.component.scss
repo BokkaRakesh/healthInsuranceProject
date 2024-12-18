@@ -1,0 +1,56 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.initials-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    font-family: $Roche-Sans-Regular;
+    background-color: $roche-blue-100;
+    color: $roche-blue-primary;
+    border: 2px solid $roche-background;
+    border-radius: 50%;
+}
+
+.three-dot {
+    content: url(../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+}
+
+.access-control-list {
+    max-height: 170px;
+    overflow-y: auto;
+    height: 170px;
+}
+
+.access-control-item {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr auto;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid $roche-border;
+
+    .user-name {
+        font-size: 14px;
+        font-family: $Roche-Sans-Regular;
+        color: $roche-grey-900;
+    }
+
+    .acess-type {
+        font-size: 14px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+}
+
+.align-no-text-found {
+    height: 170px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-family: $Roche-Sans-Regular;
+}

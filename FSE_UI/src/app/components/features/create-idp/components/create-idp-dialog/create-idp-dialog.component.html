@@ -1,0 +1,26 @@
+<kendo-dialog [formGroup]="createIdpForm" title="Create IDP" (close)="close()" [minWidth]="250" [width]="500">
+    <div class="dialog-body">
+        <div class="name mb-1">Name</div>
+        <div class="form-floating">
+            <span class="prefix ml-1">IDP_</span>
+            <input type="text" class="form-control" [(ngModel)]="idpName" id="idpName" formControlName="idpName" [disabled]="false" />    
+        </div>
+        <div class="row mt-1 ps-4 pe-1 idpNameError" *ngIf="
+        createIdpForm.controls['idpName'].touched &&
+        createIdpForm.controls['idpName']?.hasError('maxlength')
+      ">
+            Maximum of 150 characters are allowed for IDP Name
+        </div>
+        <span class="input-info">Naming convention “IDP_[study_ID….]_dataSources”</span>
+    </div>
+    <div class="d-flex justify-content-between mt-5">
+        <div class="form-check pt-1">
+            <input type="checkbox" class="form-check-input" name="updatable" id="updatable" formControlName="updatable">
+            <label class="form-check-label" for="updatable">Updatable</label>
+        </div>
+        <div class="modal-btn">
+            <button class="btn btn-outline mx-1" (click)="close()">Cancel</button>
+            <button class="btn btn-primary mx-1" (click)="create()" [disabled]="!createIdpForm.valid">Create</button>
+        </div>
+    </div>
+</kendo-dialog>

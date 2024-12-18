@@ -1,0 +1,15 @@
+<div class="d-flex flex-column">
+  <div class="card-carousel-container mb-5">
+    <div class="wrapper">
+      <kendo-tabstrip [scrollable]="true">
+        <kendo-tabstrip-tab *ngFor="let tab of selectedWorkflowCards">
+          <ng-template kendoTabTitle>
+            <app-workflow-card [card]="tab" (cardSelected)="highlightSelectedCard(tab)"></app-workflow-card>
+          </ng-template>
+        </kendo-tabstrip-tab>
+      </kendo-tabstrip>
+    </div>
+  </div>
+</div>
+
+<div kendoDialogContainer></div>

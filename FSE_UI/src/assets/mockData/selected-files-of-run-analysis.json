@@ -1,0 +1,21 @@
+{
+    "data": {
+        "items": {
+            "do_reg_check": "True",
+            "do_resize": "True",
+            "do_rgb_conv": "True"
+        },
+        "inputfile": [
+            {
+                "file": "config.json",
+                "type": "csv"
+            }
+        ],
+        "outputfile": [
+            {
+                "file": "dicom.zip",
+                "type": "zip"
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+kendo-drawer-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+li.k-drawer-item.k-selected {
+    background-color: transparent !important;
+    .k-icon {
+        filter: invert(17%) sepia(100%) saturate(3043%) hue-rotate(221deg) brightness(86%) contrast(95%);
+    }
+    .item-descr-wrap > span {
+        color: $roche-blue-primary;
+    }
+}
+
+li.k-drawer-item:hover {
+    background-color: $roche-grey-5-hover;
+}

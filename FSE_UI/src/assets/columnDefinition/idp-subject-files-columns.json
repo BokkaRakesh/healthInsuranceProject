@@ -1,0 +1,62 @@
+[
+    {
+        "name": "File Name",
+        "id": "filename",
+        "default": true,
+        "checked": true,
+        "width": 250,
+        "order": 1,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "File Path",
+        "id": "filePath",
+        "default": true,
+        "checked": true,
+        "width": 250,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "File Type",
+        "id": "filemodality",
+        "default": true,
+        "checked": true,
+        "width": 50,
+        "order": 3,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "File Size",
+        "id": "filesize",
+        "default": true,
+        "checked": true,
+        "width": 50,
+        "order": 4,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Created At",
+        "id": "dicomacquisitiondate",
+        "default": true,
+        "checked": true,
+        "width": 150,
+        "order": 5,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Checked",
+        "id": "checked",
+        "default": true,
+        "checked": true,
+        "width": 50,
+        "order": 6,
+        "hasIcon": false,
+        "hasTooltip": false
+    }
+]

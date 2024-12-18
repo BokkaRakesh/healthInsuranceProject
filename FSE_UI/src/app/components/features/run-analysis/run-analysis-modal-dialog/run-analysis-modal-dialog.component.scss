@@ -1,0 +1,25 @@
+.row-selection-btn{
+    background-color: #006aff;
+    border: 1px solid #006aff
+}
+
+
+.cancelBtn{
+    float: right;
+}
+
+.k-grid-content .k-table-row:last-child > td, .k-grid-content .k-table-row:last-child > .k-table-td{
+    background-color: #006aff;
+}
+.k-table-td .k-grid-content-sticky .k-touch-action-auto{
+    background-color: #006aff;
+}
+
+.k-grid-content .k-virtual-content .k-grid-table-wrap
+ .k-grid-table .k-table .k-table-md .k-master-row .k-table-row .k-table-td .k-grid-content-sticky .k-touch-action-auto{
+    background-color: #006aff;
+}
+
+.k-table-td .k-grid-content-sticky .k-touch-action-auto{
+    background-color: #006aff !important;
+}

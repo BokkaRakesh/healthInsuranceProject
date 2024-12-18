@@ -1,0 +1,37 @@
+{
+    "data": {
+        "ard_study_details": {
+            "studyscientificarea": "Oncology",
+            "studyindication": "Cancer",
+            "studyphase": "Phase IV",
+            "dataClassification": "Clinical Data"
+        },
+        "desc": "Curabitur non nisi in dui pellentesque vulputate vitae sit amet enim. Nullam rhoncus nunc et sem lacinia lobortis. Nunc convallis, nibh in fermentum elementum, lorem nunc pharetra velit, nec aliquet risus urna eu nulla. Mauris tempor accumsan tortor eget vehicula. În semper sit amet metus nec finibus.",
+        "data_Set_supplier" : [
+            {
+              "name": "Dataset Suplier 1",
+              "value": "medio 1"
+            },
+            {
+                "name": "Dataset Suplier 2",
+                "value": "medio 2"
+            },
+            {
+                "name": "Dataset Suplier 3",
+                "value": "medio 3"
+            },
+            {
+                "name": "Dataset Suplier 4",
+                "value": "medio 4"
+            }
+          ],
+      
+        "summary": {
+            "subjects": 1111,
+            "files": 2222,
+            "acquisitions": 3333,
+            "sessions": 44444
+         
+        }
+    }
+}

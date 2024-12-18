@@ -1,0 +1,46 @@
+<kendo-dialog title="Access Control" (close)="close()" [minWidth]="250" [width]="500">
+    <form [formGroup]="accessControlForm">
+        <div>
+            <div class="align-visibility-label align-from-left align-font">Visibility</div>
+            <div class="my-2 align-radio-btn align-from-left">
+                <div>
+                    <kendo-radiobutton #checked value="2" formControlName="visibility"></kendo-radiobutton>
+                    <kendo-label class="k-radio-label align-radio-btn-font" [for]="checked"
+                        text="Private (Default)"></kendo-label>
+                </div>
+                <div>
+                    <kendo-radiobutton #checked value="1" formControlName="visibility"></kendo-radiobutton>
+                    <kendo-label class="k-radio-label align-radio-btn-font" [for]="checked" text="Public"></kendo-label>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="accessControlForm.get('visibility')?.value === '2'">
+            <div class="align-visibility-label align-from-left align-font mt-4">Collaborators</div>
+            <div class="my-2 auto-complete-align">
+                <kendo-autocomplete class="auto-complete-search" [data]="userListData" [filterable]="true"
+                    formControlName="collaborators" (filterChange)="onFilterChange($event)"
+                    placeholder="add collaborator…" valueField="name" (valueChange)="onUserSelection($event)">
+                </kendo-autocomplete>
+            </div>
+        </div>
+
+        <div *ngIf="accessControlForm.get('visibility')?.value === '2'" class="col-lg-11 col-md-12 align-from-left">
+            <div class="d-flex mt-3 align-header align-font">
+                <span class="font-weight-bold align-header-label">User</span>
+                <span class="font-weight-bold align-header-label">Permission</span>
+            </div>
+            <app-access-control-user-list [users]="userList" (emitSelectedListInfo)="emitSelectedListInfo($event)"
+                [isShowThreeDot]="true"></app-access-control-user-list>
+        </div>
+        <div class="d-flex justify-content-between align-right mt-5">
+            <div class="modal-btn">
+                <button class="btn btn-outline mx-1" (click)="close()">Cancel</button>
+                <button class="btn btn-primary mx-1" type="submit" [disabled]="checkChanges()"
+                    (click)="onSave(accessControlForm.get('visibility')?.value)">Save</button>
+            </div>
+        </div>
+    </form>
+</kendo-dialog>
+<app-access-list-popup *ngIf="showAccessPopup" [permissionList]="permissionList" [anchor]="rowPopUp"
+    [anchorAlign]="anchorAlign" [popupAlign]="popupAlign"
+    (emitPermissionChangeInfo)="permissionChangeInfo($event)"></app-access-list-popup>

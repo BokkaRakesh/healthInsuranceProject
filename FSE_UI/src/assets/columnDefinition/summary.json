@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Datasets",
+      "id": "total",
+      "icon": "study grey"
+    },
+    {
+      "name": "Subjects",
+      "id": "subjects",
+      "icon": "study-user"
+    },
+    {
+      "name": "Files",
+      "id": "files",
+      "icon": "attach-file"
+    },
+    {
+      "name": "Sessions",
+      "id": "sessions",
+      "icon": "sessions"
+    },
+    {
+      "name": "Acquisitions",
+      "id": "acquisitions",
+      "icon": "acquisitions"
+    },
+    {
+      "name": "Algorithms",
+      "id": "algorithms",
+      "icon": "explore-algorithms"
+    },
+    {
+      "name": "Models",
+      "id": "models",
+      "icon": "sessions"
+    }
+  ]
+  

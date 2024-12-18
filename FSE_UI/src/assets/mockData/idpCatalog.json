@@ -1,0 +1,350 @@
+{
+    "data": {
+        "items": [
+            {
+                "IdpUnqId": "c74d9888-5809-480d-bd3a-498d9250c25e",
+                "IdpName": "testar",
+                "IdpType": "custom",
+                "CurrentVersion": 1,
+                "IsArchived": 0,
+                "IdpCreatedBy": "31",
+                "IdpDescription": null,
+                "IdpStatus": "active",
+                "StudyScientificArea": "Endocrinology | Ophthalmology, Respiratory Disease | Oncology",
+                "Sessions": 7709,
+                "Aquisitions": 63854,
+                "Modality": "CR,CT,FP,MR,NM,OT,PT",
+                "Subjects": 1202,
+                "Files": 75854,
+                "IdpCreatedAt": "2024-11-08T13:45:03",
+                "IdpUpdatedAt": "2024-11-08T13:45:03",
+                "DataSources":  [
+                    {
+                    "id": "Imaging",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": false,
+                    "requested": false
+                    },
+                    {
+                    "id": "Omics",
+                    "access": false,
+                    "requested": false
+                    }
+                     ],
+                "StudyNumber": "IN04302, GO29436",
+                "StudyThemeMolecule": "vicasinabin, Tecentriq",
+                "StudyIndication": "Diabetic retinopathy, Lung cancer",
+                "StudyPhase": "Phase I, Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "Inoveon, IMpower 150",
+                "StudyThemeNumber": "7774, 30019"
+            },
+            {
+                "IdpUnqId": "d56e7210-a276-47d3-82ce-ed4fed337bdf",
+                "IdpName": "studyy",
+                "IdpType": "custom",
+                "CurrentVersion": 1,
+                "IsArchived": 0,
+                "IdpCreatedBy": "31",
+                "IdpDescription": null,
+                "IdpStatus": "active",
+                "StudyScientificArea": "Endocrinology | Ophthalmology, Respiratory Disease | Oncology",
+                "Sessions": 7709,
+                "Aquisitions": 63854,
+                "Modality": "CR,CT,FP,MR,NM,OT,PT",
+                "Subjects": 1202,
+                "Files": 75854,
+                "IdpCreatedAt": "2024-11-08T13:29:16",
+                "IdpUpdatedAt": "2024-11-08T13:29:16",
+                "DataSources":  [
+                    {
+                    "id": "Imaging",
+                    "access": false,
+                    "requested": true
+                    },
+                    {
+                    "id": "Clinical",
+                    "access": false,
+                    "requested": false
+                    },
+                    {
+                    "id": "Omics",
+                    "access": false,
+                    "requested": false
+                    }
+                     ],
+                "StudyNumber": "IN04302, GO29436",
+                "StudyThemeMolecule": "vicasinabin, Tecentriq",
+                "StudyIndication": "Diabetic retinopathy, Lung cancer",
+                "StudyPhase": "Phase I, Phase III",
+                "StudyType": "Interventional",
+                "StudyStatus": "Clinical Closure",
+                "StudyAcronym": "Inoveon, IMpower 150",
+                "StudyThemeNumber": "7774, 30019"
+            }
+        ],
+        "sort": {
+            "field": "Subjects",
+            "order": "DESC"
+        },
+        "pagination": {
+            "totalCount": 6,
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "total": 6,
+            "subjects": 8412,
+            "files": 518208,
+            "sessions": 48474,
+            "acquisitions": 387558
+        },
+        "filters": [
+            {
+                "id": "DataProductUniqID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "4ee2fb27-636b-4239-8366-993788f03421",
+                    "9ca0822c-ea2b-476c-9526-89b0eb62f399",
+                    "a337e362-595f-44f2-9af8-dfad969240fc",
+                    "c74d9888-5809-480d-bd3a-498d9250c25e",
+                    "d56e7210-a276-47d3-82ce-ed4fed337bdf",
+                    "faa13db8-4816-46f1-94c7-0d41da1ab98c"
+                ]
+            },
+            {
+                "id": "Name",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "IDP2024",
+                    "studies",
+                    "studies2",
+                    "studyy",
+                    "test522",
+                    "testar"
+                ]
+            },
+            {
+                "id": "Type",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "custom"
+                ]
+            },
+            {
+                "id": "CreatedAt",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "UpdatedAt",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "CurrentVersion",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "IsArchived",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "CreatedBy",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "31"
+                ]
+            },
+            {
+                "id": "Description",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "ScientificArea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Endocrinology | Ophthalmology",
+                    "Respiratory Disease | Oncology"
+                ]
+            },
+            {
+                "id": "StudyNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "GO29436",
+                    "IN04302"
+                ]
+            },
+            {
+                "id": "StudyIndication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Diabetic retinopathy",
+                    "Lung cancer"
+                ]
+            },
+            {
+                "id": "StudyThemeMolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Tecentriq",
+                    "vicasinabin"
+                ]
+            },
+            {
+                "id": "StudyPhase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase I",
+                    "Phase III"
+                ]
+            },
+            {
+                "id": "StudyType",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "StudyStatus",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Clinical Closure"
+                ]
+            },
+            {
+                "id": "StudyAcronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "IMpower 150",
+                    "Inoveon"
+                ]
+            },
+            {
+                "id": "StudyThemeNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "30019",
+                    "7774"
+                ]
+            },
+            {
+                "id": "DataSources",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Clinical",
+                    "Imag",
+                    "Imaging"
+                ]
+            },
+            {
+                "id": "Status",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "active"
+                ]
+            },
+            {
+                "id": "Modality",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "CR",
+                    "CT",
+                    "FP",
+                    "MR",
+                    "NM",
+                    "OT",
+                    "PT"
+                ]
+            },
+            {
+                "id": "subjects",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "files",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "sessions",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "acquisitions",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectEnrollmentSiteId",
+                "type": "text",
+                "inclusion": true,
+                "values": []
+            },
+            {
+                "id": "SubjectRace",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "White"
+                ]
+            },
+            {
+                "id": "SubjectEthnicity",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Not Hispanic or Latino"
+                ]
+            },
+            {
+                "id": "SubjectSex",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "male"
+                ]
+            }
+        ],
+        "text2sql": [
+            ""
+        ]
+    }
+}

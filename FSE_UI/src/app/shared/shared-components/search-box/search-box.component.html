@@ -1,0 +1,26 @@
+<div class="d-flex">
+<form [formGroup]="searchForm" class="search-container"
+  [ngStyle]="{ 'width': width, 'background-color': backgroundColor }">
+  <!-- input box -->
+  <kendo-textbox type="text" formControlName="searchQuery" class="search-input" [placeholder]="placeHolder"
+    [ngStyle]="{ 'background-color': backgroundColor }" (keydown.enter)="performSearch()">
+    <ng-template kendoTextBoxPrefixTemplate>
+      <span class="search-icon"></span>
+    </ng-template>
+
+    <ng-template kendoTextBoxSuffixTemplate>
+      <!-- clear button -->
+      <button class="clear-btn" (click)="clearSearch()" *ngIf="searchForm.get('searchQuery')?.value">
+        <span></span>clear
+      </button>
+
+      <!-- Search Button -->
+      <button kendoButton [size]="'small'" type="submit" [fillMode]="'solid'" class="search-btn mx-3"
+        *ngIf="searchForm.get('searchQuery')?.value" (click)="performSearch()">
+        <img src="../assets/images/arrow_right.svg" alt="arrow_right">
+      </button>
+    </ng-template>
+  </kendo-textbox>
+</form>
+<ng-content></ng-content>
+</div>

@@ -1,0 +1,35 @@
+{
+    "data": {
+        "items": {
+            "do_reg_check": "True",
+            "do_resize": "True",
+            "do_rgb_conv": "True"
+        },
+        "summary": {
+            "status": "create",
+            "algorithm": "GA-Progression",
+            "ard": "IDP_ARD_25Nov2024",
+            "version": "GA-Progression_1.0",
+            "createdby": "Payal Sharma",
+            "updatedby": "Payal Sharma",
+            "created": "2024-12-03 07:22:01",
+            "completed": "2024-12-03 07:22:05",
+            "createdat": "2024-12-03 07:22:01",
+            "updatedat": "2024-12-03 07:22:05",
+            "input_file": "",
+            "outputfile": ""
+        },
+        "inputfile": [
+            {
+                "file": "config.json",
+                "type": "csv"
+            }
+        ],
+        "outputfile": [
+            {
+                "file": "dicom.zip",
+                "type": "zip"
+            }
+        ]
+    }
+}

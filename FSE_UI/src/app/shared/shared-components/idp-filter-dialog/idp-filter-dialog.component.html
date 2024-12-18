@@ -1,0 +1,42 @@
+<kendo-dialog title="Filter" *ngIf="dialogOpened" (close)="close('dialog')" [minWidth]="396" [width]="600"
+    [height]="200">
+    <form [formGroup]="filterForm">
+    <ng-container>
+        <div class="row">
+            <div class="component-container col-6" *ngIf="showInclusionBox">
+                <kendo-label text="Is/Is Not">
+                    <kendo-dropdownlist formControlName="filterInclusionfield" [data]="filterOptions"></kendo-dropdownlist>
+                </kendo-label>
+            </div>
+            <div class="col-6">
+                <span *ngIf="selectedFilterOption.dialogOptionType === 'showddSingle'">
+                    <kendo-label [text]="selectedFilterOption.displayName"></kendo-label>
+                    <kendo-dropdownlist formControlName="filterOptionfield" [data]="filterValues"></kendo-dropdownlist>
+                </span>
+                <span *ngIf="selectedFilterOption.dialogOptionType === 'showddMulti'">
+                    <kendo-label [text]="selectedFilterOption.displayName"></kendo-label>
+                    <kendo-multiselect [data]="filterValues" formControlName="filterOptionfield" [allowCustom]="allowCustom" [checkboxes]="true"
+                                style="height: 40px;" [autoClose]="false">
+                            </kendo-multiselect>
+                </span>
+                <span *ngIf="selectedFilterOption.dialogOptionType === 'showRange'">
+                    <kendo-label [text]="selectedFilterOption.displayName"></kendo-label>
+                    <kendo-rangeslider [min]="min" [max]="selectedFilterOption.values[0]" formControlName="filterOptionfield" [smallStep]="selectedFilterOption.values[0]/10"
+                    [largeStep]="selectedFilterOption.values[0]/5"></kendo-rangeslider>
+                </span>
+                <span *ngIf="selectedFilterOption.dialogOptionType === 'showDatePicker'">
+                    <kendo-label [text]="selectedFilterOption.displayName">
+                        <kendo-datepicker placeholder="Choose a date ..." formControlName="filterOptionfield"></kendo-datepicker>
+                    </kendo-label>
+                </span>
+            </div>
+        </div>
+    </ng-container>
+    <kendo-dialog-actions class="kendo-btn-align">
+        <button kendoButton (click)="action('no')" size="medium" style="width: 10%;">No</button>
+        <button kendoButton [disabled]="!filterForm.valid || !formValueChanged()" (click)="action('yes')" size="medium" style="color: #FFFFFF;background-color: #0B41CD;">
+            Yes         
+        </button>
+    </kendo-dialog-actions>
+</form>
+</kendo-dialog>

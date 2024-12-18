@@ -1,0 +1,34 @@
+{
+    "data": {
+        "studies": [
+            {
+                "StudyNumber": "ML21768",
+                "StudyPhase": "Phase III",
+                "StudyIndication": "Colorectal cancer",
+                "StudyScientificArea": "Oncology | Gastroenterology",
+                "Study_Unq_ID": "00001bd9-da12-4f55-bdb0-a95a392a7640",
+                "StudyExecutingParty": "Collaborative Group",
+                "Is_Active": 1
+            },
+            {
+                "StudyNumber": "BP15387",
+                "StudyPhase": "Phase I",
+                "StudyIndication": "Not specified",
+                "StudyScientificArea": "",
+                "Study_Unq_ID": "00070b13-5b2e-4ed6-8ad2-5325f4496a26",
+                "StudyID": "http://clinical.roche.com/study/BP15387",              
+                "StudyCITFlag": "N",
+                "StudyThemeMolecule": "",
+                "StudyScientificTitle": "An ascending dose study of the tolerability, safety, pharmacodynamics, pharmacokinetics of an IV infusion of endothelin antagonist Ro 61-1790 in healthy, male voluteers.", 
+                "StudyType": "Interventional1",
+                "StudyStatus": "Clinical Closure",
+                "StudySource": "AIMS",
+                "StudyNonRocheNumber": "",
+                "StudySponsorType": "",
+                "UpdatedAt": "2024-10-08T17:37:00Z",
+                "SourceType": "GIP, RWD",
+                "Is_Active": 1
+            }
+        ]
+    }
+}

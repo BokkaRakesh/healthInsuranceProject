@@ -1,0 +1,113 @@
+{
+    "data": {
+        "items": [
+            {
+                "algoanalysisuniqid": "0a5c54bf-02dc-42f3-8c43-8911f7c84e8d",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": "s3://gip-data-main/idp/a3d24c2d-c5fd-4e23-906a-094b9e3c3f51/ard/da4ef7b9-2a97-494b-a5c4-26d2fe873d98/analysis/0a5c54bf-02dc-42f3-8c43-8911f7c84e8d/",
+                "runs": 1,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-26 12:15:45",
+                "updatedat": "2024-11-26 12:15:45"
+            },
+            {
+                "algoanalysisuniqid": "104525db-c053-4296-96fb-454cb34e6d2e",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": "s3://gip-data-main/idp/a3d24c2d-c5fd-4e23-906a-094b9e3c3f51/ard/da4ef7b9-2a97-494b-a5c4-26d2fe873d98/analysis/104525db-c053-4296-96fb-454cb34e6d2e/",
+                "runs": 0,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-26 12:33:14",
+                "updatedat": "2024-11-26 12:33:14"
+            },
+            {
+                "algoanalysisuniqid": "38865357-113d-4014-9d23-08602ab3e78f",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": null,
+                "runs": 0,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-11-26 06:00:01",
+                "updatedat": "2024-11-26 06:00:01"
+            },
+            {
+                "algoanalysisuniqid": "3cd59dfd-8568-4df3-a9e5-b0ea09337c53",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": null,
+                "runs": 0,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-11-26 12:04:44",
+                "updatedat": "2024-11-26 12:04:44"
+            },
+            {
+                "algoanalysisuniqid": "3fb99e4b-bedf-4286-ac84-f7b9c04e93df",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": "s3://gip-data-main/idp/a3d24c2d-c5fd-4e23-906a-094b9e3c3f51/ard/da4ef7b9-2a97-494b-a5c4-26d2fe873d98/analysis/3fb99e4b-bedf-4286-ac84-f7b9c04e93df/",
+                "runs": 0,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-26 12:41:52",
+                "updatedat": "2024-11-26 12:41:52"
+            },
+            {
+                "algoanalysisuniqid": "4cce87a7-d7e8-430c-9147-87f1dcc120f4",
+                "ardversionuniqid": "090ab3ba-4ef8-410f-a96c-ee69a67554e3",
+                "arduniqid": "da4ef7b9-2a97-494b-a5c4-26d2fe873d98",
+                "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                "algoname": "GA-Progression",
+                "status": "create",
+                "name": null,
+                "location": null,
+                "runs": 0,
+                "errored": 0,
+                "createdby": "Payal Sharma",
+                "updatedby": null,
+                "createdat": "2024-11-26 12:10:54",
+                "updatedat": "2024-11-26 12:10:54"
+            }
+        ],
+        "summary": {
+            "total": 20
+        },
+        "sort": {
+            "field": "algoanalysisuniqid",
+            "order": "DESC"
+        },
+        "pagination": {
+            "page": 1,
+            "pageSize": 20
+        }
+    }
+}

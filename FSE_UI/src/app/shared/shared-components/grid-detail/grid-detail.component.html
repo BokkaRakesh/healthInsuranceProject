@@ -1,0 +1,117 @@
+<div class="no-checkbox">
+  <kendo-grid
+    #grid
+    [data]="gridData"
+    kendoGridSelectBy="StudyID"
+    [pageSize]="pageSize"
+    [pageable]="true"
+    [sortable]="true"
+    [groupable]="false"
+    [height]="500"
+    [sort]="sort"
+    (sortChange)="sortChange($event)"
+    (scrollBottom)="loadMoreData()"
+    (cellClick)="onRowClick($event)"
+  >
+    <ng-template kendoGridToolbarTemplate>
+      <div class="row pb-3">
+        <div class="col ms-3">
+          <span class="expand-btn" (click)="expandAllRows()">Expand All</span>
+        </div>
+        <div class="col-11 d-flex justify-content-start align-items-center">
+          <div class="d-flex ms-1">
+            <span class="pe-1 pagination-info">Showing</span>
+            <span class="pagination">1-{{ pageSize }}</span>
+            <span class="px-1 pagination-info">of</span>
+            <span class="pagination">{{ pagination.totalCount }}</span>
+            <span class="ps-1 pagination-info">results</span>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-container *ngFor="let gridColumn of gridColumnsData">
+      <kendo-grid-column
+        [field]="gridColumn.id"
+        [title]="gridColumn.name"
+        [width]="gridColumn.width"
+      >
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <ng-container>
+            <div class="d-flex justify-content-start align-items-center">
+              <img
+                *ngIf="gridColumn.hasIcon && dataItem[gridColumn.id]"
+                class="pe-1 pb-1"
+                src="../assets/images/{{ gridColumn.icon }}.svg"
+                alt=""
+              />
+              <span *ngIf="!gridColumn.displayAsDot && !gridColumn.displayAsCount" class="dash">{{
+                dataItem[gridColumn.id] ? dataItem[gridColumn.id] : "-"
+              }}</span>
+              <span *ngIf="gridColumn.displayAsDot" class="dot-data">{{
+                dataItem[gridColumn.id] ? dataItem[gridColumn.id] : "-"
+              }}</span>
+              <span *ngIf="gridColumn.displayAsCount">{{
+                dataItem[gridColumn.id] ? dataItem[gridColumn.id].length : "-"
+              }}</span>
+              <span
+                *ngIf="gridColumn.toolTipIcon && dataItem[gridColumn.id]"
+                kendoTooltip
+                [title]="dataItem[gridColumn.id]"
+                class="ms-1"
+              >
+                <img
+                  class="pe-1 pb-1"
+                  src="../assets/images/{{ gridColumn.toolTipIcon }}.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+          </ng-container>
+        </ng-template>
+      </kendo-grid-column>
+      <ng-template
+        kendoGridDetailTemplate
+        let-dataItem="dataItem"
+        let-rowIndex="rowIndex"
+        [kendoGridDetailTemplateShowIf]="showDetailView"
+      >
+        <ng-container *ngFor="let item of dataItem.versions">
+            <div class="detail-row-container">
+                <div class="detail-item-row mx-5">
+                    <img class="pe-1 pb-1" src="../assets/images/monitor_settings.svg" alt="" class="icon" />
+                    <span class="detail-title">{{ item.name }}</span>
+                    <span kendoTooltip [title]="item.name" class="ms-1 icon">
+                        <img class="pe-1 pb-1" src="../assets/images/circle_info.svg" alt="" />
+                    </span>
+                </div>
+                <div class="detail-item-col mx-5">
+                    <span class="detail-label">Created</span>
+                    <span class="detail-value">{{ item.createdat }}</span>
+                </div>
+                <div class="detail-item-col mx-5">
+                    <span class="detail-label">Last Updated</span>
+                    <span class="detail-value">{{ item.updatedat }}</span>
+                </div>
+                <div class="detail-item-col mx-5">
+                    <span class="detail-label">Distribution</span>
+                    <span class="detail-value">{{ item.distribution }}</span>
+                </div>
+                <div class="detail-item-col mx-5">
+                    <span class="detail-label">Version</span>
+                    <span class="detail-value">{{ item.version }}</span>
+                </div>
+                <div class="detail-item-row mx-5">
+                    <img src="../assets/images/sessions.svg" alt="Clock Icon" class="icon" />
+                    <span class="detail-value-count ps-4 pe-2">{{ item.analysis_count }}</span>
+                    <span class="detail-value-text">Analysis Run</span>
+                </div>
+                <div class="detail-item-row action-icon">
+                    <span class="redirect-icon" (click)="openMenu($event, item, rowIndex); $event.stopPropagation()">
+                    </span>
+                </div>
+            </div>
+        </ng-container>
+      </ng-template>
+    </ng-container>
+  </kendo-grid>
+</div>

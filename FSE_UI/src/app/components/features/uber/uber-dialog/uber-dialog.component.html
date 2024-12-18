@@ -1,0 +1,22 @@
+<kendo-dialog [width]="450" [minWidth]="450" [height]="200" [minHeight]="200" [animation]="false">
+    <div class="custom-dialog-title">
+        <p class="dialog-title">Uber</p>
+        <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+    </div>
+
+    <div class="container mt-4">
+        <div class="row card-container">
+            <p class="uber-dev-text">You are leaving the GIP app. Are you sure you want to be redirected to Uber
+                Platform?</p>
+        </div>
+
+        <div class="button-css">
+            <span class="save-label"><button kendoButton class="continue">
+                    Continue
+                </button></span>
+            <span class="cancel-label"><button kendoButton class="cancel">
+                    Cancel
+                </button></span>
+        </div>
+    </div>
+</kendo-dialog>

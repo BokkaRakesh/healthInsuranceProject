@@ -1,0 +1,86 @@
+<div class="container p-3">
+  <!-- Description -->
+  <form [formGroup]="descriptionForm">
+    <div class="container mb-1">
+
+      <span><strong>Description</strong>&nbsp;</span>
+      <span *ngIf="!isEditable"><img class="pe-2 pb-1 edit-icon" src="../assets/images/write.svg" alt=""
+          (click)="editDescription(descriptionForm.value.description)" /></span>
+      <span *ngIf="isEditable" class="save-label"><button kendoButton [disabled]="!descriptionForm.valid" (click)="saveDescription(descriptionForm.value.description)" fillMode="clear">
+          Save
+      </button></span>
+      <span *ngIf="isEditable" class="cancel-label"><button kendoButton (click)="cancel()" fillMode="clear">
+        Cancel
+    </button></span>
+
+    </div>
+    <div *ngIf="!isEditable" class="description-container mb-2">
+      <div class="col-12 ms-2">
+        <div class="description-content p-1">{{description}}</div>
+      </div>
+     
+    </div>
+    <div *ngIf="isEditable" class="row describe ps-4 pe-1">
+      <kendo-textarea placeholder="Please add description here...." [maxlength]="maxLength" formControlName="description" [rows]="3"
+        resizable="vertical"></kendo-textarea>
+    </div>
+    <div class="row ps-4 pe-1 descriptionError"
+    *ngIf="descriptionForm.controls['description'].touched && descriptionForm.get('description')?.hasError('required')">
+        Please enter description as it is required
+      </div>
+    <div class="row ps-4 pe-1 descriptionError"
+    *ngIf="descriptionForm.controls['description'].touched && descriptionForm.controls['description']?.hasError('maxlength')">
+        Maximum of 5000 characters are allowed for description
+    </div>
+  </form>
+  <div class="container mt-4 scroll-bar study-details">
+    <div class="main-container p-4 border rounded">
+      <div class="row" *ngIf="mappedStudiesData">
+        <!-- Accordion panels -->
+        <div class="col-12" *ngFor="let studyEntry of mappedStudiesData | keyvalue: originalOrder">
+          <kendo-expansionpanel  [svgExpandIcon]="arrowDown" 
+          [svgCollapseIcon]="arrowUp">
+          <ng-template kendoExpansionPanelTitleDirective>
+            <div class="header-content">
+               <img
+                  class="pe-1"
+                  src="../assets/images/outlined-folder.svg"
+                  alt="study"
+                />
+              <span>{{studyEntry.key}}</span>
+            </div>
+          </ng-template>
+            <div class="row mb-3">
+              <div class="study-catalog-info-box" *ngFor="let mainStudy of studyEntry.value.highLightedLabels">
+                <div class="info-box p-3 mb-2">
+                  <strong class="study-label">{{ mainStudy.uiLabel }} </strong>
+                  <div>
+                    {{ mainStudy.value }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="study-info-list">
+              <kendo-listview [data]="studyEntry.value.normalLabels">
+                <ng-template kendoListViewItemTemplate let-dataItem="dataItem">
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <strong class="study-label">{{ dataItem.uiLabel }}</strong>
+                    </div>
+                    <div class="col-6">
+                      {{ dataItem.value }}
+                    </div>
+                    <hr class="separator" />
+                  </div>
+                </ng-template>
+              </kendo-listview>
+            </div>
+          </kendo-expansionpanel>
+        </div>
+        <div class="show-more" *ngIf="!isLastPage" (click)="showMoreStudy()">show more</div>
+      </div>
+    </div>
+  </div>
+
+</div>

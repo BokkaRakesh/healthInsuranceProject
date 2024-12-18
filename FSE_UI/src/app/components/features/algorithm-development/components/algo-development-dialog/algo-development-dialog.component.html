@@ -1,0 +1,24 @@
+<kendo-dialog [width]="450" [minWidth]="450" [height]="400" [minHeight]="400" [animation]="false">
+    <div class="custom-dialog-title">
+        <p class="dialog-title">Algorithm Development</p>
+        <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+    </div>
+
+    <div class="container mt-4">
+        <div class="row card-container">
+            <p class="ard-dev-text">By selecting the option below, you will be redirected to the appropriate platform.
+            </p>
+            <div class="workflow-card d-flex justify-content-between mt-3" *ngFor="let card of workflows">
+                <div class="d-flex flex-column justify-content-around mt-1 ms-3">
+                    <div class="workflow-card-icon d-flex">
+                        <img src="../assets/images/{{card?.icon}}.svg" alt="{{card?.name}}">
+                    </div>
+                    <div class="workflow-card-name">
+                        <p class="card-names">{{ card?.name }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</kendo-dialog>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@progress/kendo-theme-default/dist/all.scss";
+@import 'bootstrap/scss/bootstrap';
+@import '../src/styles/fonts.scss';
+@import '../src/styles/kendo-drawer.scss';
+@import '../src/styles/variables.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+//Scroll-bar CSS
+::-webkit-scrollbar {
+    width: 5px !important;
+    height:5px !important;
+}
+
+::-webkit-scrollbar-button {
+    display: none !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #C2BAB5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C2BAB5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C2BAB5;
+}

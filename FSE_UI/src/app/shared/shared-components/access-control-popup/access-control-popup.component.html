@@ -1,0 +1,32 @@
+<kendo-popup *ngIf="anchor && showPopover" [anchor]="anchor" [animate]="animate" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign">
+  <form [formGroup]="dataSourceForm">
+    <div class="mx-2 my-2">
+      <p class="label-align"> Data Sources</p>
+      <ul class="popup-menu">
+        <li *ngFor="let item of accessItems">
+          <div class="align-item-dataSource">
+            <span>
+              <span *ngIf="item.access && !item.requested" class="input-tag-align"> <input type="checkbox"
+                  *ngIf="dataGridSelectedRecord.length > 0" [formControlName]="item.id"
+                  (change)="onCheckboxChange(item, $event)" kendoCheckBox>
+                <input type="checkbox" *ngIf="dataGridSelectedRecord.length === 0"
+                  (change)="onCheckboxChange(item, $event)" kendoCheckBox>
+              </span>
+              <span *ngIf="!item.access && !item.requested || !item.access && item.requested "><img class="pe-1 pb-1"
+                  src="../assets/images/grid-warning-icon.svg" alt="" />
+              </span>
+              {{item.id}}
+            </span>
+            <span class="dataSource-status-align">
+              <span *ngIf="!item.access && !item.requested" (click)="onRequestedClick(item)"
+                class="request-link">Request</span>
+              <span *ngIf="!item.access && item.requested" class="requested-link">
+                <span class="requested-align">requested</span></span>
+            </span>
+          </div>
+          <hr>
+        </li>
+      </ul>
+    </div>
+  </form>
+</kendo-popup>

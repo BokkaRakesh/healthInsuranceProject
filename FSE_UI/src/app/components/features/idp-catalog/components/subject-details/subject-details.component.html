@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row mb-2">
+    <div class="col d-flex align-items-center">
+      <span class="navigate-back pe-1" (click)="openIdpDetails()"></span>
+      <span class="idp-name px-2">Subject Id</span>
+      <span class="px-1 pb-1 idp-down"></span>
+      <span class="px-1 favourite-heart" [ngClass]="favouriteSelection ? 'favourite-heart-blue' : 'favourite-heart'"
+        (click)="selectFavourite()"></span>
+    </div>
+    <div class="col d-flex justify-content-end align-items-center flex-wrap">
+      <div class="search-and-buttons text-end d-flex align-items-center">
+        <button class="filter-btn btn btn-outline-primary mx-1 p-2">
+          <span class="filter-btn-icon me-1"></span>
+          All Filter
+      </button> 
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <ng-container>
+      <div class="col-9 p-0">
+        <!-- Tab Navigation -->
+        <app-tab-navigation [navigation]="parentTabs" (tabInfo)="getSelectedTabInfo($event)">
+          <div class="grid-projected-content text-end mt-3">
+            <!-- Todo: Need to add filter options once response json is provided -->
+            <span class="filter-btn mx-1 pe-1" (click)="openFilterOptionsPopup()" #filter></span>
+          </div>
+        </app-tab-navigation>
+        <!-- Subject Detail result -->
+        <ng-container [ngSwitch]="selectedTab">
+          <app-subject-files-detail *ngSwitchCase="'Files'"></app-subject-files-detail>
+          <div *ngSwitchCase="'Clinical Data'">Clinical Data</div>
+          <app-subject-documentation-details *ngSwitchCase="'Documentation'"
+            [studiesList]="studiesList">Documentation</app-subject-documentation-details>
+          <app-subject-activities-detail *ngSwitchCase="'Activities'"></app-subject-activities-detail>
+        </ng-container>
+      </div>
+      <div class="col-3 p-0 right-panel-summary">
+        <app-data-summary-detail [summary]="summary" [summaryDetails]="summaryDetails"></app-data-summary-detail>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<kendo-popup class="filter-option scroll-bar" *ngIf="isFilterOptionsVisible" [anchor]="filter" [animate]="false"
+  style="max-height: 300px;overflow-y: scroll;" [anchorAlign]="{ vertical: 'bottom', horizontal: 'center' }"
+  [popupAlign]="{ vertical: 'top', horizontal: 'right' }" (close)="isFilterOptionsVisible = false">
+  <div class="popup-menu mx-4 my-3">
+    <div class="title mb-2">
+      <p class="mb-0 fw-bold">Filter Options</p>
+    </div>
+    <div>
+      <ng-container *ngFor="let studyFilter of filterData">
+        <p class="mb-0 mt-3 filter-list-label" (click)="onClickOfFilterOption(studyFilter)">{{ studyFilter.id }}</p>
+        <hr class="m-0 mt-1">
+      </ng-container>
+    </div>
+  </div>
+</kendo-popup>
+
+<app-idp-filter-dialog *ngIf="isDialogOpen" [dialogOpened]="isDialogOpen" [filterData]="filterData"
+  [selectedFilterOption]="selectedFilterOption" (filterEmitter)="getFilteredData($event)"
+  (batchEmit)="getBatchesData($event)" (isDialogOpen)="isDialogOpened()"></app-idp-filter-dialog>

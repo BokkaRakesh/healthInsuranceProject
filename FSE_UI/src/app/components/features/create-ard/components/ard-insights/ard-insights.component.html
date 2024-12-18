@@ -1,0 +1,14 @@
+<div class="grid-container">
+  <ng-container *ngIf="!showGrid">
+    <app-no-results-found [showNoRecords]="true"></app-no-results-found>
+  </ng-container>
+  <ng-container *ngIf="showGrid">
+    <app-grid *ngIf="gridData.length > 0" [pageSize]="gridData.length" [gridData]="gridData" [gridColumns]="gridColumns"
+      [pagination]="pagination" [threeDotMenu]="true" (sendSortData)="getSortedData($event)"
+      (sendscrollData)="getPaginatedData($event)" (actionMenuEmitter)="openRowMenu($event)" [checkBoxSelection]="false"
+      [insights]="true" [accessFlag]="ownerFlag">
+    </app-grid>
+  </ng-container>
+</div>
+<app-table-pop-up *ngIf="showRowPopup" [items]="menuItems" [anchor]="rowPopUp" [anchorAlign]="anchorAlign"
+  [popupAlign]="popupAlign"></app-table-pop-up>

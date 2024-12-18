@@ -1,0 +1,103 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.gear-icon {
+   
+    span {
+        font-family: $Roche-Sans-Light;
+        font-size: 12px;
+        color: $roche-grey-700;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.btn-menu {
+    flex-direction: row;
+}
+
+kendo-popup {
+    width: 220px;
+    height: 340px;
+}
+
+.horizontal-separator {
+    margin: 0;
+}
+
+.popup-menu {
+    .title {
+        font-family: $Roche-Sans-Medium;
+        font-size: 14px;
+        color: $roche-grey-800;
+    }
+
+    p > label {
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+        color: $roche-grey-700;
+    }
+
+    // div:nth-child(2) {
+    //     height: 300px;
+    //     overflow-y: auto;
+    // }
+}
+
+::ng-deep {
+    .k-checkbox:checked, .k-checkbox.k-checked {
+        background-color: $roche-blue-primary;
+        border-color: transparent;
+    }
+
+    .k-checkbox:checked:focus, .k-checkbox.k-checked.k-focus {
+        box-shadow: none;
+    }
+}
+
+.table-actions {
+   padding-left: 0.9rem;
+}
+
+.container {
+    width: 220px;
+    height: 50px;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.btn-menu{
+    justify-content: space-between;
+}
+
+.reset {
+    border: 1px solid $roche-blue-primary;
+    color: $roche-blue-primary;
+}
+
+.scroll-bar::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+ 
+.scroll-bar::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #bababa;
+}
+
+// .table-details {
+//     max-height: 300px;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+// }
+
+.fields{
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

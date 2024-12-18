@@ -1,0 +1,49 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../../../../styles/fonts.scss';
+ 
+.idp-name {
+    font-family: $Roche-Sans-Medium;
+    font-size: 20px;
+    color: $roche-grey-900;
+}
+
+.favourite-heart {
+    content: url(../../../../../../assets/images/outlined-heart.svg);
+}
+
+.favourite-heart-blue {
+    content: url(../../../../../../assets/images/favourite.svg);
+}
+
+.idp-down {
+    content: url(../../../../../../assets/images/chevron_down.svg);
+}
+
+.right-panel-summary {
+    height: 800px;
+    overflow-y: auto;
+}
+
+.navigate-back {
+    content: url(../../../../../../assets/images/navigate-arrow_back.svg);
+    border-radius: 5%;
+    border: 2px solid $roche-blue-primary;
+}
+
+.filter-btn {
+    font-size: 16px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-blue-primary;
+}
+
+.filter-btn:hover {
+    background-color: transparent;
+    color: $roche-blue-primary;
+}
+
+.filter-btn-icon {
+    content: url("../../../../../../assets/images/parameters.svg");
+    filter: invert(17%) sepia(100%) saturate(3043%) hue-rotate(221deg) brightness(86%) contrast(95%);
+    vertical-align: middle;
+    cursor: pointer;
+}

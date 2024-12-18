@@ -1,0 +1,360 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.chat-right-panel {
+  background: #F0F4FD;
+  height: 75vh !important;
+  overflow: auto;
+
+  .messages-chat {
+    padding: 1rem;
+  }
+}
+
+.chat-you{
+  font-size: 13px;
+  font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.chat-from {
+  font-size: 13px;
+  color: #0B41CD;
+  font-weight: bold;
+  text-align: right;
+  padding-bottom: 4px;
+}
+
+.chat-right-panel .messages-chat .message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chat-right-panel .messages-chat .message .photo {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: #E6E7ED;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chat-right-panel .messages-chat .text {
+  margin: 0 35px;
+  background-color: #fff;
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-only {
+  margin-left: 45px;
+}
+
+.time {
+  font-size: 10px;
+  color: lightgrey;
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+
+response-time {
+  float: right;
+  margin-right: 40px !important;
+}
+
+.response {
+  float: right;
+  margin-right: 0px !important;
+  margin-left: auto;
+  /* flexbox alignment rule */
+}
+
+.response .text {
+  background-color: #FFF7DF !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-chat {
+  width: calc(65% - 66px);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+  border-top: 2px solid #EEE;
+}
+
+.chat-right-panel .footer-chat .icon {
+  margin-left: 30px;
+  color: #C0C0C0;
+  font-size: 14pt;
+}
+
+.chat-right-panel .footer-chat .send {
+  color: #fff;
+  background-color: #4f6ebd;
+  position: absolute;
+  right: 50px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 50px;
+  font-size: 14pt;
+}
+
+.chat-right-panel .footer-chat .name {
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13pt;
+  color: #515151;
+}
+
+.chat-right-panel .footer-chat .right {
+  position: absolute;
+  right: 40px;
+}
+
+.write-message {
+  border: none !important;
+  width: 60%;
+  height: 50px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.footer-chat *::-webkit-input-placeholder {
+  color: #C0C0C0;
+  font-size: 13pt;
+}
+
+.footer-chat input *:-moz-placeholder {
+  color: #C0C0C0;
+  font-size: 13pt;
+}
+
+.footer-chat input *::-moz-placeholder {
+  color: #C0C0C0;
+  font-size: 13pt;
+  margin-left: 5px;
+}
+
+.footer-chat input *:-ms-input-placeholder {
+  color: #C0C0C0;
+  font-size: 13pt;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+::ng-deep {
+  kendo-dialog-titlebar {
+    background: #0B41CD !important;
+    color: #fff !important;
+    text-align: center;
+    height: 23px;
+  }
+
+  .k-dialog-content {
+    padding: 0px !important;
+  }
+
+  .k-expander-header {
+    width: fit-content !important;
+  }
+
+  .k-expander {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .k-expander.k-focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .k-button-outline-base {
+    border-radius: 50px;
+    color: #0B41CD;
+  }
+
+  .k-button-outline-base:hover {
+    border-radius: 50px;
+    background-color: #0B41CD;
+    color: #fff;
+  }
+
+  .k-expander-title {
+    color: #0B41CD;
+  }
+}
+
+.recent {
+  margin-top: auto;
+}
+
+.days-chat {
+  font-size: 13px;
+}
+
+.recent-queries {
+  color: #0B41CD;
+}
+
+.hi {
+  height: inherit;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+
+  .searchTextBox {
+    padding: 10px 0px 0px;
+
+    .capabilities {
+      float: right;
+      font-size: 11px;
+
+      img {
+        padding: 0px;
+        width: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  li {
+    list-style-type: none !important;
+    padding: 2px 0px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  ul {
+    padding-left: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+.suggestion-btn {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+
+.suggestion-btn {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  border-color: #AEC0EE;
+  color: #0D46D0;
+}
+
+.k-button-outline-base:hover {
+  border-radius: 50px;
+  background-color: #0B41CD;
+  color: #fff;
+}
+
+
+.layout {
+  display: flex;
+  height: 100vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.example-button {
+  width: 40%;
+  margin-bottom: 5px;
+}
+
+
+::ng-deep {
+  .k-button-text {
+    padding: 0px 5px 2px !important;
+    font-size: 13px;
+  }
+
+  kendo-panelbar {
+    height: 63vh !important;
+    overflow: auto !important;
+    border: none !important;
+  }
+
+  kendo-dialog .kendo-dialog-content {
+    padding: 0px !important;
+  }
+
+  .k-panelbar>.k-panelbar-header>.k-link,
+  .k-panelbar>.k-panelbar-header>.k-link.k-selected {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: none !important;
+    padding: 5px !important;
+    
+  }
+
+  span.k-panelbar-item-text {
+    font-size: 14px !important;
+    padding: 0px !important;
+  }
+
+  kendo-panelbar-item span {
+    padding: 9px 10px !important
+  }
+
+  .k-panelbar>.k-panelbar-header+.k-panelbar-header {
+    border-top: 1px solid #ccc !important
+  }
+
+  .k-icon {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .k-tooltip {
+    white-space: pre-line;
+    font-size: 10px;
+  }
+}
+
+
+.dialog-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.dialog-controls i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.dialog-controls i:hover {
+  color: #0056b3;
+}

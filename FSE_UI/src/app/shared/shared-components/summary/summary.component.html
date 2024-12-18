@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="summaryCard me-3" *ngFor="let summaryCard of summary">
+        <div class="k-hstack">
+          <div class="k-icon">
+            <span class="dot">
+              <img class="summary-icons" src="../assets/images/{{summaryCard.icon}}.svg" alt="{{summaryCard.icon}}" />
+            </span>     
+          </div>
+          <div class="card-value-box">
+            &nbsp;<span class="card-value">{{ summaryCard.value | formatValue}}</span>
+          </div>
+          <div class="card-name-box">
+            &nbsp;&nbsp;<span class="card-name">{{ summaryCard.name }}</span>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,14 @@
+{
+    "studies": [
+        {
+            "StudyID": "IDP_GX29176_idp_Imaging",
+            "StudyUnqID": "b78ab656-75b6-4f18-af29-c16faee6d17f",
+            "Subtype": "Imaging"
+        },
+        {
+            "StudyID": "IDP_GX29176_idp_Clinical1111",
+            "StudyUnqID": "b78ab656-75b6-4f18-af29-11111",
+            "Subtype": "clinical"
+        }
+    ]
+}

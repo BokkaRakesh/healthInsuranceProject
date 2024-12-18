@@ -1,0 +1,34 @@
+
+<div class="workflow-activities d-flex flex-column">
+    <div class="row">
+        <div class="col-6 activities-data">
+            <p class="head-text">My Activities</p>
+            <kendo-listview [data]="activityData" class="list" [style.height.px]="200">
+                <ng-template kendoListViewItemTemplate let-item>
+                    <div class="list-item-activity">
+                         <div class="activity-tick">
+                            <span class="px-1 tick"></span>
+                         </div>
+                     
+                        <span class="act-txt">{{ item.Activity }}</span>
+                        <span class="hrs">{{ item.Hrs }}h</span>
+                    </div>
+                  </ng-template>
+            </kendo-listview>
+
+        </div>
+        <div class="col-6 favorite-data">
+            <p class="head-text">My Favorites</p>
+            <kendo-listview [data]="favoriteData" class="list" [style.height.px]="200">
+                <ng-template kendoListViewItemTemplate let-item>
+                    <div class="list-item-favorite">
+                        <span class="px-1 fav-icon"></span>
+                        <span class="fav-text">{{item}}</span>
+                        <span class="px-1 favourite-heart"></span>
+                    </div>
+                  </ng-template>
+            </kendo-listview>
+
+        </div>
+    </div>
+</div>

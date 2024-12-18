@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+.header {
+    --background-color: rgba(255, 255, 255, 0);
+    --heading-color: #ffffff;
+    --nav-color: #ffffff;
+}
+
+.index-page.scrolled .header {
+    --background-color: #092F94;
+}
+
+.footer-copyright-label {
+   font-weight: 600;
+}
+
+.btn-getstarted {
+    cursor: pointer;
+}

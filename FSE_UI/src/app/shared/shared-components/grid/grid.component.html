@@ -1,0 +1,187 @@
+<div [ngClass]="{'no-checkbox': !checkBoxSelection}">
+<kendo-grid
+  [data]="gridData"
+  kendoGridSelectBy="StudyID"
+  [(selectedKeys)]="mySelection"
+  [pageSize]="pageSize"
+  [pageable]="true"
+  [sortable]="true"
+  [groupable]="false"
+  [selectable]="checkBoxSelection ? { checkboxOnly: true, mode: 'multiple' } : false"
+  [height]="500"
+  [sort]="sort"
+  (sortChange)="sortChange($event)"
+  (scrollBottom)="loadMoreData()"
+  (cellClick)="onRowClick($event)" [ngStyle]="{'border-inline-end-width': checkBoxSelection ? '1.5px' : '0'}"  [rowClass]="rowCallback"
+>
+  <ng-template kendoGridToolbarTemplate>
+    <div class="row pb-3">
+      <div class="col-3 d-flex justify-content-start align-items-center">
+        <app-table-columns
+          [gridColumns]="gridColumnsTitle"
+          (selectedColumn)="showSelectedColumns($event)"
+          (resetColumns)="showResetColumns($event)"
+        ></app-table-columns>
+        <div class="d-flex ms-2">
+          <span class="pe-1 pagination-info">Showing</span>
+          <span class="pagination">1-{{ pageSize }}</span>
+          <span class="px-1 pagination-info">of</span>
+          <span class="pagination">{{ pagination.totalCount }}</span>
+          <span class="ps-1 pagination-info">results</span>
+        </div>
+      </div>
+      <div class="col">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </ng-template>
+  <kendo-grid-checkbox-column
+    *ngIf="checkBoxSelection"
+    [width]="45"
+    [headerClass]="{ 'text-center': true }"
+    [class]="{ 'text-center': true }"
+    [resizable]="false"
+    [columnMenu]="false"
+    [showSelectAll]="true"
+  >
+    <ng-template
+      kendoGridHeaderTemplate
+      let-dataItem
+      let-rowIndex="rowIndex"
+      class="title"
+    >
+      <input
+        type="checkbox"
+        name="selectAll"
+        [(ngModel)]="dataItem.checked"
+        [checked]="allSelected"
+        (change)="selectAllDataRows(gridData, dataItem.checked)"
+        kendoCheckBox
+      />
+    </ng-template>
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      <ng-container *ngIf="shouldShowWarning(dataItem); else showCheckbox">
+        <img src="../assets/images/grid-warning-icon.svg" alt="warning-icon"/>
+        </ng-container>
+      <ng-template #showCheckbox>
+      <input
+        type="checkbox"
+        [(ngModel)]="dataItem.checked"
+        [checked]="
+          allSelected
+        " [indeterminate]="dataItem.isIndeterminate"
+        (change)="onDataSelection(dataItem, rowSelected, dataItem.checked)"
+        kendoCheckBox
+        name="all"
+      />
+      </ng-template>
+    </ng-template>
+  </kendo-grid-checkbox-column>
+
+  <ng-container   *ngFor="let gridColumn of gridColumnsData">
+      <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+      *ngIf="gridColumn.id !== 'Access' && gridColumn.id !== 'DataSources' && gridColumn.id !== 'customAccess'"> 
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <ng-container>
+          <div class="d-flex justify-content-start align-items-center">
+            <img *ngIf="gridColumn.hasCustomIcon && (isRequested(dataItem) || isRequest(dataItem))" src="../assets/images/{{ gridColumn.customIcon }}.svg" class="mx-1 my-1"/>
+            <img *ngIf="gridColumn.hasIcon  &&  dataItem[gridColumn.id]" class="pe-1 pb-1" src="../assets/images/{{ gridColumn.icon }}.svg" alt="" />
+            <span class="dash">{{ dataItem[gridColumn.id] ? dataItem[gridColumn.id] : '-' }}</span>
+            <span *ngIf="gridColumn.toolTipIcon && dataItem[gridColumn.id]" kendoTooltip [title]="dataItem[gridColumn.id]" class="ms-1">
+              <img class="pe-1 pb-1" src="../assets/images/{{ gridColumn.toolTipIcon }}.svg" alt="" />
+            </span>
+          </div>
+        </ng-container>
+      </ng-template>
+    </kendo-grid-column>
+    
+    <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+     *ngIf="gridColumn.id == 'Access'">
+     <ng-template kendoGridCellTemplate let-dataItem>
+       <ng-container *ngIf="dataItem.Access">
+         <ng-container *ngIf="dataItem.accessFlag">
+           <span>{{ dataItem.Access }}</span>
+         </ng-container>
+    
+         <ng-container
+           *ngIf="!dataItem.accessFlag">
+           <div class="d-flex">
+             <ng-container *ngFor="let access of dataItem.Access.split(',')">
+               <div class="access-circle">
+                 <span>{{ access.trim() }}</span>
+               </div>
+             </ng-container>
+           </div>
+         </ng-container>
+       </ng-container>
+     </ng-template>
+   </kendo-grid-column>
+  <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+      *ngIf="gridColumn.id == 'DataSources'" >
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <ng-container *ngIf="dataItem">
+          <ng-container>
+           <div class="d-flex justify-content-start align-items-center">
+            <ng-container>
+              <span *ngFor="let item of dataItem.DataSources; let i = index, let last = last" >
+                <span *ngIf="!isRowSelected(dataItem,i)"  [ngClass]="{
+                  'access-denied': !item.access && checkBoxSelection, 
+                  'requested': item.requested && checkBoxSelection,
+              }"> 
+            {{ item.id }}
+            </span>
+            <span *ngIf="!last && !isRowSelected(dataItem,i)">,&nbsp;</span></span>
+            <!-- <span *ngIf="!last">,&nbsp;</span></span> commenting this -->
+            </ng-container>     
+            <ng-container *ngIf="this.selectedRecordList.length > 0">
+              <span *ngFor="let item of dataItem.DataSources; let i = index">
+                    <span *ngIf="isRowSelected(dataItem,i)"   [ngClass]="{
+                      'access-granted-grid-selected': item.access && checkBoxSelection && isRowSelected(dataItem,i),
+                      'request-grid-selected': !item.access && !item.requested && checkBoxSelection && isRowSelected(dataItem,i),
+                      'access-denied': !item.access && checkBoxSelection, 
+                      'requested': item.requested && checkBoxSelection
+                    }">
+                <span> <span class="align-dataSources"> {{ item.id }} </span></span>
+                </span>
+              </span>
+            </ng-container>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ng-template>
+    </kendo-grid-column> 
+    
+
+    <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+    *ngIf="gridColumn.id == 'customAccess'" >
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <ng-container *ngIf="dataItem">
+          <ng-container>
+           <div class="d-flex justify-content-start align-items-center">
+            <p *ngIf="isRequested(dataItem)" class="requested-status-align">
+             <span class="align-status-bg"> Requested </span>
+            </p>
+            <p *ngIf="isRequest(dataItem)" class="request-status-align">
+              <span class="align-status-bg" (click)="onRequest()"> Request </span>
+            </p>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ng-template>
+    </kendo-grid-column>
+  </ng-container>
+  <ng-container>
+    <kendo-grid-column
+      *ngIf="threeDotMenu"
+      field="menu"
+      title=""
+      [width]="50"
+      [sticky]="true"
+    >
+      <ng-template kendoGridCellTemplate let-dataItem="dataItem" let-rowIndex="rowIndex">
+        <span [ngClass]="'three-dot-' + rowIndex" (click)="openMenu($event, dataItem, rowIndex); $event.stopPropagation()" #threeDotButton></span>
+      </ng-template>
+    </kendo-grid-column>
+  </ng-container>
+</kendo-grid>
+</div>

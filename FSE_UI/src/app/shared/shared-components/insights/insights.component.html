@@ -1,0 +1,16 @@
+<div class="card p-3">
+    <div class="d-flex justify-content-between">
+        <span class="title">Latest Insights</span>
+        <span class="link" role="button">View All</span>
+    </div>
+    <ul class="insight-list list-unstyled mt-2">
+        <li *ngFor="let insight of insights" class="insight-item">
+            <span class="inprogress mx-2" *ngIf="insight.status==='inprogress'"></span>
+            <span class="complete mx-2" *ngIf="insight.status==='complete'"></span>
+            <span class="error mx-2" *ngIf="insight.status==='error'"></span>
+            <div class="insight-name ps-2"><span class="icon px-2"></span><span class="name">{{ insight.name }}</span></div>
+            <div class="insight-value ms-2">{{ insight.value }}</div>
+            <span class="launch-icon ms-2"></span>
+        </li>
+    </ul>
+</div>

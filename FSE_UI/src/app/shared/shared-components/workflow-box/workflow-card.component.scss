@@ -1,0 +1,79 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.workflow-card {
+  width: 180px;
+  height: 110px;
+  text-align: center;
+  margin-left: 5px;
+  background-color: $roche-background;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $roche-box-shadow;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  // display: inline-block;  /* Makes each card appear in a row */
+  // width: 150px;  /* Set the width of each card */
+  margin-right: 10px;  /* Add margin between cards */
+  display: flex;
+}
+
+.workflow-card:hover {
+  border-color: $roche-blue-primary;
+}
+
+.workflow-card:active{
+  background-color: $roche-blue-primary !important;
+  div > .workflow-card-name {
+    color: $roche-background;
+  }
+
+  div > .workflow-card-icon > img {
+    filter: brightness(0) invert(1); 
+  }
+}
+
+.workflow-card.selected {
+  background-color: $roche-blue-primary !important;
+  div > .workflow-card-name {
+    color: $roche-background;
+  }
+
+  div > .workflow-card-icon > img {
+    filter: brightness(0) invert(1); 
+  }
+}
+
+.workflow-card:hover {
+  border: 2px solid $roche-blue-primary;
+}
+
+.workflow-card-name {
+  font-family: $Roche-Sans-Regular;
+  font-size: 16px;
+  color: $roche-blue-primary;
+  text-align: left;
+  white-space: pre-line;
+  // p{    
+  // white-space: nowrap;
+  // overflow: hidden;
+  // width: 133px;
+  // text-overflow: ellipsis;
+  // }
+}
+
+.info-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+}
+
+::ng-deep .k-tabstrip-content.k-active, .k-tabstrip > .k-content.k-active{
+display: none !important;
+}
+::ng-deep .k-tabstrip-top > .k-tabstrip-items-wrapper{
+  border-bottom: none !important;
+  height: 135px;
+}

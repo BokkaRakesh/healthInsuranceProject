@@ -1,0 +1,219 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+::ng-deep .k-toolbar {
+    display: inline !important;
+}
+
+.right-btn {
+    align-items: end;
+}
+
+.ard-text {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.attach-file-icon {
+    background-image: url(../../../../../../assets/images/attach-file.svg);
+    filter: brightness(0) saturate(100%) invert(7%) sepia(7%) saturate(447%) hue-rotate(349deg) brightness(100%) contrast(87%);
+}
+
+.no-of-auq-icon {
+    background-image: url(../../../../../../assets/images/sessions.svg);
+    filter: brightness(0) saturate(100%) invert(7%) sepia(7%) saturate(447%) hue-rotate(349deg) brightness(100%) contrast(87%);
+}
+
+.navigate-icon {
+    content: url(../../../../../../assets/images/outlined-launch.svg);
+    filter: brightness(0) saturate(100%) invert(7%) sepia(7%) saturate(447%) hue-rotate(349deg) brightness(100%) contrast(87%);
+    vertical-align: middle;
+}
+
+.expansion-header-icon {
+    display: inline-flex;
+}
+
+::ng-deep .k-grid .k-grid-md {
+    height: 0px !important;
+}
+
+::ng-deep kendo-grid {
+    max-height: fit-content !important;
+    margin-bottom: 20px !important;
+}
+
+.detail-row-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+
+    .detail-item-row {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .info-icon {
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .detail-item-col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .action-icon {
+        margin-left: auto;
+        cursor: pointer;
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.spacing {
+    justify-content: space-between;
+}
+
+.three-dot {
+    content: url(../../../../../../assets/images/three-dots.svg);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.label-click {
+    text-decoration: underline;
+    color: blue;
+}
+
+.session-spacing {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+::ng-deep {
+    .k-expander-header {
+    background-color: $roche-grey-5-hover;
+    border-bottom: 2px solid $roche-blue-primary;
+    }
+    .k-expander-indicator {
+        margin-left: 1rem;
+    }
+}
+
+.visit-data {
+    left: 19em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .file-data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .value {
+            font-size: 16px;
+            font-family: $Roche-Sans-Bold;
+            color: $roche-grey-900
+        }
+        .label {
+            font-size: 14px;
+            font-family: $Roche-Sans-Regular;
+            color: $roche-grey-900
+        }
+    }
+}
+
+.visit-checkbox>input {
+    border-right: 1px solid;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.visit-checkbox>label {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: $Roche-Sans-Medium;
+    color: $roche-grey-900;
+}
+
+.navigate { 
+    padding-left: 50px;
+}
+
+.grid-buttons > button {
+    font-size: 12px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-blue-primary;
+    text-decoration: none;
+}
+.action-buttons {
+    span {
+        font-size: 12px;
+        font-family: $Roche-Sans-Light;
+        color: $roche-grey-900;
+    }
+
+    button {
+        background-color: $roche-blue-primary;
+        color: $roche-background;
+        font-family: $Roche-Sans-Regular;
+        font-size: 14px;
+    }
+    button:nth-child(2) > span {
+        content: url(../../../../../../assets/images/create_ard.svg);
+        vertical-align: middle;
+    }
+    button:nth-child(3) > span {
+        content: url(../../../../../../assets/images/run_analysis.svg);
+        vertical-align: middle;
+    }
+}
+
+.icon-dot {
+    height: 25px;
+    width: 25px;
+    background-color: $roche-background;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        vertical-align: middle;
+    }
+}
+
+.file-icon {
+    content: url(../../../../../../assets/images/image_viewer.svg);
+    vertical-align: middle;
+}
+
+.checkbox-border {
+    border-right: 1px solid #e0e0e0;
+    height: 2rem;
+}
+
+.detail-value {
+    font-size: 14px;
+    font-family: $Roche-Sans-Regular;
+    color: $roche-grey-900;
+}

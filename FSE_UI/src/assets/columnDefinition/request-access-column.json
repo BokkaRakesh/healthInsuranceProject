@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Stat",
+        "id": "StudyNumber",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 1,
+        "hasIcon": true,
+        "icon": "outlined-folder",
+        "hasTooltip": false
+    },
+    {
+        "name": "Request Type",
+        "id": "StudyAcronym",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 2,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "ID",
+        "id": "Subjects",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 3,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Request Date",
+        "id": "Sessions",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 4,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "User",
+        "id": "Aquisitions",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 5,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Data Context",
+        "id": "Files",
+        "default": true,
+        "checked": true,
+        "width": 80,
+        "order": 6,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Access",
+        "id": "Modality",
+        "default": true,
+        "checked": true,
+        "width": 120,
+        "order": 7,
+        "hasIcon": false,
+        "hasTooltip": false
+    },
+    {
+        "name": "Response Date",
+        "id": "DataSources",
+        "default": true,
+        "checked": true,
+        "width": 100,
+        "order": 8,
+        "hasIcon": false,
+        "hasTooltip": false
+    }
+]

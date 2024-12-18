@@ -1,0 +1,81 @@
+{
+    "data": {
+        "items": [
+            {
+                "algouniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                "name": "GA-Progression",
+                "description": "Description of the algorithm",
+                "type": "Analysis",
+                "currentversion": 1,
+                "isactive": true,
+                "createdby": "Payal Sharma",
+                "updatedby": "Sam Verma",
+                "createdat": "2024-11-18 13:45:51",
+                "updatedat": "2024-11-18 13:45:51",
+                "versions": [
+                    {
+                        "algouniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                        "version": 1,
+                        "versionref": "1.0-ga",
+                        "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+                        "createdat": "2024-11-18 14:45:22",
+                        "updatedat": "2024-11-18 14:45:22",
+                        "algo_version_name": "GA-Progression_1.0-ga",
+                        "analysis_count": 0,
+                        "distribution": "-"
+                    },
+                    {
+                        "algouniqid": "5330cbf9-a585-11ef-a326-88a4c2a5318e",
+                        "version": 2,
+                        "versionref": "1.1-ga",
+                        "algoversionuniqid": "f016e0a9-a648-11ef-a326-88a4c2a5318e",
+                        "createdat": "2024-11-19 13:06:06",
+                        "updatedat": "2024-11-19 13:06:06",
+                        "algo_version_name": "GA-Progression_1.1-ga",
+                        "analysis_count": 0,
+                        "distribution": "-"
+                    }
+                ]
+            },
+            {
+                "algouniqid": "7024806a-a7c7-11ef-a326-88a4c2a5318e",
+                "name": "Auto-Lugano",
+                "description": "GA-Progression algo",
+                "type": "Analysis",
+                "currentversion": 1,
+                "isactive": true,
+                "createdby": "Payal Sharma",
+                "updatedby": "Chris Michel",
+                "createdat": "2024-11-21 10:44:09",
+                "updatedat": "2024-11-21 10:44:09",
+                "versions": []
+            },
+            {
+                "algouniqid": "aa1fdec7-a585-11ef-a326-88a4c2a5318e",
+                "name": "Rosa",
+                "description": "Rosa algo",
+                "type": "Analysis",
+                "currentversion": 1,
+                "isactive": true,
+                "createdby": "Payal Sharma",
+                "updatedby": "Payal Sharma",
+                "createdat": "2024-11-18 13:48:17",
+                "updatedat": "2024-11-18 13:48:17",
+                "versions": []
+            }
+        ],
+        "summary": {
+            "algorithms": 3
+        },
+        "sort": {
+            "field": "algouniqid",
+            "order": "ASC"
+        },
+        "pagination": {
+            "currentPage": 1,
+            "pageSize": 20,
+            "page": 1
+        }
+    }
+}
+ 

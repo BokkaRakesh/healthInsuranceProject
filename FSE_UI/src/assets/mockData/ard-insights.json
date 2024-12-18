@@ -1,0 +1,58 @@
+ 
+{
+    "data": {
+        "pagination": {
+            "totalCount": 15146,
+            "page": 1,
+            "pageSize": 20
+        },
+        "items": [
+            {
+                "status": "fail",
+                "Name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "Info": "Info ICON",
+                "Files": "600",
+                "Algoversion": "1.0.0-rc4",
+                "Type": "Analysis",
+                "Owner": "AZ" 
+            },
+            {
+                "status": "in_progress",
+                "Name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "Info": "info",
+                "Files": "600",
+                "Algoversion": "1.0.0-rc4",
+                "Type": "Analysis",
+                "Owner": "AZ"
+            },
+            {
+                "status": "in_progress",
+                "Name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "Info": "info",
+                "Files": "400",
+                "Algoversion": "1.0.0-rc4",
+                "Type": "Analysis",
+                "Owner": "AZ"
+            },
+            {
+                "status": "complete",
+                "Name": "433d3e01-a590-11ef-a326-88a4c2a5318e",
+                "Info": "info",
+                "Files": "400",
+                "Algoversion": "1.0.0-rc4",
+                "Type": "Analysis",
+                "Owner": "AZ"
+            }
+        ]
+    },
+    "summary": {
+        "algoversionuniqid": "a3c3a702-a58d-11ef-a326-88a4c2a5318e",
+        "name": "GA Progression",
+        "version": 1,
+        "isactive": 1,
+        "createdby": "Payal Sharma",
+        "updatedby": "Payal Sharma",
+        "createdat": "2024-11-18 14:45:22",
+        "updatedat": "2024-11-18 14:45:22"
+    }
+}

@@ -1,0 +1,26 @@
+<div class="container p-4">
+    <div class="summary">
+        <app-summary [summary]="summaryInfo"></app-summary>
+    </div>
+    <div class="searchBar">
+      <app-search-box
+        [placeHolder]="placeHolder"
+        (search)="performNlqSearch($event)">  
+      <span class="search-button">
+        <button kendoButton class="workspace-btn me-3" [routerLink]="'/home/explore-data'">
+            <img src="../assets/images/table-content.svg" alt="plus" />
+            <span class="button-text">Data Catalog</span>      
+          </button>
+      </span>
+      </app-search-box>
+    
+    </div>
+    <div class="explore-data-searches mt-3">
+      <span class="recent-search">Recent searches:</span>
+      <ng-container *ngFor="let idp of recentCreatedIDPs">
+      <a class="ps-3" href="">{{idp.label}}
+        <img src="../assets/images/arrow_right.svg" alt="">
+      </a>
+      </ng-container>
+    </div>
+  </div>

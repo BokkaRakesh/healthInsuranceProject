@@ -1,0 +1,83 @@
+<kendo-appbar themeColor="light">
+  <kendo-appbar-section>
+    <img src="../assets/images/roche_logo.svg" alt="Logo" />
+  </kendo-appbar-section>
+
+  <span class="k-appbar-separator mx-2"></span>
+
+  <kendo-appbar-section>
+    <span class="title text">GIP</span>
+  </kendo-appbar-section>
+
+  <kendo-appbar-spacer></kendo-appbar-spacer>
+
+  <kendo-appbar-section class="pe-3" >
+    <div class="search-and-buttons text-end d-flex align-items-center" *ngIf="showGIP">
+      <button class="gip-chat-btn btn btn-md rounded-pill btn-primary mx-1" (click)="openGipai()">
+          <span class="align-text-bottom pe-1"></span>
+          <span>GIP</span>
+          <span class="pe-1">Ai</span>
+      </button>
+  </div>
+  </kendo-appbar-section>
+  <kendo-appbar-section class="pe-3">
+    <img src="../assets/images/assest_folder.svg" alt="folder" />
+    <span class="asset text">My Assets</span>
+  </kendo-appbar-section>
+
+  <span class="k-appbar-separator me-1"></span>
+
+  <kendo-appbar-section>
+    <button kendoButton class="help-btn" (click)="showHelp()" #help>
+      <img
+        src="../assets/images/circle_help.svg"
+        alt="help"
+      />
+    </button>
+    <kendo-popup class="help mt-2"
+      *ngIf="isHelpMenuVisible"
+      [anchor]="help"
+      [animate]="false"
+      [anchorAlign]="{ vertical: 'bottom', horizontal: 'right' }"
+      [popupAlign]="{ vertical: 'top', horizontal: 'right' }"
+      (close)="isHelpMenuVisible = false"
+    >
+      <div class="popup-menu">
+        <div class="menu-items pt-4 pb-1">
+          <p class="menu-item d-flex align-items-center justify-content-between">
+            <span>Report an issue</span>
+            <span class="fw-bold">&gt;</span>
+          </p>
+          <p class="menu-item d-flex align-items-center justify-content-between">
+            <span>Request an access</span>
+            <span class="fw-bold">&gt;</span>
+          </p>
+          <p class="menu-item d-flex align-items-center justify-content-between">
+            <span>Documentation</span>
+            <span class="fw-bold">&gt;</span>
+          </p>
+        </div>
+        <div class="bookmarks-section px-4 pt-2">
+          <span class="text-muted">Bookmarks</span>
+          <hr />
+          <p class="bookmark-item d-flex justify-content-between">
+            <span>Lorem ipsum dolor...</span>
+            <img src="../assets/images/outlined-launch.svg" alt="launch" />
+          </p>
+        </div>
+      </div>
+    </kendo-popup>
+  </kendo-appbar-section>
+
+  <kendo-appbar-section>
+    <button kendoButton class="notification-btn">
+      <img src="../assets/images/notification.svg" alt="notification" />
+    </button>
+  </kendo-appbar-section>
+
+  <kendo-appbar-section class="mx-1">
+    <button type="button" class="dot" #userPopover (click)="showProfile()">{{userInfo.firstNameInitial}}</button>
+  </kendo-appbar-section>
+</kendo-appbar>
+
+<div kendoDialogContainer></div>
