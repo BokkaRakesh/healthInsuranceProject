@@ -201,6 +201,11 @@
  content: url(../../../../assets/images/three-dots.svg);
  cursor: pointer;
 }
+[class^="custom-icon-"] {
+  content: url(../../../../assets/images/folder.svg);
+  cursor: pointer;
+ }
+ 
 
 
 ::ng-deep .access-circle {
@@ -282,4 +287,41 @@
 
 .k-checkbox:indeterminate, .k-checkbox.k-indeterminate {
   background-image: url('../../../../assets/images/checkbox-indeterminate.svg');
+}
+
+.yellow-flag {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.red-flag {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.blue-flag {
+  background-color: #cce5ff;
+  color: #004085;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.yellow-icon {
+  color: #ffc107; /* Yellow */
+}
+.red-icon {
+  color: #dc3545; /* Red */
+}
+.blue-icon {
+  color: #007bff; /* Blue */
+}
+
+.user-flag {
+  padding: 5px;
+  font-weight: bold;
 }

@@ -24,7 +24,8 @@ export const IDP_URLS = {
   GET_IDP_SUBJECTS_URL: `${AUTH_BASE_URL}/assets/mockData/subjects.json`, // Remove this constant
   GET_IDP_FILES_URL: `${AUTH_BASE_URL}/assets/mockData/files.json`, // Remove this constant
   GET_IDP_CATALOG_URL: `${AUTH_BASE_URL}/assets/mockData/idpCatalog.json`, // Remove this constant
-  EXPLORE_DATA_URL: `${AUTH_BASE_URL}/assets/mockData/exploreData.json`,
+  EXPLORE_DATA_URL: `${AUTH_BASE_URL}/assets/mockData/exploreData.json`, // Remove this constant
+  REQUEST_ACCESS_DATA_URL: `${AUTH_BASE_URL}/assets/mockData/requestAccess.json`,// Remove this constant
   GET_CLINICAL_DATA_URL: `${AUTH_BASE_URL}/assets/mockData/getClinicalData.json`, // Remove this constant
   // CREATE_IDP_URL: `${AUTH_BASE_URL}/api/data/idp`,
   // GET_IDP_URL: `${AUTH_BASE_URL}/api/search/getidpdetails/id`,

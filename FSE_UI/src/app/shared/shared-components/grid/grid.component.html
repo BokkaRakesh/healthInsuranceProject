@@ -80,7 +80,7 @@
 
   <ng-container   *ngFor="let gridColumn of gridColumnsData">
       <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
-      *ngIf="gridColumn.id !== 'Access' && gridColumn.id !== 'DataSources' && gridColumn.id !== 'customAccess'"> 
+      *ngIf="gridColumn.id !== 'Access' && gridColumn.id !== 'DataSources' && gridColumn.id !== 'customAccess' && gridColumn.id !== 'User'"> 
       <ng-template kendoGridCellTemplate let-dataItem>
         <ng-container>
           <div class="d-flex justify-content-start align-items-center">
@@ -95,12 +95,17 @@
       </ng-template>
     </kendo-grid-column>
     
-    <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+   <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
      *ngIf="gridColumn.id == 'Access'">
      <ng-template kendoGridCellTemplate let-dataItem>
        <ng-container *ngIf="dataItem.Access">
          <ng-container *ngIf="dataItem.accessFlag">
-           <span>{{ dataItem.Access }}</span>
+           <span class="access-flag"
+           [ngClass]="{
+             'yellow-flag': dataItem.Access === 'Requested',
+             'red-flag': dataItem.Access === 'Rejected',
+             'blue-flag': dataItem.Access === 'Granted'
+           }">{{ dataItem.Access }}</span>
          </ng-container>
     
          <ng-container
@@ -116,6 +121,18 @@
        </ng-container>
      </ng-template>
    </kendo-grid-column>
+
+   <!--User Start:Access Request--->
+   <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
+     *ngIf="gridColumn.id == 'User'">
+     <ng-template kendoGridCellTemplate let-dataItem>
+       <ng-container *ngIf="dataItem.isUser">
+         
+           <span class="blue-flag">{{ dataItem.User }}</span>
+         </ng-container>
+     </ng-template>
+   </kendo-grid-column>
+   <!--User End:Access Request--->
   <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
       *ngIf="gridColumn.id == 'DataSources'" >
       <ng-template kendoGridCellTemplate let-dataItem>
@@ -149,7 +166,7 @@
           </ng-container>
         </ng-container>
       </ng-template>
-    </kendo-grid-column> 
+  </kendo-grid-column> 
     
 
     <kendo-grid-column [field]="gridColumn.id" [title]="gridColumn.name" [width]="gridColumn.width"
@@ -172,7 +189,7 @@
   </ng-container>
   <ng-container>
     <kendo-grid-column
-      *ngIf="threeDotMenu"
+    *ngIf="threeDotMenu"
       field="menu"
       title=""
       [width]="50"
@@ -180,8 +197,13 @@
     >
       <ng-template kendoGridCellTemplate let-dataItem="dataItem" let-rowIndex="rowIndex">
         <span [ngClass]="'three-dot-' + rowIndex" (click)="openMenu($event, dataItem, rowIndex); $event.stopPropagation()" #threeDotButton></span>
+      <!-- Custom icon for actions -->
+        <!-- <span class="custom-icon" (click)="openMenu($event, dataItem, rowIndex); $event.stopPropagation()" #nonDotButton>
+          <kendo-icon [name]="'outlined-folder'" [ngClass]="'custom-icon-' + rowIndex"></kendo-icon>
+        </span> -->
       </ng-template>
     </kendo-grid-column>
   </ng-container>
+ 
 </kendo-grid>
 </div>

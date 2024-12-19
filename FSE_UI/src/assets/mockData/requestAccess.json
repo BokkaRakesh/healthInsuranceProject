@@ -1,0 +1,321 @@
+{
+    "data": {
+        "items": [
+            {
+              "StudyID": "577aa911-cd9d-4994-83a6-19a1f4e93698",
+              "StudyNumber": "BP27931",
+              "StudyType": "Interventional",
+              "StudyAcronym": "IMpower 150",
+              "Access": "Requested",
+              "accessFlag": true,
+              "customAccess": "Requested",
+              "DataSources": [
+                { "id": "Imaging", "access": true, "requested": false },
+                { "id": "Clinical", "access": false, "requested": true }
+              ],
+              "Subjects": 1202,
+              "Files": 75854,
+              "Sessions": 7709,
+              "Aquisitions": 63854,
+              "isUser": true,
+              "User": "AZ",
+              "icon": "outlined-folder"
+            },
+            {
+              "StudyID": "002273bb-e07f-44c5-84f7-b482f33ac77c",
+              "StudyNumber": "PH23325",
+              "StudyType": "Non-interventional",
+              "StudyAcronym": "RATIONAL",
+              "Access": "Rejected",
+              "accessFlag": true,
+              "customAccess": "Rejected",
+              "DataSources": [
+                { "id": "Imaging", "access": false, "requested": false },
+                { "id": "Clinical", "access": false, "requested": false }
+              ],
+              "Subjects": 200,
+              "Files": 10514,
+              "Sessions": 370,
+              "Aquisitions": 6966,
+              "isUser": true,
+              "User": "AZ",
+              "icon": "outlined-folder"
+            },
+            {
+              "StudyID": "001d3cc4-97ae-4a16-b019-61f619ab3db8",
+              "StudyNumber": "BP15387",
+              "StudyType": "Interventional",
+              "StudyAcronym": "MAINTENANCE",
+              "Access": "Granted",
+              "accessFlag": true,
+              "customAccess": "Granted",
+              "DataSources": [
+                { "id": "Imaging", "access": true, "requested": false },
+                { "id": "Clinical", "access": true, "requested": false }
+              ],
+              "Subjects": 100,
+              "Files": 19044,
+              "Sessions": 629,
+              "Aquisitions": 739,
+              "isUser": true,
+              "User": "AZ",
+              "icon": "outlined-folder"
+            }
+          ]
+          ,
+        "sort": {
+            "field": "Subjects",
+            "order": "DESC"
+        },
+        "pagination": {
+            "totalCount": 15146,
+            "page": 1,
+            "pageSize": 20
+        },
+        "summary": {
+            "total": 15146,
+            "subjects": 1502,
+            "files": 105412,
+            "sessions": 8708,
+            "acquisitions": 71559
+        },
+        "filters": [
+            {
+                "id": "Study_Unq_ID",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "00212c9c-dd46-496c-a253-6045a67d03e9",
+                    "000d390f-942d-497a-8330-aeecf3012ddd",
+                    "577aa911-cd9d-4994-83a6-19a1f4e93698",
+                    "001d3cc4-97ae-4a16-b019-61f619ab3db8",
+                    "002273bb-e07f-44c5-84f7-b482f33ac77c",
+                    "00078227-a112-4161-80a6-1f9c18a8157a",
+                    "00110164-a1f4-4775-8d71-7186b9e5eb13",
+                    "0012c4f2-8b93-46ab-9f76-15c5c5c925a8",
+                    "001d3ea9-8220-42a9-8493-fa0662888625",
+                    "000a73a5-22df-4eff-b9e4-45e425ec1dd9",
+                    "0027d3bf-568b-4ade-903e-fd995eb84571",
+                    "00110b90-8e84-4335-9156-82baed3e0c8c",
+                    "b0c428d2-ddcf-445c-9b8c-3bcad5e4084a",
+                    "00070b13-5b2e-4ed6-8ad2-5325f4496a26",
+                    "0025569e-88aa-42fa-942e-1fbe2d67018a",
+                    "0031f667-f3f4-46b3-8e0d-7b1b54f88c5e",
+                    "002ec673-5d16-4d74-a579-7683f07f2693",
+                    "a67b9797-db54-4c52-bf7a-22fb7b9cb976",
+                    "002e7b9b-f3ad-4714-9d08-eb8d00dd540f",
+                    "00001bd9-da12-4f55-bdb0-a95a392a7640"
+                ]
+            },
+            {
+                "id": "StudyNumber",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "BP27931",
+                    "PH23325",
+                    "BP15387",
+                    "IN04302",
+                    "ML18958",
+                    "Q3553S",
+                    "84-902",
+                    "ML28890",
+                    "NP25140",
+                    "ML39656",
+                    "BN42833",
+                    "85-044",
+                    "GO29436",
+                    "87-700",
+                    "NO14790",
+                    "BP29476",
+                    "ML21768",
+                    "ML40488",
+                    "NP22770",
+                    "GV28514"
+                ]
+            },
+            {
+                "id": "StudyType",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Non-interventional",
+                    "Interventional"
+                ]
+            },
+            {
+                "id": "StudyAcronym",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "RATIONAL",
+                    "IMpower 150",
+                    "PicnicHealth",
+                    "MAINTENANCE",
+                    "Inoveon"
+                ]
+            },
+            {
+                "id": "StudyScientificArea",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Virology | Infectious Disease",
+                    "Dermatology | Immunology",
+                    "Psychiatry | Neurology",
+                    "Respiratory Disease | Oncology",
+                    "Metabolism | Endocrinology",
+                    "Oncology",
+                    "Transplantation Medicine | Immunology",
+                    "Genetic Disease | Neurology",
+                    "Endocrinology | Ophthalmology",
+                    "Oncology | Gastroenterology"
+                ]
+            },
+            {
+                "id": "StudyThemeMolecule",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "HUMAN GROWTH HORMONE",
+                    "Xolair",
+                    "CMV ANTI",
+                    "G-SEC modulator (2)",
+                    "Tecentriq",
+                    "Activase",
+                    "Tamiflu",
+                    "Evrysdi",
+                    "Nutropin",
+                    "Avastin",
+                    "GIP/GLP1 dual ago(2)",
+                    "Xeloda",
+                    "vicasinabin"
+                ]
+            },
+            {
+                "id": "StudyIndication",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Lung cancer",
+                    "Spinal muscular atrophy",
+                    "Atopic dermatitis",
+                    "Colorectal cancer",
+                    "Advanced breast cancer",
+                    "Cancer",
+                    "Diabetic retinopathy",
+                    "Transplant rejection",
+                    "Influenza virus infection",
+                    "Cytomegalovirus infection",
+                    "Alzheimer disease",
+                    "Not specified",
+                    "Diabetes mellitus"
+                ]
+            },
+            {
+                "id": "StudyPhase",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Phase I",
+                    "Phase IV",
+                    "Phase III",
+                    "Phase II"
+                ]
+            },
+            {
+                "id": "Subjects",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    200,
+                    1202,
+                    100
+                ]
+            },
+            {
+                "id": "Files",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    10514,
+                    19044,
+                    75854
+                ]
+            },
+            {
+                "id": "Sessions",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    370,
+                    629,
+                    7709
+                ]
+            },
+            {
+                "id": "Aquisitions",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    6966,
+                    739,
+                    63854
+                ]
+            },
+            {
+                "id": "User",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Az",
+                    "ZA"
+                ]
+            },
+            {
+                "id": "Access",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "'FP'",
+                    "'CR', 'CT', 'DOC', 'DX', 'MR', 'OT', 'SC'",
+                    "'CR', 'CT', 'MR', 'NM', 'OT', 'PT'"
+                ]
+            },
+            {
+                "id": "DataSources",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "Imaging, Clinical",
+                    "Imaging"
+                ]
+            },
+            {
+                "id": "StudyPCDActual",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "2019-09-13"
+                ]
+            },
+            {
+                "id": "StudyCreateUser",
+                "type": "text",
+                "inclusion": true,
+                "values": [
+                    "HYNESA1",
+                    "ALCIRA",
+                    "LAGRASTL",
+                    "GALLICCM",
+                    "JAINA19"
+                ]
+            }
+        ],
+        "text2sql": [
+            " SELECT study.* FROM study"
+        ]
+    }
+}
+
+

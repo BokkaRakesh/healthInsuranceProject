@@ -12,7 +12,7 @@ export class RequestAccessService {
   constructor(private http: HttpClient) { }
 
   getExploreData(nlqRequest: NLQRequestEto): Observable<any> {
-    return this.http.post<any>(IDP_URLS.EXPLORE_DATA_URL, nlqRequest).pipe(
+    return this.http.post<any>(IDP_URLS.REQUEST_ACCESS_DATA_URL, nlqRequest).pipe(
       catchError((error: HttpErrorResponse) => {
         return of({ status: error.status, data: null });
       })

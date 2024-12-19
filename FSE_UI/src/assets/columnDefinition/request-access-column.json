@@ -4,11 +4,12 @@
         "id": "StudyNumber",
         "default": true,
         "checked": true,
-        "width": 100,
+        "width": 25,
         "order": 1,
         "hasIcon": true,
         "icon": "outlined-folder",
-        "hasTooltip": false
+        "hasTooltip": false,
+        "hasCustomIcon": true
     },
     {
         "name": "Request Type",
@@ -17,8 +18,9 @@
         "checked": true,
         "width": 100,
         "order": 2,
-        "hasIcon": false,
-        "hasTooltip": false
+        "hasIcon": true,
+        "hasTooltip": false,
+        "icon": "outlined-folder"
     },
     {
         "name": "ID",
@@ -42,12 +44,12 @@
     },
     {
         "name": "User",
-        "id": "Aquisitions",
+        "id": "User",
         "default": true,
         "checked": true,
         "width": 100,
         "order": 5,
-        "hasIcon": false,
+        "hasIcon": true,
         "hasTooltip": false
     },
     {
@@ -62,10 +64,10 @@
     },
     {
         "name": "Access",
-        "id": "Modality",
+        "id": "Access",
         "default": true,
         "checked": true,
-        "width": 120,
+        "width": 100,
         "order": 7,
         "hasIcon": false,
         "hasTooltip": false
