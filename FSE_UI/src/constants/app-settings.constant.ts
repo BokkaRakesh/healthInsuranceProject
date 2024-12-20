@@ -34,9 +34,11 @@ export const IDP_URLS = {
   // GET_IDP_FILES_URL: `${AUTH_BASE_URL}/api/idp/catalog`,
   // GET_IDP_CATALOG_URL: `${AUTH_BASE_URL}/api/data/idp/catalog`,
   // EXPLORE_DATA_URL: `${AUTH_BASE_URL}/api/search/getstudies`
-  GET_EXPLORE_DATA_DOC_URL:`${AUTH_BASE_URL}/api/exploreDoc`,
+  GET_EXPLORE_DATA_DOC_URL:`${AUTH_BASE_URL}/assets/mockData/getIdp.json`,
 }
- 
+export const REQUEST_URLS = {
+  GET_REQUEST_ACCESS_DATA_DOC_URL:`${AUTH_BASE_URL}/assets/mockData/getAccessRequestDialougeData.json`,
+}
  
 export const ARD_URLS = {
   CREATE_ARD_URL: `${AUTH_BASE_URL}/assets/mockData/createIdp.json`, // Remove this constant

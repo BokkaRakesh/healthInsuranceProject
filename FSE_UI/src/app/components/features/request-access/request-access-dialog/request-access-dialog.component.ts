@@ -44,6 +44,7 @@ export class RequestAccessDocDialogComponent {
     console.log('Id--', this.exploreId);
     this.requestAccessService.getExploreDataDocumentation(this.exploreId).subscribe((result) => {
       this.summaryInfo = this.mapSummaryInfo(result.data['summary']);
+      console.log("summaryInfo", this.summaryInfo);
       this.ardDetailResult = result.data['ard_study_details'];
       this.dataSet = result.data['data_Set_supplier'];
       this.description = result.data['desc'];

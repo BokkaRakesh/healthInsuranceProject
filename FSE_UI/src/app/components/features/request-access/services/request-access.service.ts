@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { IDP_URLS } from '../../../../../constants/app-settings.constant';
+import { IDP_URLS, REQUEST_URLS } from '../../../../../constants/app-settings.constant';
 import { Observable, catchError, of } from 'rxjs';
 import { NLQRequestEto } from '../../../models/nlqRequestEto';
 
@@ -22,6 +22,6 @@ export class RequestAccessService {
 
   getExploreDataDocumentation(exploreId: any): Observable<any> {
     // return this.http.get<any>(`${IDP_URLS.GET_EXPLORE_DATA_DOC_URL}/` + exploreId);
-    return this.http.get<any>(IDP_URLS.GET_EXPLORE_DATA_DOC_URL);
+    return this.http.get<any>(REQUEST_URLS.GET_REQUEST_ACCESS_DATA_DOC_URL);
   }
 }
