@@ -8,6 +8,7 @@ import { RequestAccessDocDialogComponent } from './request-access-dialog/request
 
 import { RequestAccessRoutingModule } from './request-access-routing.module';
 import { RequestAccessComponent } from './request-access/request-access.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { RequestAccessComponent } from './request-access/request-access.componen
     RequestAccessRoutingModule,
     SharedModule,
     KendoModule,
-    IdpModule
+    IdpModule,
+    FormsModule
   ]
 })
 export class RequestAccessModule { }

@@ -1,16 +1,11 @@
-<kendo-dialog  [width]="700" [minWidth]="700" [height]="710" [minHeight]="710" [animation]="false">
+<kendo-dialog [width]="700" [minWidth]="700" [height]="710" [minHeight]="710" [animation]="false">
     <div class="custom-dialog-title">
-      <img class="close-icon"src="../assets/images/folder.svg" alt="" />
-     <p class="dialog-title">{{ exploreId }}</p> 
-      <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
+        <img class="close-icon" src="../assets/images/folder.svg" alt="" />
+        <p class="dialog-title">{{ exploreId }}</p>
+        <img class="close-icon" src="../assets/images/close_icon_grey.svg" alt="" (click)="close()" />
     </div>
     <!-- Dialog content goes here -->
 
-    <div class="col d-flex justify-content-start align-items-center flex-wrap summaryInfo">
-        <div class="metadata-section text-end me-3" >
-            <app-summary [summary]="summaryInfo"></app-summary>
-        </div>
-    </div>
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-12 col-md-12 mb-3">
@@ -18,34 +13,77 @@
                     <div class="row d-flex">
                         <div class="col-3 mx-2 my-2 py-2 info-box" *ngFor="let expDoc of expDocDetails">
                             <div class="label py-1">{{ expDoc.label }}</div>
-                            <div class="value">{{ expDoc.value }}</div>
+                            <div class="value" [ngClass]="{
+                                'yellow-flag': expDoc.value === 'Requested',
+                                'red-flag': expDoc.value === 'Rejected',
+                                'blue-flag': expDoc.value === 'Granted',
+                                'user-blue-flag': expDoc.label === 'Request User'
+                              }">{{ expDoc.value }}</div>
                         </div>
                     </div>
-                 
+
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="card datasetDetails px-3 py-2">
                 <div class="row d-flex">
-                    <p class="desc_text">Description</p>
-                    <p class="desc_text_value">{{description}}</p>
-                  </div>
+                    <div class="qa-list">
+                        <div class="qa-item" *ngFor="let qa of qandAData">
+                            <div class="question">
+                                <p><strong>{{ qa.question }}</strong></p>
+                            </div>
+                            <div class="answer">{{ qa.answer }}</div>
+                        </div>
+                    </div>
                 </div>
-        </div>  
+            </div>
+        </div>
         <div class="row dataSetList">
             <div class="card datasetDetails px-3 py-2">
                 <div class="row d-flex">
-                <ul class="dataset-list list-unstyled mt-2">
-                    <ng-container *ngFor="let data of dataSet">
-                        <li class="dataset-item">
-                            <div class="user-name">{{ data.name }}</div>
-                            <div class="access-type">{{ data.value }}</div>
-                        </li>
-                    </ng-container>
-                </ul>
+                    <ul class="dataset-list list-unstyled mt-2">
+                        <ng-container *ngFor="let data of dataSet">
+                            <li class="dataset-item">
+                                <div class="user-name">{{ data.name }}</div>
+                                <div class="access-type">{{ data.value }}</div>
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="row d-flex">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <!-- <img src="../assets/images/lock_icon.svg" alt="Lock Icon" class="lock-icon" /> -->
+                        <p class="access-request-title">Access Request Decision</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment"><strong>Comments</strong> <span class="text-danger">*</span></label>
+                        <textarea id="comment" class="form-control" rows="4" [(ngModel)]="comment" required></textarea>
+                    </div>
+                    <div class="col-12 mt-3 d-flex justify-content-end">
+                        <button class="btn d-flex align-items-center col-3" [ngClass]="{
+                        'btn-danger': comment && comment.trim() !== '',
+                        'btn-light': !comment || comment.trim() === ''
+                      }" (click)="rejectRequest()" [disabled]="!comment">
+                            <!-- <img src="../assets/images/close_icon.svg" alt="Reject" class="me-2" /> -->
+                            Reject Request
+                        </button>
+
+                        <button class="btn d-flex align-items-center col-3 ms-2" [ngClass]="{
+                        'btn-success': comment && comment.trim() !== '',
+                        'btn-light': !comment || comment.trim() === ''
+                      }" (click)="grantAccess()" [disabled]="!comment">
+                            <!-- <img src="../assets/images/check_circle.svg" alt="Grant" class="me-2" /> -->
+                            Grant Access
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </kendo-dialog>
+</kendo-dialog>

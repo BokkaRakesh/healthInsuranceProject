@@ -15,24 +15,26 @@ export class RequestAccessDocDialogComponent {
   ardDetailResult: any;
   summaryInfo: SummaryInfo[] = [];
   dataSet: any;
+  qandAData:any
   description: any;
+  comment: string = '';
   expDocDetails: any[] = [];
   exploreDetailsMapper = [
     {
-      label: 'Clinical Phase',
-      dbColumn: 'studyphase'
+      label: 'Request Status',
+      dbColumn: 'requestStatus'
     },
     {
-      label: 'Indication',
-      dbColumn: 'studyindication'
+      label: 'Request Date',
+      dbColumn: 'requestDate'
     },
     {
-      label: 'Scientific Area',
-      dbColumn: 'studyscientificarea'
+      label: 'ResponseDate',
+      dbColumn: 'responseData'
     },
     {
-      label: 'Data Classification',
-      dbColumn: 'dataClassification'
+      label: 'Request User',
+      dbColumn: 'requestUser'
     }
   ]
   constructor(private dialogRef: DialogRef, private requestAccessService: RequestAccessService) {
@@ -47,6 +49,7 @@ export class RequestAccessDocDialogComponent {
       console.log("summaryInfo", this.summaryInfo);
       this.ardDetailResult = result.data['ard_study_details'];
       this.dataSet = result.data['data_Set_supplier'];
+      this.qandAData = result.data['questionAndAnswers'];
       this.description = result.data['desc'];
       this.mapExploreDocDetails();
     });
@@ -84,5 +87,27 @@ export class RequestAccessDocDialogComponent {
     });
     console.log('expDocDetails---', this.expDocDetails);
   }
+  // Method to handle the Reject Request action
+  rejectRequest() {
+    if (this.comment.trim()) {
+      // Logic for rejecting the request (e.g., call a service or API to reject)
+      console.log('Request has been rejected with comment:', this.comment);
+      // Optionally, you can reset the comment field after rejection
+      this.comment = '';
+    } else {
+      console.log('Please provide a comment to reject the request.');
+    }
+  }
 
+  // Method to handle the Grant Access action
+  grantAccess() {
+    if (this.comment.trim()) {
+      // Logic for granting access (e.g., call a service or API to grant access)
+      console.log('Access has been granted with comment:', this.comment);
+      // Optionally, you can reset the comment field after granting access
+      this.comment = '';
+    } else {
+      console.log('Please provide a comment to grant access.');
+    }
+  }
 }

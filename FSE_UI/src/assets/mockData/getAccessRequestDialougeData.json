@@ -1,24 +1,30 @@
 {
-    "data": {
-      "summary": {
-        "totalFiles": 75854,
-        "totalSubjects": 1202,
-        "totalSessions": 7709,
-        "totalAcquisitions": 63854
-      },
-      "ard_study_details": {
-        "studyphase": "Phase III",
-        "studyindication": "Lung Cancer",
-        "studyscientificarea": "Respiratory Disease | Oncology",
-        "dataClassification": "High Risk"
-      },
-      "data_Set_supplier": [
-        { "name": "Dataset 1", "value": "Full Access" },
-        { "name": "Dataset 2", "value": "Read-Only Access" },
-        { "name": "Dataset 3", "value": "No Access" }
-      ],
-      "desc": "This is a detailed description of the study. It includes information about its objectives and methods."
-    }
+  "data": {
+    "summary": {
+      "totalFiles": 75854,
+      "totalSubjects": 1202,
+      "totalSessions": 7709,
+      "totalAcquisitions": 63854
+    },
+    "ard_study_details": {
+      "requestStatus": "Requested",
+      "requestDate": "20/12/2024",
+      "responseData": "20/12/2024",
+      "requestUser": "AZ"
+    },
+    "data_Set_supplier": [
+      { "name": "Request ID", "value": "#6535" },
+      { "name": "Source", "value": "BP29842" },
+      { "name": "Type", "value": "Imagining" },
+      { "name": "Data Usage", "value": "Primary Usage" },
+      { "name": "Data Type", "value": "Pseudonymized Data" }
+    ],
+    "desc": "This is a detailed description of the study. It includes information about its objectives and methods.",
+    "questionAndAnswers": [
+      {
+        "question": "How do you intend to use this data?",
+        "answer": "Curabitur non nisi in dui peftentesque vu putate veae sa amet enim. Nutan mancus rune et sen lacina lobortis. Nunc conatis, ribh in fermentum elementum, lorem nune pharetra vell, nec aliquet risus uma eu nulta. Mauris tempor accumsan tortor eget vehicula, in semper sit anet metus nec finibas."
+      }
+    ]
   }
-  
-  
+}

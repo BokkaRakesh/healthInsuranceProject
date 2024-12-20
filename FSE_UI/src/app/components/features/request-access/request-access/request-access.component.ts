@@ -452,6 +452,6 @@ export class RequestAccessComponent {
       content: RequestAccessDocDialogComponent,
     });
     const instance = dialogRef.content.instance;
-    instance.exploreId = event.StudyNumber;
+    instance.exploreId = 'Imaging Data Access Request';
   }
 }
