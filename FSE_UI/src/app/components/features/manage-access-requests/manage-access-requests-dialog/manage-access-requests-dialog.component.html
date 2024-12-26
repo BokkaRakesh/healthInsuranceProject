@@ -1,0 +1,116 @@
+<kendo-dialog [width]="700" [minWidth]="700" [height]="710" [minHeight]="710" [animation]="false">
+    <div class="custom-dialog-title">
+      <img class="icon" src="../assets/images/folder.svg" alt="Folder Icon" />
+      <p class="dialog-title">{{ exploreId }}</p>
+      <img
+        class="icon close-icon"
+        src="../assets/images/close_icon_grey.svg"
+        alt="Close Icon"
+        (click)="close()"
+      />
+    </div>
+  
+    <div class="container mt-4">
+      <!-- Access Request Details Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card ard-details">
+            <div class="row">
+              <div
+                class="col-3 mx-2 my-2 py-2 info-box"
+                *ngFor="let expDoc of expDocDetails"
+              >
+                <div class="label">{{ expDoc.label }}</div>
+                <div
+                  class="value"
+                  [ngClass]="{
+                    'yellow-flag': expDoc.value === 'Requested',
+                    'red-flag': expDoc.value === 'Rejected',
+                    'blue-flag': expDoc.value === 'Granted',
+                    'user-blue-flag': expDoc.label === 'Request User'
+                  }"
+                >
+                  {{ expDoc.value }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Questions and Answers Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card datasetDetails px-3 py-2">
+            <div class="qa-list">
+              <div class="qa-item" *ngFor="let qa of qandAData">
+                <p class="question"><strong>{{ qa.question }}</strong></p>
+                <p class="answer">{{ qa.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Dataset Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card datasetDetails px-3 py-2">
+            <ul class="dataset-list list-unstyled mt-2">
+              <ng-container *ngFor="let data of dataSet">
+                <li class="dataset-item">
+                  <span class="dataset-name">{{ data.name }}</span>: 
+                  <span class="dataset-value">{{ data.value }}</span>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Access Request Decision Section -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="access-request-title">Access Request Decision</h3>
+          <div class="form-group">
+            <label for="comment">
+              <strong>Comments</strong> <span class="text-danger">*</span>
+            </label>
+            <textarea
+              id="comment"
+              class="form-control"
+              rows="4"
+              [(ngModel)]="comment"
+              placeholder="Add your comment here..."
+              required
+            ></textarea>
+          </div>
+          <div class="mt-3 d-flex justify-content-end">
+            <button
+              class="btn col-3"
+              [ngClass]="{
+                'btn-danger': comment && comment.trim() !== '',
+                'btn-light': !comment || comment.trim() === ''
+              }"
+              (click)="rejectRequest()"
+              [disabled]="!comment"
+            >
+              Reject Request
+            </button>
+            <button
+              class="btn col-3 ms-2"
+              [ngClass]="{
+                'btn-success': comment && comment.trim() !== '',
+                'btn-light': !comment || comment.trim() === ''
+              }"
+              (click)="grantAccess()"
+              [disabled]="!comment"
+            >
+              Grant Access
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </kendo-dialog>
+  
